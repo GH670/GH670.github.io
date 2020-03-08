@@ -198,6 +198,88 @@
             
 
   
+    <article id="post-github仓库博客换绑新域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/03/08/github%E4%BB%93%E5%BA%93%E5%8D%9A%E5%AE%A2%E6%8D%A2%E7%BB%91%E6%96%B0%E5%9F%9F%E5%90%8D/" target="_blank">github仓库博客换绑新域名</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/03/08/github%E4%BB%93%E5%BA%93%E5%8D%9A%E5%AE%A2%E6%8D%A2%E7%BB%91%E6%96%B0%E5%9F%9F%E5%90%8D/" class="archive-article-date">
+        <time datetime="2020-03-08T00:14:02.566Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="github-仓库博客换绑新域名"><a href="#github-仓库博客换绑新域名" class="headerlink" title="github 仓库博客换绑新域名"></a>github 仓库博客换绑新域名</h1><h2 id="1-首先，在阿里云等平台购买自己的域名。"><a href="#1-首先，在阿里云等平台购买自己的域名。" class="headerlink" title="1.首先，在阿里云等平台购买自己的域名。"></a>1.首先，在阿里云等平台购买自己的域名。</h2><p>注意：购买注册域名时，.com的一般最贵，可以选择相对便宜的域名，在关注首年注册的价格的同时，一定要看多年注册价格以及续费价格！有的域名首年注册的价格很便宜，但是之后续费价格就很贵了。<br>例如购买的域名为 aliyun.com。</p>
+<h2 id="2-解析域名"><a href="#2-解析域名" class="headerlink" title="2.解析域名"></a>2.解析域名</h2><p>购买注册完域名后，进入域名控制台进行域名的解析。</p>
+<p>（1）选择自己购买的域名，点击解析，进入云解析DNS。<br>（2）点击添加记录：<br>①记录类型选择“CNME-将域名指向另一个域名”；<br>②主机记录就是域名前缀，可填写www；<br>③解析路线选择默认；<br>④记录值填写GitHub中博客仓库的仓库名，即：“你的GitHub用户名.github.io”；<br>⑤TTL默认选择10分钟即可。<br>（3）按照第二步再进行一次记录添加，这个不同的是主机记录处填写@。这样做的目的在于解析绑定完之后，既可以通过<a href="http://www.aliyun.com访问，也可以直接通过主域名aliyun.com访问。" target="_blank" rel="noopener">www.aliyun.com访问，也可以直接通过主域名aliyun.com访问。</a>  </p>
+<h2 id="3-GitHub设置"><a href="#3-GitHub设置" class="headerlink" title="3.GitHub设置"></a>3.GitHub设置</h2><p>（1）进入GitHub仓库，选择新建一个新文件，即Create new file。<br>（2）文件名为CNAME,文件中的内容为刚刚购买的新域名，即：aliyun.com 。其他位置可不作任何更改，填写完毕之后选择下方Commit new file 即可<br>（3）完成上述操作后，选择仓库中的Settings，找到GitHub Pages，在Custom domain处填写刚刚购买的域名，然后勾选下方Enforce HTTPS。<br>（注：此GitHub设置过程，访问GitHub过程中网络网页可能反映有些慢，耐心等待刷新即可。）</p>
+<h2 id="4-访问自己的新域名博客"><a href="#4-访问自己的新域名博客" class="headerlink" title="4.访问自己的新域名博客"></a>4.访问自己的新域名博客</h2><p>完成上述操作之后，即可在浏览器输入自己购买的域名进行访问自己的博客了，如果输入的还是之前设置的“你的GitHub用户名.github.io”，浏览器则会主动跳转至新域名。</p>
+<blockquote>
+<p>如果有其他问题，欢迎大家评论留言。</p>
+</blockquote>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/03/08/github%E4%BB%93%E5%BA%93%E5%8D%9A%E5%AE%A2%E6%8D%A2%E7%BB%91%E6%96%B0%E5%9F%9F%E5%90%8D/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Git使用命令行更改用户名及邮箱" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
