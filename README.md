@@ -9,6 +9,15 @@ A:将CNAME文件放置到source文件家目录下。
 Q:更新部署一次，README.md消失一次，并且，将README.md放置在source文件目录下更新部署之后，导致.md转化成.html。  
 A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。  
 例如：skip_render : README.md  （注意格式规范）
-#### 3...  
+#### 3.Gitment----基于GitHub的评论系统  
+注册一个新的 OAuth Application：[https://github.com/settings/applications/new](https://github.com/settings/applications/new)  
+- Application name 应用名称(根据实际来填写)  
+- Homepage URL 主页网址(应用程序主页的完整URL)  
+- Application description 应用说明(应用描述)  
+- Authorization callback URL 授权回调URL(一般是博客的域名)  
 
+&nbsp;&nbsp;&nbsp;&nbsp;gitment_repo: ''          #存储评论的 repo name(需要在Github创建)      
+无初始化按钮，只显示且不能评论。  
+
+#### 4...
 # 欢迎各位批评指导...
