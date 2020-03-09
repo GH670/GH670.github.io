@@ -17,7 +17,13 @@ A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染
 - Authorization callback URL 授权回调URL(一般是博客的域名)  
 
 &nbsp;&nbsp;&nbsp;&nbsp;gitment_repo: ''          #存储评论的 repo name(需要在Github创建)      
-无初始化按钮，只显示且不能评论。  
+Q:无初始化按钮，只显示且不能评论。  
+A:Application与_config.yml中gitment_repo一致。   
 
-#### 4...
+Q:[object ProgressEvent]  
+A:估计。。。作者服务器到期/?
+#### 4.Giteement-集成码云评论  
+- 更改Gitment为giteement.  
+#### 5...  
+
 # 欢迎各位批评指导...
