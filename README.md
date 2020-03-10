@@ -7,7 +7,7 @@ Q:每次更新部署之后，CNAME消失不见。
 A:将CNAME文件放置到source文件家目录下。
 #### 2.README
 Q:更新部署一次，README.md消失一次，并且，将README.md放置在source文件目录下更新部署之后，导致.md转化成.html。  
-A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。  
+A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。（接1）  
 例如：skip_render : README.md  （注意格式规范）
 #### 3.Gitment----基于GitHub的评论系统  
 注册一个新的 OAuth Application：[https://github.com/settings/applications/new](https://github.com/settings/applications/new)  
@@ -24,6 +24,6 @@ Q:[object ProgressEvent]
 A:估计。。。作者服务器到期/?
 #### 4.Giteement-集成码云评论  
 - 更改Gitment为giteement.  
-#### 5...  
+#### 5.blog不定期更新测试中...   
 
 # 欢迎各位批评指导...
