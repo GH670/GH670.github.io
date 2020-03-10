@@ -213,7 +213,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/03/10/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_blank">这是一篇测试文章</a>
+	  <a class="article-title" href="/2020/03/10/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_blank">测试</a>
   
     </h1>
   
@@ -234,11 +234,8 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <hr>
-<p>title： 测试<br>data: 2020-3-10 8:30:00<br>tags: 测试<br>comments: true<br>top: 1<br>description: blog测试  </p>
-<hr>
-<ul>
-<li>测试1：文章置顶及tags、title等文章头设置。  </li>
+    <ul>
+<li>测试1：文章置顶及tags、title等文章头设置。格式！  </li>
 <li>测试2：…</li>
 </ul>
 
@@ -251,7 +248,23 @@
   </div>
   <div class="article-info article-info-index">
     
+    <div class="article-pop-out tagcloud">
+      <i class="icon-tuding"></i>
+      <a class="article-tag-list-link color3">置顶</a>
+    </div>
     
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -826,6 +839,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
