@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/photos/data.json</loc>
+    
+    <lastmod>2020-04-01T23:31:34.753Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/2020/04/01/markown/</loc>
+    
+    <lastmod>2020-04-01T13:38:59.840Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/2020/04/01/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/</loc>
     
     <lastmod>2020-04-01T12:15:16.656Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://gh670.github.io/2020/04/01/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0/</loc>
     
     <lastmod>2020-04-01T11:16:13.957Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/2020/04/01/markown/</loc>
-    
-    <lastmod>2020-04-01T11:14:04.042Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://gh670.github.io/2020/04/01/Hexo+yilia+%E7%85%A7%E7%89%87&%E8%A7%86%E9%A2%91/</loc>
     
     <lastmod>2020-04-01T09:48:54.047Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/photos/data.json</loc>
-    
-    <lastmod>2020-04-01T08:23:24.967Z</lastmod>
     
   </url>
   
