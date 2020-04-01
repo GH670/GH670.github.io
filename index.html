@@ -117,7 +117,7 @@ var _hmt = _hmt || [];
 			</ul>
 		</nav>
 		<nav>
-			<a>总文章数 16</a>
+			<a>总文章数 17</a>
 		</nav>
 		<nav class="header-smart-menu">
 			
@@ -446,6 +446,98 @@ var _hmt = _hmt || [];
 
 
   
+    <article id="post-hexo小更新" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/04/01/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0/">hexo 个性化</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/04/01/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0/" class="archive-article-date">
+        <time datetime="2020-04-01T00:54:05.255Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h5 id="在左侧显示总文章数"><a href="#在左侧显示总文章数" class="headerlink" title="在左侧显示总文章数"></a>在左侧显示总文章数</h5><p>修改 themes\yilia\layout_partial\left-col.ejs</p>
+<p>在</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav <span class="class"><span class="keyword">class</span></span>=<span class="string">"header-menu"</span>&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">    &lt;% <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> theme.menu)&#123; %&gt;</span><br><span class="line">        &lt;li&gt;<span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%- url_for(theme.menu[i]) %&gt;"</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;%&#125;%&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/u</span>l&gt;</span><br><span class="line">&lt;<span class="regexp">/nav&gt;</span></span><br></pre></td></tr></table></figure>
+<p>后面加入</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">	&lt;a&gt;总文章数 &lt;%=site.posts.length%&gt;&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>nav&gt;</span><br></pre></td></tr></table></figure>
+
+<p>OK！</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/04/01/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-HelloWorld" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -598,9 +690,11 @@ int main()
 <li>顺便纪念一下：今天是githubpages挂掉的日子。。。</li>
 </ul>
 <h4 id="3-27"><a href="#3-27" class="headerlink" title="3.27"></a>3.27</h4><ul>
-<li><h4 id="3-28"><a href="#3-28" class="headerlink" title="3.28"></a>3.28</h4></li>
-<li><p>尝尽百味后，才会知道自己想干什么</p>
-</li>
+<li></li>
+</ul>
+<h4 id="3-28"><a href="#3-28" class="headerlink" title="3.28"></a>3.28</h4><ul>
+<li>尝尽百味后，才会知道自己想干什么<h4 id="4-1"><a href="#4-1" class="headerlink" title="4.1"></a>4.1</h4></li>
+<li>愿你找出前半生，归来仍少年！</li>
 </ul>
 
     
@@ -1072,97 +1166,6 @@ int main()
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2020/03/15/%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E6%90%AD%E5%BB%BAMarkdown%E5%9B%BE%E5%BA%8A/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-GitHub访问加速方法：修改hosts" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/03/14/GitHub%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BF%AE%E6%94%B9hosts/">Github访问-加速</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/03/14/GitHub%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BF%AE%E6%94%B9hosts/" class="archive-article-date">
-        <time datetime="2020-03-14T02:27:38.515Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <ul>
-<li>GitHub被墙，导致访问速度慢。打开系统工具下的命令提示符，输入ping github.com，你会发现，请求超时，发生数据包4个，丢失4个。</li>
-<li>你可以通过一点小小的“技巧”加速GitHub的访问。</li>
-<li>打开系统盘下的hosts文件(一般为此路径：C:\Windows\System32\drivers\etc)，在文件末尾，输入下面两行内容保存即可，这样， 你再打开系统工具下的命令提示符，输入ping github.com会“惊喜”！
-    
-    <a class="article-more-a" href="/2020/03/14/GitHub%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BF%AE%E6%94%B9hosts/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/03/14/GitHub%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BF%AE%E6%94%B9hosts/">展开全文 >></a>
     </p>
     
 
