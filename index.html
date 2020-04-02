@@ -184,7 +184,7 @@ var _hmt = _hmt || [];
 			
 				<li><a href="http://giteerepositories.gitee.io/resume/" target="_blank" rel="noopener" >个人简历</a></li>
 			
-				<li><a href="/Guestbook/" >留言板</a></li>
+				<li><a href="/Guestbook/" >留言簿</a></li>
 			
 			</ul>
 		</nav>
@@ -199,6 +199,10 @@ var _hmt = _hmt || [];
 			
 				
 					<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+				
+			
+				
+					<a q-on="click: openSlider(e, 'Tourist')" href="javascript:void(0)">游客墙</a>
 				
 			
 				
@@ -315,7 +319,7 @@ var _hmt = _hmt || [];
 		        
 					<li style="width: 14.285714285714286%"><a href="http://giteerepositories.gitee.io/resume/" target="_blank" rel="noopener">个人简历</a></li>
 		        
-					<li style="width: 14.285714285714286%"><a href="/Guestbook/">留言板</a></li>
+					<li style="width: 14.285714285714286%"><a href="/Guestbook/">留言簿</a></li>
 		        
 				</ul>
 			</nav>
@@ -470,9 +474,13 @@ var _hmt = _hmt || [];
 
   <div class="article-entry" itemprop="articleBody">
     
-    <h4 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h4><ul>
-<li>Hexo博客搭建过程中的测试及问题</li>
-<li>欢迎来访各位大佬————希望大佬们能够在文章内留言，给出一些意见建议。感谢大家！</li>
+    <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><ul>
+<li><p>Hexo博客搭建过程中的测试及问题</p>
+</li>
+<li><p>欢迎来访各位大佬————希望大佬们能够在文章内留言，给出一些意见建议。感谢大家！</p>
+</li>
+<li><p>注释 ：乱七八糟的测试中，不定期更新！</p>
+</li>
 </ul>
     
     <a class="article-more-a" href="/2020/03/10/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/#more">more >></a>
@@ -1387,21 +1395,29 @@ int main()
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 25%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 25%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 25%" q-on="click: openSlider(e, 'Tourist')"><a href="javascript:void(0)" q-class="active:Tourist">游客墙</a></li>
+      
+        
+      
+      <li style="width: 25%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -1422,15 +1438,11 @@ int main()
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">测试</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1442,15 +1454,19 @@ int main()
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法分析与设计</a>
+                <a href="javascript:void(0)" class="js-tag color5">随机记事</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">随机记事</a>
+                <a href="javascript:void(0)" class="js-tag color3">算法分析与设计</a>
               </li>
              
               <li class="article-tag-list-item">
