@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/photos/index.html</loc>
+    
+    <lastmod>2020-04-02T11:07:55.688Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/photos/videos.html</loc>
+    
+    <lastmod>2020-04-02T11:05:02.792Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/2020/04/02/404/</loc>
     
-    <lastmod>2020-04-02T09:36:06.466Z</lastmod>
+    <lastmod>2020-04-02T10:50:43.563Z</lastmod>
     
   </url>
   
@@ -61,13 +75,6 @@
     <loc>https://gh670.github.io/2020/04/01/Hexo+yilia+%E7%85%A7%E7%89%87&%E8%A7%86%E9%A2%91/</loc>
     
     <lastmod>2020-04-01T09:48:54.047Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/photos/index.html</loc>
-    
-    <lastmod>2020-04-01T05:18:54.302Z</lastmod>
     
   </url>
   
