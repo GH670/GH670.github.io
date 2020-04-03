@@ -565,6 +565,32 @@ int main()
 </aside>
 
 
+   <!--有响应的，增加valine评论 系统-->>
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'false' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "kVQCjjM5KQdlOecKV2TEf1Cs-gzGzoHsz",
+            app_key: "EsotLcdbI03SC9LGGTzilV6h",
+            placeholder: "留下你来过的痕迹~",
+            avatar:"robohash"
+        });
+    }
+</script>
+  </section>
 
 
 
@@ -743,7 +769,7 @@ int main()
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -751,7 +777,7 @@ int main()
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -763,11 +789,11 @@ int main()
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">随机记事</a>
+                <a href="javascript:void(0)" class="js-tag color3">算法分析与设计</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法分析与设计</a>
+                <a href="javascript:void(0)" class="js-tag color5">随机记事</a>
               </li>
              
               <li class="article-tag-list-item">
