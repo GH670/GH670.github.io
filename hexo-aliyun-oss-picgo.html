@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://GH670.github.io">
-  <title>Markdown | GH670</title>
+  <title>hexo——搭建图床 | GH670</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="markdown格式 1.文本右&#x2F;居中&#x2F;左对齐  123&lt;p align&#x3D;&quot;right&quot;&gt;右对齐&lt;&#x2F;p&gt;&lt;center&gt;居中对齐&lt;&#x2F;center&gt;&lt;p align&#x3D;&quot;left&quot;&gt;右对齐&lt;&#x2F;p&gt;">
+  <meta name="description" content="使用阿里云OSS+PicGo搭建Markdown图床">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown">
-<meta property="og:url" content="https://gh670.github.io/markdown.html">
+<meta property="og:title" content="hexo——搭建图床">
+<meta property="og:url" content="https://gh670.github.io/hexo-aliyun-oss-picgo.html">
 <meta property="og:site_name" content="GH670">
-<meta property="og:description" content="markdown格式 1.文本右&#x2F;居中&#x2F;左对齐  123&lt;p align&#x3D;&quot;right&quot;&gt;右对齐&lt;&#x2F;p&gt;&lt;center&gt;居中对齐&lt;&#x2F;center&gt;&lt;p align&#x3D;&quot;left&quot;&gt;右对齐&lt;&#x2F;p&gt;">
+<meta property="og:description" content="使用阿里云OSS+PicGo搭建Markdown图床">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-04-04T09:06:58.492Z">
+<meta property="article:published_time" content="2020-03-15T00:31:06.294Z">
+<meta property="article:modified_time" content="2020-04-04T10:12:49.766Z">
 <meta property="article:author" content="GH670">
-<meta property="article:tag" content="基础">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="GH670" type="application/atom+xml">
@@ -202,7 +202,7 @@ var _hmt = _hmt || [];
 			</ul>
 		</nav>
 		<nav>
-			<a>总文章数 22</a>
+			<a>总文章数 21</a>
 		</nav>
 		<nav class="header-smart-menu">
 			
@@ -324,14 +324,14 @@ var _hmt = _hmt || [];
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-markown" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【Hexo】阿里云OSS+PicGo搭建Markdown图床" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Markdown
+      hexo——搭建图床
     </h1>
   
 
@@ -343,8 +343,8 @@ var _hmt = _hmt || [];
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/markdown.html" class="archive-article-date">
-        <time datetime="2020-03-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+<a href="/hexo-aliyun-oss-picgo.html" class="archive-article-date">
+        <time datetime="2020-03-15T00:31:06.294Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-15</time>
 </a>
 
   
@@ -357,7 +357,7 @@ var _hmt = _hmt || [];
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">55字</span>
+      <span class="post-count">108字</span>
     </span>
   </span>
 
@@ -378,15 +378,17 @@ var _hmt = _hmt || [];
 
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="markdown格式"><a href="#markdown格式" class="headerlink" title="markdown格式"></a>markdown格式</h3><ul>
-<li>1.文本右/居中/左对齐</li>
+    <h2 id="使用阿里云OSS-PicGo搭建Markdown图床"><a href="#使用阿里云OSS-PicGo搭建Markdown图床" class="headerlink" title="使用阿里云OSS+PicGo搭建Markdown图床"></a>使用阿里云OSS+PicGo搭建Markdown图床</h2><p>步骤：</p>
+<ul>
+<li>1.阿里云平台购买阿里云oss</li>
+<li>2.创建OSS专用用户，专门用于访问OSS，注意保存AccessKey和AccessKeySecret</li>
+<li>3.下载阿里官方的OSS Browser管理客户端，并配置链接信息</li>
+<li>4.创建Bucket,注意权限设置为公共读</li>
+<li>5.在GitHub下载picgo客户端并安装配置</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p align&#x3D;&quot;right&quot;&gt;右对齐&lt;&#x2F;p&gt;</span><br><span class="line">&lt;center&gt;居中对齐&lt;&#x2F;center&gt;</span><br><span class="line">&lt;p align&#x3D;&quot;left&quot;&gt;右对齐&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
-<ul>
-<li>2.</li>
-</ul>
+<p>转载：<a href="https://www.cnblogs.com/demojie/p/11600991.html" target="_blank" rel="noopener">使用阿里云oss和picgo搭建markdown图床</a></p>
 
     
 
@@ -433,7 +435,7 @@ var _hmt = _hmt || [];
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https:/GH670.github.io/markdown.html" title="Markdown" target="_blank">https:/GH670.github.io/markdown.html</a>
+          <a href="https:/GH670.github.io/hexo-aliyun-oss-picgo.html" title="hexo——搭建图床" target="_blank">https:/GH670.github.io/hexo-aliyun-oss-picgo.html</a>
         </li>
         
         <li>
@@ -455,7 +457,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -511,7 +513,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gh670.github.io/markdown.html" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gh670.github.io/hexo-aliyun-oss-picgo.html" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -526,18 +528,18 @@ var _hmt = _hmt || [];
 
 <nav id="article-nav">
   
-    <a href="/hexo-gengxin.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/test-qqwechat.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          hexo 个性化
+          七十分同学&amp;群
         
       </div>
     </a>
   
   
-    <a href="/hello-world.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Helllo World</div>
+    <a href="/github-hosts.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Github访问-加速</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -603,9 +605,9 @@ var _hmt = _hmt || [];
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "Markdown" -->
+  <!-- id: "hexo——搭建图床" -->
   var giteement = new Giteement({
-    id: '20200401000000',
+    id: '20200315083106',
     owner: 'giteerepositories',
     repo: 'WBlog-message',
     backcall_uri: 'https://wblog.tech/',
@@ -769,10 +771,6 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">code</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
@@ -781,7 +779,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">code</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -793,19 +799,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">随笔记事</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法分析与设计</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">算法</a>
               </li>
             
             <div class="clearfix"></div>

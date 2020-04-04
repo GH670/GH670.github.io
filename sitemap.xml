@@ -2,37 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gh670.github.io/Hexo-yilia-photos.html</loc>
+    <loc>https://gh670.github.io/test-ques.html</loc>
     
-    <lastmod>2020-04-04T09:07:13.004Z</lastmod>
+    <lastmod>2020-04-04T11:30:10.735Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/markdown.html</loc>
+    <loc>https://gh670.github.io/test-qqwechat.html</loc>
     
-    <lastmod>2020-04-04T09:06:58.492Z</lastmod>
+    <lastmod>2020-04-04T11:02:19.992Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gh670.github.io/question.html</loc>
     
-    <lastmod>2020-04-04T09:06:08.316Z</lastmod>
+    <lastmod>2020-04-04T10:59:44.221Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/hexo-gengxin.html</loc>
+    <loc>https://gh670.github.io/hexo-404.html</loc>
     
-    <lastmod>2020-04-04T09:05:47.968Z</lastmod>
+    <lastmod>2020-04-04T10:28:37.875Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/hello-world.html</loc>
+    <loc>https://gh670.github.io/rijiben.html</loc>
     
-    <lastmod>2020-04-04T09:05:29.480Z</lastmod>
+    <lastmod>2020-04-04T10:24:29.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/algorithm.html</loc>
+    
+    <lastmod>2020-04-04T10:14:55.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/suibijishi.html</loc>
+    
+    <lastmod>2020-04-04T10:14:22.277Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/hexo-aliyun-oss-picgo.html</loc>
+    
+    <lastmod>2020-04-04T10:12:49.766Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/basis-markdown.html</loc>
+    
+    <lastmod>2020-04-04T10:12:23.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/hexo-gexinghua.html</loc>
+    
+    <lastmod>2020-04-04T10:12:10.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/max-min-compare.html</loc>
+    
+    <lastmod>2020-04-04T10:11:32.731Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/code-question.html</loc>
+    
+    <lastmod>2020-04-04T10:11:13.805Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/git-mail.html</loc>
+    
+    <lastmod>2020-04-04T10:10:55.394Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/hexo-yilia-photos.html</loc>
+    
+    <lastmod>2020-04-04T10:09:59.280Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/basis-hello-world.html</loc>
+    
+    <lastmod>2020-04-04T10:09:38.492Z</lastmod>
     
   </url>
   
@@ -58,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/git.html</loc>
-    
-    <lastmod>2020-04-04T09:04:31.343Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gh670.github.io/git-false.html</loc>
     
     <lastmod>2020-04-04T09:04:22.941Z</lastmod>
@@ -72,79 +135,9 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/code.html</loc>
-    
-    <lastmod>2020-04-04T09:04:12.645Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/max-min-compare.html</loc>
-    
-    <lastmod>2020-04-04T09:04:04.507Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/ceshi.html</loc>
-    
-    <lastmod>2020-04-04T09:03:56.769Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/tuchuang.html</loc>
-    
-    <lastmod>2020-04-04T09:03:33.205Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/suibijishi.html</loc>
-    
-    <lastmod>2020-04-04T09:03:16.742Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/algorithm.html</loc>
-    
-    <lastmod>2020-04-04T09:03:04.283Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/jiamiwen.html</loc>
-    
-    <lastmod>2020-04-04T09:02:53.592Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/rijiben.html</loc>
-    
-    <lastmod>2020-04-04T09:02:41.735Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gh670.github.io/python-some.html</loc>
     
     <lastmod>2020-04-04T09:02:22.987Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/aliyun-oss-picgo.html</loc>
-    
-    <lastmod>2020-04-04T09:02:04.061Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/hexo-404.html</loc>
-    
-    <lastmod>2020-04-04T09:01:34.223Z</lastmod>
     
   </url>
   
