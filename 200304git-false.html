@@ -6,22 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://GH670.github.io">
-  <title>hexo 个性化 | GH670</title>
+  <title>Git fatal:HttpRequestException encountered的处理办法 | GH670</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="hexo 小更新">
+  <meta name="description" content="Git报错显示fatal:HttpRequestException encountered的处理办法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 个性化">
-<meta property="og:url" content="https://gh670.github.io/article/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0.html">
+<meta property="og:title" content="Git fatal:HttpRequestException encountered的处理办法">
+<meta property="og:url" content="https://gh670.github.io/200304git-false.html">
 <meta property="og:site_name" content="GH670">
-<meta property="og:description" content="hexo 小更新">
+<meta property="og:description" content="Git报错显示fatal:HttpRequestException encountered的处理办法">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-01T00:54:05.255Z">
-<meta property="article:modified_time" content="2020-04-04T02:28:13.008Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200302162652865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc4NDY1NQ==,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2020-03-04T02:21:57.643Z">
+<meta property="article:modified_time" content="2020-04-04T06:24:22.722Z">
 <meta property="article:author" content="GH670">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200302162652865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc4NDY1NQ==,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="GH670" type="application/atom+xml">
   
@@ -324,14 +326,14 @@ var _hmt = _hmt || [];
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo小更新" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-GIt报错：fatal HttpRequestException encountered解决方法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      hexo 个性化
+      Git fatal:HttpRequestException encountered的处理办法
     </h1>
   
 
@@ -343,8 +345,8 @@ var _hmt = _hmt || [];
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/article/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0.html" class="archive-article-date">
-        <time datetime="2020-04-01T00:54:05.255Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+<a href="/200304git-false.html" class="archive-article-date">
+        <time datetime="2020-03-04T02:21:57.643Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-04</time>
 </a>
 
   
@@ -357,7 +359,7 @@ var _hmt = _hmt || [];
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">105字</span>
+      <span class="post-count">100字</span>
     </span>
   </span>
 
@@ -378,16 +380,13 @@ var _hmt = _hmt || [];
 
   <div class="article-entry" itemprop="articleBody">
     
-    <h5 id="在左侧显示总文章数"><a href="#在左侧显示总文章数" class="headerlink" title="在左侧显示总文章数"></a>在左侧显示总文章数</h5><p>修改 themes\yilia\layout_partial\left-col.ejs</p>
-<p>在</p>
+    <h2 id="git报错显示fatal-HttpRequestException-encountered的处理办法"><a href="#git报错显示fatal-HttpRequestException-encountered的处理办法" class="headerlink" title="git报错显示fatal: HttpRequestException encountered的处理办法"></a>git报错显示fatal: HttpRequestException encountered的处理办法</h2><p>出现上述情况，原因在于Github禁用了TLS v1.0 and v1.1，必须更新Windows的git凭证管理器才可以。<br>解决方法如下：<br>下载GCMW-1.14.0.exe，“傻瓜式”安装即可。</p>
 <a id="more"></a>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav <span class="class"><span class="keyword">class</span></span>=<span class="string">"header-menu"</span>&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">    &lt;% <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> theme.menu)&#123; %&gt;</span><br><span class="line">        &lt;li&gt;<span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%- url_for(theme.menu[i]) %&gt;"</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;%&#125;%&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/u</span>l&gt;</span><br><span class="line">&lt;<span class="regexp">/nav&gt;</span></span><br></pre></td></tr></table></figure>
-<p>后面加入</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">	&lt;a&gt;总文章数 &lt;%=site.posts.length%&gt;&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>nav&gt;</span><br></pre></td></tr></table></figure>
-<p>OK！</p>
-<h5 id="建立新的标签页"><a href="#建立新的标签页" class="headerlink" title="建立新的标签页"></a>建立新的标签页</h5><ul>
-<li>hexo new page ***</li>
-</ul>
+
+<blockquote>
+<p>资源下载地址：//download.csdn.net/download/weixin_45784655/12205516<br> <a href="//download.csdn.net/download/weixin_45784655/12205516" target="_blank" rel="noopener">超链接</a>.<br>或GitHub下载地址：<a href="https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.14.0" target="_blank" rel="noopener">https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.14.0</a></p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20200302162652865.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc4NDY1NQ==,size_16,color_FFFFFF,t_70" alt="github下载"></p>
 
     
 
@@ -434,7 +433,7 @@ var _hmt = _hmt || [];
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https:/GH670.github.io/article/hexo小更新.html" title="hexo 个性化" target="_blank">https:/GH670.github.io/article/hexo小更新.html</a>
+          <a href="https:/GH670.github.io/200304git-false.html" title="Git fatal:HttpRequestException encountered的处理办法" target="_blank">https:/GH670.github.io/200304git-false.html</a>
         </li>
         
         <li>
@@ -456,7 +455,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
       		
 		</ul>
@@ -512,7 +511,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gh670.github.io/article/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0.html" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gh670.github.io/200304git-false.html" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -527,20 +526,15 @@ var _hmt = _hmt || [];
 
 <nav id="article-nav">
   
-    <a href="/article/Hexo+yilia+%E7%85%A7%E7%89%87&%E8%A7%86%E9%A2%91.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/200306git.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Hexo-yilia-photos&amp;videos
+          Git使用命令行更改用户名及邮箱
         
       </div>
     </a>
   
-  
-    <a href="/article/markown.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Markdown</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
@@ -604,9 +598,9 @@ var _hmt = _hmt || [];
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "hexo 个性化" -->
+  <!-- id: "Git fatal:HttpRequestException encountered的处理办法" -->
   var giteement = new Giteement({
-    id: '20200401085405',
+    id: '20200304102157',
     owner: 'giteerepositories',
     repo: 'WBlog-message',
     backcall_uri: 'https://wblog.tech/',
@@ -770,15 +764,7 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">code</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -786,7 +772,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color5">code</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
               </li>
              
               <li class="article-tag-list-item">
