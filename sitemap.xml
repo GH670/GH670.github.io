@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gh670.github.io/2020/03/17/%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%B9%B3%E5%9D%87%E6%95%B0%E7%9A%84%E5%B9%B3%E5%9D%87%E6%AF%94%E8%BE%83%E6%AC%A1%E6%95%B0/</loc>
+    <loc>https://gh670.github.io/article/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html</loc>
+    
+    <lastmod>2020-04-04T01:08:10.169Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/article/%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%B9%B3%E5%9D%87%E6%95%B0%E7%9A%84%E5%B9%B3%E5%9D%87%E6%AF%94%E8%BE%83%E6%AC%A1%E6%95%B0.html</loc>
     
     <lastmod>2020-04-04T00:53:50.266Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/03/question/</loc>
+    <loc>https://gh670.github.io/article/question.html</loc>
     
     <lastmod>2020-04-04T00:42:46.652Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/02/Code%E2%80%94%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://gh670.github.io/article/Code%E2%80%94%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98.html</loc>
     
     <lastmod>2020-04-03T13:44:52.570Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/10/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
-    
-    <lastmod>2020-04-03T12:11:21.655Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/2020/04/03/%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E8%A7%A3%E9%94%81/</loc>
+    <loc>https://gh670.github.io/article/%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E8%A7%A3%E9%94%81.html</loc>
     
     <lastmod>2020-04-03T12:11:19.241Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/22/%E6%97%A5%E8%AE%B0%E6%9C%AC/</loc>
+    <loc>https://gh670.github.io/article/%E6%97%A5%E8%AE%B0%E6%9C%AC.html</loc>
     
     <lastmod>2020-04-03T11:22:39.143Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/18/%E9%9A%8F%E7%AC%94%E8%AE%B0%E4%BA%8B/</loc>
+    <loc>https://gh670.github.io/article/%E9%9A%8F%E7%AC%94%E8%AE%B0%E4%BA%8B.html</loc>
     
     <lastmod>2020-04-03T07:26:01.538Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/15/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%8A-%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://gh670.github.io/article/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%8A-%E6%B5%8B%E8%AF%95.html</loc>
     
     <lastmod>2020-04-02T23:40:01.275Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/01/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0/</loc>
+    <loc>https://gh670.github.io/article/hexo%E5%B0%8F%E6%9B%B4%E6%96%B0.html</loc>
     
     <lastmod>2020-04-02T12:18:53.936Z</lastmod>
     
@@ -79,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/02/404/</loc>
+    <loc>https://gh670.github.io/article/404.html</loc>
     
     <lastmod>2020-04-02T10:50:43.563Z</lastmod>
     
@@ -100,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/01/markown/</loc>
+    <loc>https://gh670.github.io/article/markown.html</loc>
     
     <lastmod>2020-04-01T13:38:59.840Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/01/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/</loc>
+    <loc>https://gh670.github.io/article/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3.html</loc>
     
     <lastmod>2020-04-01T12:15:16.656Z</lastmod>
     
@@ -121,84 +121,84 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/13/%E5%85%B3%E4%BA%8Epython/</loc>
+    <loc>https://gh670.github.io/article/%E5%85%B3%E4%BA%8Epython.html</loc>
     
     <lastmod>2020-04-01T09:52:10.538Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/04/01/Hexo+yilia+%E7%85%A7%E7%89%87&%E8%A7%86%E9%A2%91/</loc>
+    <loc>https://gh670.github.io/article/Hexo+yilia+%E7%85%A7%E7%89%87&%E8%A7%86%E9%A2%91.html</loc>
     
     <lastmod>2020-04-01T09:48:54.047Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/25/HelloWorld/</loc>
+    <loc>https://gh670.github.io/article/HelloWorld.html</loc>
     
     <lastmod>2020-03-25T01:01:40.509Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/19/%E5%85%B3%E4%BA%8Epython-bug/</loc>
+    <loc>https://gh670.github.io/article/%E5%85%B3%E4%BA%8Epython-bug.html</loc>
     
     <lastmod>2020-03-19T13:25:49.636Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/18/%E4%B8%B4%E6%97%B6%E7%95%99%E8%A8%80%E6%9D%BF/</loc>
+    <loc>https://gh670.github.io/article/%E4%B8%B4%E6%97%B6%E7%95%99%E8%A8%80%E6%9D%BF.html</loc>
     
     <lastmod>2020-03-18T04:55:07.384Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/14/GitHub%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BF%AE%E6%94%B9hosts/</loc>
+    <loc>https://gh670.github.io/article/GitHub%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BF%AE%E6%94%B9hosts.html</loc>
     
     <lastmod>2020-03-15T01:39:42.105Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/08/github%E4%BB%93%E5%BA%93%E5%8D%9A%E5%AE%A2%E6%8D%A2%E7%BB%91%E6%96%B0%E5%9F%9F%E5%90%8D/</loc>
+    <loc>https://gh670.github.io/article/github%E4%BB%93%E5%BA%93%E5%8D%9A%E5%AE%A2%E6%8D%A2%E7%BB%91%E6%96%B0%E5%9F%9F%E5%90%8D.html</loc>
     
     <lastmod>2020-03-15T01:39:30.979Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/08/github+hexo+CNAME/</loc>
+    <loc>https://gh670.github.io/article/github+hexo+CNAME.html</loc>
     
     <lastmod>2020-03-15T01:39:18.187Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/06/Git%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D%E5%8F%8A%E9%82%AE%E7%AE%B1/</loc>
+    <loc>https://gh670.github.io/article/Git%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D%E5%8F%8A%E9%82%AE%E7%AE%B1.html</loc>
     
     <lastmod>2020-03-15T01:39:09.349Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/04/GIt%E6%8A%A5%E9%94%99%EF%BC%9Afatal%20HttpRequestException%20encountered%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://gh670.github.io/article/GIt%E6%8A%A5%E9%94%99%EF%BC%9Afatal%20HttpRequestException%20encountered%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</loc>
     
     <lastmod>2020-03-15T01:38:57.442Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/15/%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E6%90%AD%E5%BB%BAMarkdown%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://gh670.github.io/article/%E9%98%BF%E9%87%8C%E4%BA%91OSS+PicGo%E6%90%AD%E5%BB%BAMarkdown%E5%9B%BE%E5%BA%8A.html</loc>
     
     <lastmod>2020-03-15T00:47:16.474Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://gh670.github.io/2020/03/02/hello-world/</loc>
+    <loc>https://gh670.github.io/article/hello-world.html</loc>
     
     <lastmod>2020-03-02T01:46:52.982Z</lastmod>
     
