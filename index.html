@@ -654,57 +654,11 @@ var _hmt = _hmt || [];
 
   <div class="article-entry" itemprop="articleBody">
     
-    <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Valine：一款快速、简洁且高效的无后端评论系统。</p>
-<h2 id="注册及简单配置"><a href="#注册及简单配置" class="headerlink" title="注册及简单配置"></a>注册及简单配置</h2><p>1.注册<a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a><br>2.创建创建Valine应用，选择开发板即可，名称任意。例如：Valine。<br>3.选择刚刚创建好的应用，点击【设置】 -&gt; 【应用 Keys】，获取 <strong>AppID</strong> 和 <strong>AppKey</strong>。<br>4.我的是hexo博客，yilia主题。以我自己的为例：<br>打开 <strong>主题</strong> 目录下的_config.yml。添加以下代码:  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">valine: </span><br><span class="line"> appid: &#39;&#39;  #Leancloud应用的AppID</span><br><span class="line"> appkey: &#39;&#39;  #Leancloud应用的AppKey</span><br><span class="line"> verify: false #验证码</span><br><span class="line"> notify: false #评论回复提醒</span><br><span class="line"> avatar: robohash #评论列表头像样式：&#39;&#39;&#x2F;mm&#x2F;identicon&#x2F;monsterid&#x2F;wavatar&#x2F;retro&#x2F;hide</span><br><span class="line"> #头像类型可见： https:&#x2F;&#x2F;valine.js.org&#x2F;avatar.html</span><br><span class="line"> placeholder: 留下你来过的痕迹~ #评论框占位符</span><br><span class="line">&#96;&#96;&#96;    </span><br><span class="line">article.ejs  </span><br><span class="line">在themes&#x2F;yilia&#x2F;layout&#x2F;_partial&#x2F;article.ejs文件中添加如下几行，位置随意</span><br></pre></td></tr></table></figure>
-<p>&lt;% if (!index){ %&gt;<br>        &lt;% if (theme.valine &amp;&amp; theme.valine.appid &amp;&amp; theme.valine.appkey){ %&gt;<br>            <section id="comments" class="comments"><br>              <style><br>                .comments{margin:30px;padding:10px;background:#fff}<br>                @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<br>              </style><br>              &lt;%- partial(‘post/valine’, {<br>                key: post.slug,<br>                title: post.title,<br>                url: config.url+url_for(post.path)<br>                }) %&gt;<br>          </section><br>        &lt;% } %&gt;<br>&lt;% } %&gt;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">valine.ejs  </span><br><span class="line">这个文件需要新建  </span><br><span class="line">路径：themes&#x2F;yilia-plus&#x2F;layout&#x2F;_partial&#x2F;post&#x2F;valine.ejs</span><br></pre></td></tr></table></figure>
-<div id="vcomment" class="comment"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    var notify = '<%= theme.valine.notify %>' == true ? true : false;
-    var verify = '<%= theme.valine.verify %>' == true ? true : false;
-    new Valine({
-        av: AV,
-        el: '#vcomment',
-        notify: notify,
-        app_id: "<%= theme.valine.appid %>",
-        app_key: "<%= theme.valine.appkey %>",
-        placeholder: "<%= theme.valine.placeholder %>",
-        avatar:"<%= theme.valine.avatar %>",
-    });
-</script>
-```
-
-<p>6.【设置】-&gt;【安全中心】-&gt;【web安全域名】里填写你的博客访问地址<br>正常情况下，这样已经可以简单的使用了。</p>
-<h2 id="云引擎的设置（进阶）"><a href="#云引擎的设置（进阶）" class="headerlink" title="云引擎的设置（进阶）"></a>云引擎的设置（进阶）</h2><ul>
-<li>进入【云引擎】-【设置】界面。    </li>
-</ul>
-<p>1.源码部署<br>其中，源码部署中的代码库为：<a href="https://gitee.com/giteerepositories/Valine-Admin" target="_blank" rel="noopener">https://gitee.com/giteerepositories/Valine-Admin</a>  ,填写完毕后点击下方保存。<br>（特别说明，这是从Github上导入的他人的，由于GitHub上部署起来比较慢，所以我导入到了gitee上，这样部署起来比较快。<a href="https://github.com/DesertsP/Valine-Admin.git" target="_blank" rel="noopener">原GitHub地址</a>）    </p>
-<p>2.自定义环境变量  </p>
-<p>其中，只填写几个必填的就可以了，选填的看个人喜好自己设置。  </p>
-<p>具体格式示例如下：<br>名称  |  示例  | 说明<br>| ——–   | —–:   | :—-: |<br>SITE_NAME  |  GH670  |  [必填]博客名称  wblog.tech<br>SITE_URL  |    <a href="https://wblog.tech" target="_blank" rel="noopener">https://wblog.tech</a>  |    [必填]首页地址<br>SMTP_SERVICE  |    “QQ”      |  [新版支持]邮件服务提供商，支持 QQ、163、126、Gmail 以及 更多<br>SMTP_USER  |    <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>  |    [必填]SMTP登录用户<br>SMTP_PASS  |    XXXXXXXX       | [必填]SMTP登录密码（QQ邮箱需要获取独立密码）<br>SENDER_NAME  |    GH670  |     [必填]发件人<br>SENDER_EMAIL  |    <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>      |  [必填]发件邮箱<br>BLOGGER_EMAIL  |    <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>  |    [可选]如果自己在回复，设置这个可以不向自己的邮箱发送邮件<br>ADMIN_URL  |    <a href="https://xxx.leanapp.cn/" target="_blank" rel="noopener">https://xxx.leanapp.cn/</a>      |  [建议]Web主机二级域名，用于自动唤醒<br>BLOGGER_EMAIL  |      <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>  |    [可选]博主通知收件地址，默认使用SENDER_EMAIL<br>AKISMET_KEY      |  xxxxxxxxxxxx  |     [可选]Akismet Key 用于垃圾评论检测，设为MANUAL_REVIEW开启人工审核，留空不使用反垃圾  </p>
-<p>  <strong>参数务必填写正确</strong>    </p>
-<p>  特别注意的是：  </p>
-<ul>
-<li>SMTP_PASS的填写，我使用的是QQ邮箱，这里的SMTP_PASS登录密码的填写 <strong>不是填QQ邮箱的登录密码</strong>。<br>这个密码的获取过程是：<br>【打开QQ邮箱】-&gt;【选择设置】-&gt;【账户】-&gt;【找到SMTP_PASS，点击开启】  <ul>
-<li>Web主机二级域名的获取：云引擎 -&gt; 设置，在Web主机域名位置点击申请即可。  </li>
-</ul>
-</li>
-</ul>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>【云引擎】-&gt;【部署】<br>分支使用master，点击部署即可。  </p>
-<h2 id="Valine评论管理"><a href="#Valine评论管理" class="headerlink" title="Valine评论管理"></a>Valine评论管理</h2><p>访问设置的二级域名https://二级域名.leanapp.cn/sign-up ，注册管理员登录信息。<br>设置完管理员的登录信息。<br>之后，即可通过https://二级域名.leanapp.cn/管理评论</p>
-<h2 id="定时唤醒-amp-邮件提醒"><a href="#定时唤醒-amp-邮件提醒" class="headerlink" title="定时唤醒&amp;邮件提醒"></a>定时唤醒&amp;邮件提醒</h2><p>添加定时唤醒是为了防止应用死机导致邮件提醒等漏发。<br>进入【云引擎】-【定时任务】中，创建定时器，创建两个定时任务  </p>
-<ul>
-<li>1.生产环境选择self-wake云函数，Cron表达式为0 0/30 7-23 * * ?<br>表示每天早6点到晚23点每隔30分钟访问云引擎，ADMIN_URL环境变量务必设置正确，这样可以保持每天的绝大多数时间邮件服务是正常的。  </li>
-<li>2.生产环境选择resend_mails云函数，Cron表达式为0 0 8 * * ?<br>表示每天早上八点检查过去24小时内漏发的通知邮件并补发。  </li>
-</ul>
-<p>添加定时器后记得点击启动方可生效。</p>
-<p>至此，Valine Admin 已经可以正常工作。</p>
-<p><a href="https://deserts.io/valine-admin-document/" target="_blank" rel="noopener">参考博文</a></p>
-
+    <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Valine：一款快速、简洁且高效的ee无后端评论系统。</p>
+<h2 id="注册及简单配置"><a href="#注册及简单配置" class="headerlink" title="注册及简单配置"></a>注册及简单配置</h2><p>1.注册<a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a><br>2.创建创建Valine应用，选择开发板即可，名称任意。例如：Valine。<br>3.选择刚刚创建好的应用，点击【设置】 -&gt; 【应用 Keys】，获取 <strong>AppID</strong> 和 <strong>AppKey</strong>。<br>4.我的是hexo博客，yilia主题。以我自己的为例：<br>打开 <strong>主题</strong> 目录下的_config.yml。添加以下代码:    </p>
+    
+    <a class="article-more-a" href="/hexo-valine.html#more">more >></a>
+    
     
 
     
@@ -1452,11 +1406,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1468,11 +1422,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
