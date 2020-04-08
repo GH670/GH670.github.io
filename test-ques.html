@@ -18,7 +18,7 @@
 <meta property="og:description" content="blog测试">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-10T01:26:37.300Z">
-<meta property="article:modified_time" content="2020-04-07T07:41:16.774Z">
+<meta property="article:modified_time" content="2020-04-08T02:22:08.962Z">
 <meta property="article:author" content="GH670">
 <meta property="article:tag" content="测试">
 <meta name="twitter:card" content="summary">
@@ -353,7 +353,7 @@ var _hmt = _hmt || [];
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">510字</span>
+      <span class="post-count">1.4k字</span>
     </span>
   </span>
 
@@ -362,7 +362,7 @@ var _hmt = _hmt || [];
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">5分</span>
     </span>
   </span>
 </div>
@@ -420,7 +420,27 @@ var _hmt = _hmt || [];
 <h3 id="待定"><a href="#待定" class="headerlink" title="待定"></a>待定</h3><ul>
 <li>hexo模板yilia主题左侧增加背景<br><a href="https://qianlei6148.github.io/2018/09/30/hexo%E6%A8%A1%E7%89%88yilia%E5%B7%A6%E4%BE%A7%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">参考</a></li>
 </ul>
-<h3 id="部分博主"><a href="#部分博主" class="headerlink" title="部分博主"></a>部分博主</h3><p><a href="http://litten.me/" target="_blank" rel="noopener">litten</a><br><a href="https://zhousiwei.gitee.io/yilia-plus-demo/" target="_blank" rel="noopener">試毅-思伟</a><br><a href="http://blog.linhe3306.com/demo/" target="_blank" rel="noopener">lin</a><br><a href="http://www.lawlite.me/" target="_blank" rel="noopener">lawlite</a><br><a href="https://blog.zscself.com/" target="_blank" rel="noopener">F!redent</a><br><a href="http://moxfive.xyz/2015/08/20/blog-building/" target="_blank" rel="noopener">MOxFIVE</a><br><a href="http://www.54tianzhisheng.cn/" target="_blank" rel="noopener">zhisheng</a><br><a href="http://dongshuyan.com/" target="_blank" rel="noopener">Shuyan</a><br><a href="https://tding.top/archives/9a232bbe.html" target="_blank" rel="noopener">小丁的个人博客</a><br><a href="https://blog.xxwhite.com/2018/HexoKeng.html" target="_blank" rel="noopener">MonoLogueChi</a><br><a href="https://anyway1314.cn/" target="_blank" rel="noopener">本该如此</a></p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h2 id="1-hexo-yilia添加URL持久化（×）"><a href="#1-hexo-yilia添加URL持久化（×）" class="headerlink" title="1.hexo yilia添加URL持久化（×）"></a>1.hexo yilia添加URL持久化（×）</h2><p>hexo默认的链接是<a href="http://xxx.yy.com/2013/07/14/hello-world这种类型的，这源于站点目录下的配置_config.yml里的配置:permalink" target="_blank" rel="noopener">http://xxx.yy.com/2013/07/14/hello-world这种类型的，这源于站点目录下的配置_config.yml里的配置:permalink</a>: :year/:month/:day/:title/.这种默认配置的缺点就是一般文件名是中文，导致url链接里有中文出现，这会造成很多问题，如使用gitment，也不利于seo。另外就是年月日都会有分隔符。<br><em>在博客根目录下进行修改，不是在主题目录下</em><br>一个好的URL设计，不仅有利于网络爬虫的爬取，更有利于用户的体验。<br><em>正确的URL设计应该满足：长度尽量短，目录层次尽量少，全小写，连字符使用中划线-，具有描述性，包含关键词等。</em><br>文章URL优化策略（一）：自定义id属性<br>1.为每篇文章Front-matter添加id属性，作为文章URL，确保id属性的值满足以上条件。<br>2.编辑站点配置文件：<br>或者、使用官方文档提供的方法。</p>
+<h2 id="2-文章目录"><a href="#2-文章目录" class="headerlink" title="2.文章目录"></a>2.文章目录</h2><p>在测试文章中，文章目录是开启的，显示在文章左侧，正常情况下应该是显示在文章右侧，增加文章目录功能，在themes\yilia-plus\source在增加了新的文件main.234bc0.css，用的是别人的直接拷贝，有些臃肿冗余。<br>使用的是Hexo的toc函数<br>打开themes\yilia\layout_partial文件夹下的article.ejs文件<br>在</header> &lt;% } %&gt;下面加..!<br><strong>博客自带目录功能！</strong></p>
+<h2 id="3-增加每日一言功能（×）"><a href="#3-增加每日一言功能（×）" class="headerlink" title="3.增加每日一言功能（×）"></a>3.增加每日一言功能（×）</h2><p>在左侧栏增每日一言功能失败，在themes\yilia-plus\layout_partial中的left-col.ejs增加了一行新代码。<br>在themes\yilia-plus\layout_partial中的tools.ejs中增加一言代码?</p>
+<h2 id="4-Fork-me（√）"><a href="#4-Fork-me（√）" class="headerlink" title="4.Fork me（√）"></a>4.Fork me（√）</h2><p>在hemes\yilia-plus\layout中的layout.ejs中降其内容注释掉</p>
+<h2 id="5-文章标签（×）"><a href="#5-文章标签（×）" class="headerlink" title="5.文章标签（×）"></a>5.文章标签（×）</h2><p>方便百度收录修改，在博客主题目录下增加了permalink，在博客主目录下，为了添加标签增加的那一段代码里将permalink修改为true。</p>
+<h2 id="6-百度统计；百度站长平台（×）"><a href="#6-百度统计；百度站长平台（×）" class="headerlink" title="6.百度统计；百度站长平台（×）"></a>6.百度统计；百度站长平台（×）</h2><p>百度站长平台收录，设置不准确，不报错，不收录。</p>
+<h2 id="7-laquo-Prev————Next-raquo"><a href="#7-laquo-Prev————Next-raquo" class="headerlink" title="7.&laquo; Prev————Next &raquo;"></a>7.&laquo; Prev————Next &raquo;</h2><p>上一页下一页问题，乱码！<br>在themes\yilia\layout_partial\archive.ejs </p>
+<h2 id="8-修改第三方CDN（√）"><a href="#8-修改第三方CDN（√）" class="headerlink" title="8.修改第三方CDN（√）"></a>8.修改第三方CDN（√）</h2><p>文件目录：themes/yilia/layout/_partial/post/valine.ejs</p>
+<h2 id="9-Valine评论系统（？）"><a href="#9-Valine评论系统（？）" class="headerlink" title="9.Valine评论系统（？）"></a>9.Valine评论系统（？）</h2><p>管理后台数据，评论管理问题。<br>目前情况为评论全开?有gitee与valine两个评论系统开启。<br>增加hexo-valine评论管理系统</p>
+<h2 id="9-CNAME的设置（√）"><a href="#9-CNAME的设置（√）" class="headerlink" title="9.CNAME的设置（√）"></a>9.CNAME的设置（√）</h2><p>Q:每次更新部署之后，CNAME消失不见。<br>A:将CNAME文件放置到source文件家目录下。  </p>
+<h2 id="10-README（√）"><a href="#10-README（√）" class="headerlink" title="10.README（√）"></a>10.README（√）</h2><p>Q:更新部署一次，README.md消失一次，并且，将README.md放置在source文件目录下更新部署之后，导致.md转化成.html。<br>A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。（接1）<br>例如：skip_render : README.md  （注意格式规范）  </p>
+<h2 id="11-Gitment—-基于GitHub的评论系统-Giteement-集成码云评论-（√）"><a href="#11-Gitment—-基于GitHub的评论系统-Giteement-集成码云评论-（√）" class="headerlink" title="11.Gitment—-基于GitHub的评论系统/Giteement-集成码云评论 （√）"></a>11.Gitment—-基于GitHub的评论系统/Giteement-集成码云评论 （√）</h2><p>注册一个新的 OAuth Application：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a>  </p>
+<ul>
+<li>Application name 应用名称(根据实际来填写)  </li>
+<li>Homepage URL 主页网址(应用程序主页的完整URL)  </li>
+<li>Application description 应用说明(应用描述)  </li>
+<li>Authorization callback URL 授权回调URL(一般是博客的域名)<br>gitment_repo: ‘’          #存储评论的 repo name(需要在Github创建)<br>Q:无初始化按钮，只显示且不能评论。<br>A:Application与_config.yml中gitment_repo一致。<br>Q:[object ProgressEvent]<br>A:估计。。。作者服务器到期/?<br>更改Gitment为giteement.  </li>
+</ul>
+<h2 id="12-头像旋转问题-×"><a href="#12-头像旋转问题-×" class="headerlink" title="12.头像旋转问题?(×)"></a>12.头像旋转问题?(×)</h2><p>-webkit-transition<br>source-src\css\left.scss<br>webpack编译<br><strong>前端问题？</strong></p>
+<h2 id="13-网易云音乐（？）"><a href="#13-网易云音乐（？）" class="headerlink" title="13.网易云音乐（？）"></a>13.网易云音乐（？）</h2><p>点击跳转界面暂停播放<br>作者添加的网易云已更换</p>
+<h2 id="14-。。。"><a href="#14-。。。" class="headerlink" title="14.。。。"></a>14.。。。</h2><h3 id="部分博主"><a href="#部分博主" class="headerlink" title="部分博主"></a>部分博主</h3><p><a href="http://litten.me/" target="_blank" rel="noopener">litten</a><br><a href="https://zhousiwei.gitee.io/yilia-plus-demo/" target="_blank" rel="noopener">試毅-思伟</a><br><a href="http://blog.linhe3306.com/demo/" target="_blank" rel="noopener">lin</a><br><a href="http://www.lawlite.me/" target="_blank" rel="noopener">lawlite</a><br><a href="https://blog.zscself.com/" target="_blank" rel="noopener">F!redent</a><br><a href="http://moxfive.xyz/2015/08/20/blog-building/" target="_blank" rel="noopener">MOxFIVE</a><br><a href="http://www.54tianzhisheng.cn/" target="_blank" rel="noopener">zhisheng</a><br><a href="http://dongshuyan.com/" target="_blank" rel="noopener">Shuyan</a><br><a href="https://tding.top/archives/9a232bbe.html" target="_blank" rel="noopener">小丁的个人博客</a><br><a href="https://blog.xxwhite.com/2018/HexoKeng.html" target="_blank" rel="noopener">MonoLogueChi</a><br><a href="https://anyway1314.cn/" target="_blank" rel="noopener">本该如此</a></p>
 
     
 
@@ -604,7 +624,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#测试"><span class="toc-number">1.1.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题"><span class="toc-number">1.2.</span> <span class="toc-text">问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#待定"><span class="toc-number">1.3.</span> <span class="toc-text">待定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部分博主"><span class="toc-number">1.4.</span> <span class="toc-text">部分博主</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#测试"><span class="toc-number">1.1.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题"><span class="toc-number">1.2.</span> <span class="toc-text">问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#待定"><span class="toc-number">1.3.</span> <span class="toc-text">待定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">1.4.</span> <span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-hexo-yilia添加URL持久化（×）"><span class="toc-number">2.</span> <span class="toc-text">1.hexo yilia添加URL持久化（×）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-文章目录"><span class="toc-number">3.</span> <span class="toc-text">2.文章目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-增加每日一言功能（×）"><span class="toc-number">4.</span> <span class="toc-text">3.增加每日一言功能（×）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Fork-me（√）"><span class="toc-number">5.</span> <span class="toc-text">4.Fork me（√）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-文章标签（×）"><span class="toc-number">6.</span> <span class="toc-text">5.文章标签（×）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-百度统计；百度站长平台（×）"><span class="toc-number">7.</span> <span class="toc-text">6.百度统计；百度站长平台（×）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-laquo-Prev————Next-raquo"><span class="toc-number">8.</span> <span class="toc-text">7.&amp;laquo; Prev————Next &amp;raquo;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-修改第三方CDN（√）"><span class="toc-number">9.</span> <span class="toc-text">8.修改第三方CDN（√）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-Valine评论系统（？）"><span class="toc-number">10.</span> <span class="toc-text">9.Valine评论系统（？）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-CNAME的设置（√）"><span class="toc-number">11.</span> <span class="toc-text">9.CNAME的设置（√）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-README（√）"><span class="toc-number">12.</span> <span class="toc-text">10.README（√）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-Gitment—-基于GitHub的评论系统-Giteement-集成码云评论-（√）"><span class="toc-number">13.</span> <span class="toc-text">11.Gitment—-基于GitHub的评论系统&#x2F;Giteement-集成码云评论 （√）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-头像旋转问题-×"><span class="toc-number">14.</span> <span class="toc-text">12.头像旋转问题?(×)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-网易云音乐（？）"><span class="toc-number">15.</span> <span class="toc-text">13.网易云音乐（？）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-。。。"><span class="toc-number">16.</span> <span class="toc-text">14.。。。</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#部分博主"><span class="toc-number">16.1.</span> <span class="toc-text">部分博主</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -795,11 +815,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -811,11 +831,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
