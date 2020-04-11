@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gh670.github.io/git-Github-gitee.html</loc>
+    <loc>https://gh670.github.io/photos/data.json</loc>
     
-    <lastmod>2020-04-11T04:50:33.760Z</lastmod>
+    <lastmod>2020-04-11T09:57:19.104Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gh670.github.io/test-ques.html</loc>
     
-    <lastmod>2020-04-11T03:15:31.648Z</lastmod>
+    <lastmod>2020-04-11T09:45:27.661Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/basis-markdown.html</loc>
+    
+    <lastmod>2020-04-11T09:40:57.564Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/git-Github-gitee.html</loc>
+    
+    <lastmod>2020-04-11T04:50:33.760Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>https://gh670.github.io/a-abs.html</loc>
     
     <lastmod>2020-04-10T14:56:11.457Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/photos/data.json</loc>
-    
-    <lastmod>2020-04-10T14:35:55.653Z</lastmod>
     
   </url>
   
@@ -131,13 +138,6 @@
     <loc>https://gh670.github.io/hexo-dajian.html</loc>
     
     <lastmod>2020-04-07T07:49:40.256Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/basis-markdown.html</loc>
-    
-    <lastmod>2020-04-05T03:28:17.176Z</lastmod>
     
   </url>
   
