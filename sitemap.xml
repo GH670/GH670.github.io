@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gh670.github.io/python-bug.html</loc>
+    <loc>https://gh670.github.io/basis-markdown.html</loc>
     
-    <lastmod>2020-04-12T10:00:42.492Z</lastmod>
+    <lastmod>2020-04-12T13:29:51.130Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://gh670.github.io/hexo-aliyun-oss-picgo.html</loc>
     
-    <lastmod>2020-04-12T09:58:53.670Z</lastmod>
+    <lastmod>2020-04-12T13:29:06.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/rijiben.html</loc>
+    
+    <lastmod>2020-04-12T13:21:11.425Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/python-bug.html</loc>
+    
+    <lastmod>2020-04-12T10:00:42.492Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>https://gh670.github.io/photos/data.json</loc>
     
     <lastmod>2020-04-11T09:57:19.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/basis-markdown.html</loc>
-    
-    <lastmod>2020-04-11T09:40:57.564Z</lastmod>
     
   </url>
   
@@ -96,13 +103,6 @@
     <loc>https://gh670.github.io/code-zhishidian.html</loc>
     
     <lastmod>2020-04-09T09:55:52.079Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/rijiben.html</loc>
-    
-    <lastmod>2020-04-09T07:03:34.740Z</lastmod>
     
   </url>
   
