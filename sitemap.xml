@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/python-bug.html</loc>
+    
+    <lastmod>2020-04-12T10:00:42.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/hexo-aliyun-oss-picgo.html</loc>
+    
+    <lastmod>2020-04-12T09:58:53.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/ccf201604-1.html</loc>
+    
+    <lastmod>2020-04-12T09:58:12.338Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/test-ques.html</loc>
     
     <lastmod>2020-04-12T00:22:58.090Z</lastmod>
@@ -54,13 +75,6 @@
     <loc>https://gh670.github.io/photos/videos.html</loc>
     
     <lastmod>2020-04-10T07:32:33.702Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/ccf201604-1.html</loc>
-    
-    <lastmod>2020-04-10T07:18:29.492Z</lastmod>
     
   </url>
   
@@ -121,13 +135,6 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/python-bug.html</loc>
-    
-    <lastmod>2020-04-08T01:58:32.696Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gh670.github.io/git-mail.html</loc>
     
     <lastmod>2020-04-08T01:34:39.824Z</lastmod>
@@ -152,13 +159,6 @@
     <loc>https://gh670.github.io/suibijishi.html</loc>
     
     <lastmod>2020-04-04T10:14:22.277Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/hexo-aliyun-oss-picgo.html</loc>
-    
-    <lastmod>2020-04-04T10:12:49.766Z</lastmod>
     
   </url>
   
