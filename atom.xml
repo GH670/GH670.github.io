@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>GH670</title>
+  
+  <subtitle>挺菜的~，学习中...</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://gh670.github.io/"/>
+  <updated>2020-04-13T13:57:04.103Z</updated>
+  <id>https://gh670.github.io/</id>
+  
+  <author>
+    <name>GH670</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三分查找-算法</title>
+    <link href="https://gh670.github.io/a-sanfensearch.html"/>
+    <id>https://gh670.github.io/a-sanfensearch.html</id>
+    <published>2020-04-13T13:53:51.104Z</published>
+    <updated>2020-04-13T13:57:04.103Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">ternarysearch</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> low,<span class="keyword">int</span> high,<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(high&lt;low)</span><br><span class="line">j=<span class="number">-1</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">int</span> mid1 =low + (high-low)/<span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> mid2 =high- (high-low)/<span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(x=a[mid1])</span><br><span class="line">j = mid1;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x&lt;a[mid1])</span><br><span class="line">j = ternarysearch(a,low,mid1<span class="number">-1</span>,x);</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x=a[mid2])</span><br><span class="line">j = mid2;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x&gt;a[mid2])</span><br><span class="line">j = ternarysearch(a,low,mid2<span class="number">-1</span>,x);</span><br><span class="line"><span class="keyword">return</span> j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      三分查找-算法
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>B-计算球的体积</title>
+    <link href="https://gh670.github.io/algorithm-Sphere-volume.html"/>
+    <id>https://gh670.github.io/algorithm-Sphere-volume.html</id>
+    <published>2020-04-13T05:59:13.232Z</published>
+    <updated>2020-04-13T06:14:01.912Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="B-计算球的体积"><a href="#B-计算球的体积" class="headerlink" title="B-计算球的体积"></a>B-计算球的体积</h2><p>根据输入的半径值，计算球的体积。<br>Input<br>输入数据有多组，每组占一行，每行包括一个实数，表示球的半径。<br>Output<br>输出对应的球的体积，对于每组输入数据，输出一行，计算结果保留三位小数。<br>Sample Input<br>1<br>1.5<br>Sample Output<br>4.189<br>14.137  </p><a id="more"></a><p>Hint<br>#define PI 3.1415927  </p><pre><code class="c++"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iomanip&gt;</span></span><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><span class="function"></span>{    <span class="keyword">double</span> r = <span class="number">0</span>,p=<span class="number">3.1415927</span>;    <span class="keyword">while</span> (<span class="built_in">cin</span>&gt;&gt;r)    {        <span class="keyword">double</span> v;        v = (<span class="number">4</span> *p*r*r*r) / <span class="number">3</span>;        <span class="built_in">cout</span> &lt;&lt; fixed &lt;&lt; setprecision(<span class="number">3</span>) &lt;&lt; v &lt;&lt; <span class="built_in">endl</span>;    }}</code></pre><p>多组输入，需要条件循环语句，<br>需要对小数点后的位数限制，因此用到了库函数setprecision(），对应iomanip头文件。</p>]]></content>
+    
+    <summary type="html">
+    
+      计算球的体积
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github+PicGo 搭建图床</title>
+    <link href="https://gh670.github.io/hexo-github-picgo.html"/>
+    <id>https://gh670.github.io/hexo-github-picgo.html</id>
+    <published>2020-04-13T01:30:08.671Z</published>
+    <updated>2020-04-13T05:10:31.427Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>使用GitHub+picgo搭建免费图床。</strong>  </p><ul><li>待改善 </li></ul><a id="more"></a>  <h2 id="大体流程："><a href="#大体流程：" class="headerlink" title="大体流程："></a>大体流程：</h2><h3 id="1-GitHub部分配置"><a href="#1-GitHub部分配置" class="headerlink" title="1. GitHub部分配置"></a>1. GitHub部分配置</h3><ol><li>进入GitHub创建一个新的仓库   </li><li>点击右上角头像进入Settings </li><li>进入Developer settings  </li><li>选择Personal access okens，点击 Generate new token，创建 token  </li><li>命名为picgo（图床），赋予仓库权限。repo全选  </li><li>最后点击Generate token即可看到显示的token页面，复制token,之后在对picgo的配置过程中，会用到。    <h3 id="2-picgo配置"><a href="#2-picgo配置" class="headerlink" title="2. picgo配置"></a>2. picgo配置</h3></li><li>下载PicGo，图片上传工具PicGo下载地址:<a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo/releases</a>  </li><li>下载完毕安装即可，下面进行对picgo的配置。  </li><li>选择图床设置-GitHub图床<br>（1）设定仓库名：这个是刚刚第一步所新建仓库的名称，我的为cdn，此处填写格式username/repo。<br>（2）设定分支名：master，采用默认分支即可<br>（3）设定Token：此处填写上一步得到的Token，添加到输入框即可。<br>（4）指定存储路径：自定义，例：images/，相当于在刚刚新建的仓库下新建了一个文件夹。<br>（5）设定自定义域名：<br> cdn加速格式：<a href="https://cdn.jsdelivr.net/gh/username/repo，username为GitHub用户名，repo为新建的仓库，用于存储图片" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/username/repo，username为GitHub用户名，repo为新建的仓库，用于存储图片</a><br> 普通格式：<a href="https://github.com/username/repo" target="_blank" rel="noopener">https://github.com/username/repo</a><br> 或<a href="https://raw.githubusercontent.com/用户名/RepositoryName/分支名" target="_blank" rel="noopener">https://raw.githubusercontent.com/用户名/RepositoryName/分支名</a> （建议）<br>（6）设置快捷键ctrl+shit+C: 在qq截屏ctrl+alt+a后，再ctrl+shit+C可以快速上传    <h3 id="3-上传"><a href="#3-上传" class="headerlink" title="3. 上传"></a>3. 上传</h3></li><li>快捷键上传<br>ctrl+shit+c<br>进入picgo设置——修改快捷键——编辑——按下你想要设定的快捷键保存即可。</li><li>拖拽上传：<br>注意：上传时要选择markdown格式，在picgo相册中可复制图片链接。  </li></ol><h3 id="存在问题："><a href="#存在问题：" class="headerlink" title="存在问题："></a>存在问题：</h3><ol><li>上传失败，服务端出错</li><li>不稳定</li><li>上传文件命名等？</li><li>间接性上传失败。</li><li>图片链接失败</li></ol><blockquote><p>虽然免费…实在是不如阿里oss好用啊~</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      Github+PicGo 搭建图床
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github-gitee</title>
+    <link href="https://gh670.github.io/git-Github-gitee.html"/>
+    <id>https://gh670.github.io/git-Github-gitee.html</id>
+    <published>2020-04-11T04:43:05.290Z</published>
+    <updated>2020-04-11T04:50:33.760Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="摘要："><a href="#摘要：" class="headerlink" title="摘要："></a>摘要：</h3><p>github 与 gitee<br>不定期更新，无干货。 </p><a id="more"></a><p>Github与gitee  </p><p>cd **   //进入目标文件<br>hexo clean      //清理<br>hexo g<br>hexo d        //更新加部署  </p><p>区别：<br> GitHub自动部署；gitee需手动部署：进入目标仓库，服务，gitee pages.</p>]]></content>
+    
+    <summary type="html">
+    
+      Github-gitee
+    
+    </summary>
+    
+    
+    
+      <category term="github" scheme="https://GH670.github.io/tags/github/"/>
+    
+      <category term="git" scheme="https://GH670.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CCF 201509-1 数列分段</title>
+    <link href="https://gh670.github.io/ccf201509-1.html"/>
+    <id>https://gh670.github.io/ccf201509-1.html</id>
+    <published>2020-04-11T00:39:48.321Z</published>
+    <updated>2020-04-11T00:45:35.048Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述<br>　　给定一个整数数列，数列中连续相同的最长整数序列算成一段，问数列中共有多少段？<br>输入格式<br>　　输入的第一行包含一个整数n，表示数列中整数的个数。<br>　　第二行包含n个整数a1, a2, …, an，表示给定的数列，相邻的整数之间用一个空格分隔。<br>输出格式<br>　　输出一个整数，表示给定的数列有多个段。<br>样例输入<br>8<br>8 8 8 0 12 12 8 0   </p><a id="more"></a><p>样例输出<br>5<br>样例说明<br>　　8 8 8是第一段，0是第二段，12 12是第三段，倒数第二个整数8是第四段，最后一个0是第五段。<br>评测用例规模与约定<br>　　1 ≤ n ≤ 1000，0 ≤ ai ≤ 1000。   </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1000</span>];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> ans=<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)</span><br><span class="line"><span class="keyword">if</span>(a[i]!=a[i<span class="number">-1</span>])</span><br><span class="line">ans++;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>切记“;”</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      CCF 201509-1 数列分段
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+      <category term="CCF" scheme="https://GH670.github.io/tags/CCF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A-求绝对值</title>
+    <link href="https://gh670.github.io/a-abs.html"/>
+    <id>https://gh670.github.io/a-abs.html</id>
+    <published>2020-04-10T14:53:18.389Z</published>
+    <updated>2020-04-10T14:56:11.457Z</updated>
+    
+    <content type="html"><![CDATA[<p>求实数的绝对值。<br>Input<br>输入数据有多组，每组占一行，每行包含一个实数。<br>Output<br>对于每组输入数据，输出它的绝对值，要求每组数据输出一行，结果保留两位小数。<br>Sample Input<br>123<br>-234.00  </p><a id="more"></a>  <p>Sample Output<br>123.00<br>234.00  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">zxd</span> <span class="params">(<span class="keyword">double</span> x)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> x;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lf"</span>, &amp;x)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> y = zxd(x);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>,y);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">zxd</span> <span class="params">(<span class="keyword">double</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> z;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;=<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        z=x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = -x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      A-求绝对值
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CCF 201609-1 最大波动</title>
+    <link href="https://gh670.github.io/ccf201609-1.html"/>
+    <id>https://gh670.github.io/ccf201609-1.html</id>
+    <published>2020-04-10T07:56:24.228Z</published>
+    <updated>2020-04-10T08:01:35.498Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述<br>　　小明正在利用股票的波动程度来研究股票。小明拿到了一只股票每天收盘时的价格，他想知道，这只股票连续几天的最大波动值是多少，即在这几天中某天收盘价格与前一天收盘价格之差的绝对值最大是多少。<br>输入格式<br>　　输入的第一行包含了一个整数n，表示小明拿到的收盘价格的连续天数。<br>　　第二行包含n个正整数，依次表示每天的收盘价格。  </p><a id="more"></a>  <p>输出格式<br>　　输出一个整数，表示这只股票这n天中的最大波动值。<br>样例输入<br>6<br>2 5 5 7 3 5<br>样例输出<br>4<br>样例说明<br>　　第四天和第五天之间的波动最大，波动值为|3-7|=4。<br>评测用例规模与约定<br>　　对于所有评测用例，2 ≤ n ≤ 1000。股票每一天的价格为1到10000之间的整数。  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1000</span>];</span><br><span class="line"></span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> b=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> ans;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">ans= <span class="built_in">abs</span>(a[i] - a[i<span class="number">-1</span>]);</span><br><span class="line"><span class="keyword">if</span> (ans&gt;b)</span><br><span class="line">b=ans;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;b;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p> 特别注意：  </p><ol><li>绝对值！   </li><li>int a[];<br>[Error] storage size of ‘a’ isn’t known</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      ccf201609-1最大波动
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+      <category term="CCF" scheme="https://GH670.github.io/tags/CCF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CCF 201604-1 折点计数</title>
+    <link href="https://gh670.github.io/ccf201604-1.html"/>
+    <id>https://gh670.github.io/ccf201604-1.html</id>
+    <published>2020-04-10T07:13:10.760Z</published>
+    <updated>2020-04-13T05:53:36.442Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述<br>　　给定n个整数表示一个商店连续n天的销售量。如果某天之前销售量在增长，而后一天销售量减少，则称这一天为折点，反过来如果之前销售量减少而后一天销售量增长，也称这一天为折点。其他的天都不是折点。如下图中，第3天和第6天是折点。<br> <img src="https://raw.githubusercontent.com/GH670/img/master/images/2016041.jpg" alt="">  </p><a id="more"></a><p>给定n个整数a1, a2, …, an表示销售量，请计算出这些天总共有多少个折点。<br>　　为了减少歧义，我们给定的数据保证：在这n天中相邻两天的销售量总是不同的，即ai-1≠ai。注意，如果两天不相邻，销售量可能相同。<br>输入格式<br>　　输入的第一行包含一个整数n。<br>　　第二行包含n个整数，用空格分隔，分别表示a1, a2, …, an。<br>输出格式<br>　　输出一个整数，表示折点出现的数量。<br>样例输入<br>7<br>5 4 1 2 3 6 4<br>样例输出<br>2<br>评测用例规模与约定<br>　　所有评测用例满足：1 ≤ n ≤ 1000，每天的销售量是不超过10000的非负整数。  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10000</span>];</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;<span class="built_in">cin</span>&gt;&gt;a[i];&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;n<span class="number">-1</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(a[i]&lt;a[i<span class="number">-1</span>]&amp;a[i]&lt;a[i+<span class="number">1</span>] || a[i]&gt;a[i<span class="number">-1</span>]&amp;a[i]&gt;a[i+<span class="number">1</span>])</span><br><span class="line">sum++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;sum;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>注意：<br>1、头文件要书写正确。<br>2、不要忘记；</p>]]></content>
+    
+    <summary type="html">
+    
+      ccf201604-1折点计数
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+      <category term="CCF" scheme="https://GH670.github.io/tags/CCF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Code-相关知识点</title>
+    <link href="https://gh670.github.io/code-zhishidian.html"/>
+    <id>https://gh670.github.io/code-zhishidian.html</id>
+    <published>2020-04-09T09:54:13.365Z</published>
+    <updated>2020-04-09T09:55:52.079Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>s.length是针对java中数组的，length是数组的一个属性，用来表示数组的长度  </li><li>s.length()则是字符串的一个方法，用来返回字符串的长度的  </li></ol>]]></content>
+    
+    <summary type="html">
+    
+      Code-相关知识点
+    
+    </summary>
+    
+    
+    
+      <category term="code" scheme="https://GH670.github.io/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CCF 201703-1 分蛋糕</title>
+    <link href="https://gh670.github.io/ccf201703-1.html"/>
+    <id>https://gh670.github.io/ccf201703-1.html</id>
+    <published>2020-04-09T07:51:47.433Z</published>
+    <updated>2020-04-10T07:13:23.794Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述<br>　　小明今天生日，他有n块蛋糕要分给朋友们吃，这n块蛋糕（编号为1到n）的重量分别为a1, a2, …, an。小明想分给每个朋友至少重量为k的蛋糕。小明的朋友们已经排好队准备领蛋糕，对于每个朋友，小明总是先将自己手中编号最小的蛋糕分给他，当这个朋友所分得蛋糕的重量不到k时，再继续将剩下的蛋糕中编号最小的给他，直到小明的蛋糕分完或者这个朋友分到的蛋糕的总重量大于等于k。<br>　　请问当小明的蛋糕分完时，总共有多少个朋友分到了蛋糕。</p><a id="more"></a><p>输入格式<br>　　输入的第一行包含了两个整数n, k，意义如上所述。<br>　　第二行包含n个正整数，依次表示a1, a2, …, an。<br>输出格式<br>　　输出一个整数，表示有多少个朋友分到了蛋糕。<br>样例输入<br>6 9<br>2 6 5 6 3 5<br>样例输出<br>3<br>样例说明<br>　　第一个朋友分到了前3块蛋糕，第二个朋友分到了第4、5块蛋糕，第三个朋友分到了最后一块蛋糕。<br>评测用例规模与约定<br>　　对于所有评测用例，1 ≤ n ≤ 1000，1 ≤ k ≤ 10000，1 ≤ ai ≤ 1000。  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,k;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1005</span>]; <span class="comment">//</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">cin</span> &gt;&gt; n &gt;&gt; k;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">&#123;</span><br><span class="line">    sum += a[i];</span><br><span class="line"><span class="keyword">if</span>(sum&gt;=k)&#123;</span><br><span class="line">b += <span class="number">1</span>;</span><br><span class="line">sum=<span class="number">0</span>;</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(i==n<span class="number">-1</span>)&#123;</span><br><span class="line">b+=<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;b;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>曾修改问题：  </p><ol><li>头文件书写不规范  </li><li>忘记“;”  </li><li>忘记输出</li><li>未考虑最后剩下蛋糕不足k的情况</li><li>审题要仔细！！！  </li></ol><p>Dev-C++上运行OK<br>CCF模拟考试，零分。<br>多是碰巧。</p>]]></content>
+    
+    <summary type="html">
+    
+      ccf201703-1分蛋糕
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+      <category term="CCF" scheme="https://GH670.github.io/tags/CCF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020年-计划</title>
+    <link href="https://gh670.github.io/jihua20.html"/>
+    <id>https://gh670.github.io/jihua20.html</id>
+    <published>2020-04-09T06:58:44.835Z</published>
+    <updated>2020-04-09T12:04:02.350Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><ul><li>你不想努力的时候，就闭上眼，想象自己老年时躺在椅子上，过着你讨厌的生活，身体素质很差，生活不能自理，你每天想回到以前要努力的时光，可年龄限制了你的想法，到你死了的时候，都是那么的默默无闻。</li><li>你睁开眼睛，好了这是新的开始，你有努力的资本了，你还想浑浑噩噩过完这一辈子吗</li><li>现在的你，是需要输入的时候，不是可以输出的时候！ </li></ul><p><strong>此博客以后多为分享生活！</strong> </p><a id="more"></a><h3 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h3><ul><li>2020ing…  </li></ul><h4 id="4月"><a href="#4月" class="headerlink" title="4月"></a>4月</h4><h4 id="5月"><a href="#5月" class="headerlink" title="5月"></a>5月</h4><h4 id="6月"><a href="#6月" class="headerlink" title="6月"></a>6月</h4><h4 id="7月"><a href="#7月" class="headerlink" title="7月"></a>7月</h4><h4 id="8月"><a href="#8月" class="headerlink" title="8月"></a>8月</h4><h4 id="9月"><a href="#9月" class="headerlink" title="9月"></a>9月</h4><h4 id="10月"><a href="#10月" class="headerlink" title="10月"></a>10月</h4><h4 id="11月"><a href="#11月" class="headerlink" title="11月"></a>11月</h4><h4 id="12月"><a href="#12月" class="headerlink" title="12月"></a>12月</h4>]]></content>
+    
+    <summary type="html">
+    
+      2020年-计划
+    
+    </summary>
+    
+    
+    
+      <category term="随笔记事" scheme="https://GH670.github.io/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随笔-语录</title>
+    <link href="https://gh670.github.io/suibijishi.html"/>
+    <id>https://gh670.github.io/suibijishi.html</id>
+    <published>2020-04-08T03:30:44.993Z</published>
+    <updated>2020-04-13T08:17:59.557Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>记忆之中，没有辛苦，只有遗憾！</p><a id="more"></a></li><li><p>所有经历过的都不是可惜，错过的都不是遗憾。  </p></li><li><p>你能否做到—— 胆大而不急躁，迅速而不轻佻，爱动而不粗浮，服从上司而不阿谀奉承，身居职守而不刚愎自用，胜而不骄，喜功而不自炫，自重而不自傲，豪爽而不欺人，刚强而不迂腐，活泼而不轻浮，直爽而不幼稚……</p></li><li><p>不要把欲望的满足，看作是幸福。  </p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;记忆之中，没有辛苦，只有遗憾！&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="随笔记事" scheme="https://GH670.github.io/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日常记事</title>
+    <link href="https://gh670.github.io/rijiben.html"/>
+    <id>https://gh670.github.io/rijiben.html</id>
+    <published>2020-04-08T03:30:44.992Z</published>
+    <updated>2020-04-12T13:21:11.425Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">输入你认为对的密码解锁...</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="6e856f0438f793587981df8f925ead0ec5241eb9017be4972700c862bf1b2e96">b677b62b9df0a22e71adaf4669365c35d006995f27b52a803023263d22cc28018da0d1a27fd9757858c8597e1c54576c38f4720e56feab4b2671a8907212211c924932e6c33f1743ec3331f14237c105387ddadea6e915c4742e8eccc84cf65ba090d5911e7cd87dd4ee008e1e652e9b6f5b3ae4fb68d12a533f9661e8b9667c8c902400ce2fbc3c3a2b9280537335f68c4b3e88c0ade251501430e6ace6f1b19c66898168f40ee81dc016beb6193cfbdfaa1651f87753acb4a0a6ca9905440fb0cd98abc597edd4f7255f0b55b5c8f52728207a1edb5d7c8850883b630222ae328c49fb7119b284cc0555a049d091cca2797565f24098465c1cbaf1ead930aade637322071a0e631ff3b14c9e7e9277a408a99b6e47a8dc30f1ad0fcb316e510d328944d444bbc1e7010c20e79711161f2d67db7f3afdc858e976df21a68692296480240aae47874d3dcab9ce1f082ddc9baa7b5480db0b25b9bd1276e4f747c30aac69ffad624690898eb0965dcf7f45eb57e1b2b4db0837ced418e10c79f090f7a87c87cba129d9c2772abf21397abbedbe0ba93c6d5c2022b06a4aca1271a29528dea303a1b0a06c1f0406e03f8ba17620035f330e0c86b06b301f646fc9df995ed3e3f358fa3188fe7516a81f586dee0275816ce1d0d1f7c8d64f7672a70608af2a483de97c695713cd55712b152826bc09c6a4ca542703f1f848a8840a012eb0c3cae4b6f6c4cdfb79ec95cc5493833cb5386f3bf70dc30c3d09d9911992bfca32efa246dc16ec82220f08ce12180c6c4f6dde06b6791900db5e2eef3404139928403956ce87aa990c5506a5f6e4a9201d6815530731901c0fb535a141f7cd59e5ec471d5130ae5f3ce2dab19806ba113f6c763409ad117d98016f9446afdfb79ba5a7a0c4479aa6035f96a4068af70aa2d3274bb3e82574270419d63728850f951145d467da90ece61c75a43d8aeaf50761eaffc1a89583cfbc36548b0deda91cb2ede8d90a44b228db1b1d08a7d05570fff4a24ed0404f54b2e878a5ef969cf33c333fb462f89146e9c887aef6af0d7e2b4ce5dbc7d14a10bb39866759d4353a8a895c3744f4dd93377a0276f8fcc6709993d84e2f8d6ed64237f668ff2adb7c63092b347507a242ca529a61c6abd7c7cdadb10de924389f347b923174110b69ff336eefadb1defdad1e68062c14a5c6f35d221cade50b962c4bf49ff7714849a295ff8e9ecb697b6183ee3bb7ee5ca2a1a0500a094d2ce1f149e02fdb524c22d76bf33f6c9608314a40f655404607dcf87f6bf72ecb72c6efbaf69abf04909db16e15cc32ce746bb1fedfe9726c7d90dd9c0c3f61f720bebc5258dbaf98afd5089e757d25f241d30ea886baa231ad736ed438842be4179a183fbb4d7a3ea1c757217353dcdeefe36d3c203ad73d6a4e2c8c11921e36ea54ffc9fe9a1f41674625a82ec5529232fd3b09b40fb18e601a74b9f5cd4a2608b43fbe4b9db13b04d37e4c5a4c306fcefe9d1345eb529164e10d527b890da56d4a3c8397dc19cb97ed13b07e8ee927a6b1ad16298d1b95398b09b4434bf8ee3a1a4fc6d482f57a1df91dc2cb27a43635f25c4b033310bd58c80b578a9ebd3b59e0855257b3168a19251efe448614214d14d8943b419b5efcbb397cb500cae042d47fb232ae7f687c277652a65fd4f6d0717a7248fa7f5a4cd32867f9af64eab2cd378e95ea448a2b10ef26da24a0b3e08ffd9f5c0aa67887c447e483c91225d89404b14fbb1a823edecc53bb09a4da518bfa5b3d694599f05a13c1ce27eaba3751972ef026e5b8ab1b6a9ccbcd34e54d438a748b5fed626c1e2843f3ff5527cd78ee1d79d71704c157c590cb4446b7108c8e2e2660cb95acfe6668f3a57202e42c8c9b0dd44915842116b2fa7ba238718bfd3d8cc86f65346adccf7043484da747be670f3fdea197d10e7e42dd8b1e6fdaebb506cc8b81a785bb45e7fb2529d6f2feaeb830ed116ca00403dd78652fdd96635d26e69c877cc317e5f924f9a7b85ab44c8b29177f4497c06b9ee9a9acc4b240bc47ef13ba8bdbb94282648f9baf95083e1662af662d7649ad5c903fd676d7c56ea78cc9c79d849b66163d1fc03bd15fbc4140b3acdbd4622c30cf32df95fbaf0784e399bc69783fd6665ecec2f2a1bde0ec56d0cce3adb06133ed1dba60b1bf15a9ea521246ab568a2400be4ce3df7ba8dab4b7a487ca024f4416d26ccc64cad8857b4788916b050c38ad495c5a68a8d8e04d855e5778285265a8ef2e2ff7f22bf57b8f2f30c14511390b9a6dfb1074edac243a82749ac120ec34328dfba47d0357dc5e4580c98fc1e89fbf5fba3f41fe8a8e811e32a6b779635bf5d5a6ca510f0a34acf153f5c090da59326c965362e7106e3937997f14246db8c20f6a6190c34ba722b232c3efbd75204f434203fee02fffca1db24443c320db34ec94d2b4dffa196b647b2ea21e3e7c1495bdd289411674bbf5ec1aa5ce838a196f150330f5bcb0bec07fda5b68f4452ad1f1f4309fa4b5742ef567ea8f4a86f8433dfc6141b8c4a2543bac37edd8b6e29cde2115d9ddb7d33828a4a3ff2b11cedf495859b4ddcc2d33f996c4a00d3d3203b44abd609e68c2ccddac1cfcfd8dcd63b7ac6d8437462eccda21865ecf5e94bf909122ff5cbc6f455e307ee0b9df85be6147bed36b8e205776c2cf96a30c4e173e19d08843333d79bc952b58bd12e5986af53356dde6bafd0fd6d3615a53633b0be7785ddabf56c45d4c82716f991fe8e2e03635b27ef423ef4ea2a8e2d35da47aec65d7f425b17098f17979a60f6b132fd8e02d0e527f93cab9f71e916cbb45997837512ee154944b27b69ad617b9f614187af53041d66e53156d1b147de31f7fccb93e130770a09051b6ea98a53ca725a7f4a85b8b0eaacf3a163f83d4430e3bc1fef8adb97e0b97a6998b5d83942bb97910a8e716e94617fa84bbccb10ca31253b7077aef4886d017d38288bafbbd510ac6be607341bd997a1afce103f16ad2d5121953fd644b8ec8d7a00fb583b659054fdab8511af7e9daecc4f93800c9f5b9a16cb6428fab5820711ad574899d3161a0ab0866</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      这是一篇加密文。无密码拒绝访问！
+    
+    </summary>
+    
+    
+    
+      <category term="随笔记事" scheme="https://GH670.github.io/tags/notes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-yilia搭建相关问题</title>
+    <link href="https://gh670.github.io/hexo-dajian.html"/>
+    <id>https://gh670.github.io/hexo-dajian.html</id>
+    <published>2020-04-07T07:43:23.493Z</published>
+    <updated>2020-04-07T07:49:40.256Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-js脚本打开错误"><a href="#1-js脚本打开错误" class="headerlink" title="1.js脚本打开错误"></a>1.js脚本打开错误</h3><p><img src="https://gh-picture.oss-cn-qingdao.aliyuncs.com/question/js%E8%84%9A%E6%9C%AC%E6%89%93%E5%BC%80%E9%94%99%E8%AF%AF.png" alt=""></p><h3 id="2-发送请求时出错"><a href="#2-发送请求时出错" class="headerlink" title="2.发送请求时出错"></a>2.发送请求时出错</h3><p><img src="https://gh-picture.oss-cn-qingdao.aliyuncs.com/question/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E6%97%B6%E5%87%BA%E9%94%99.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      hexo
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-valine评论系统</title>
+    <link href="https://gh670.github.io/hexo-valine.html"/>
+    <id>https://gh670.github.io/hexo-valine.html</id>
+    <published>2020-04-05T02:01:33.144Z</published>
+    <updated>2020-04-08T05:02:50.973Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h1><p>此文在CSDN中更易查阅，请点击此处转去CSDN中查看：<a href="https://blog.csdn.net/weixin_45784655/article/details/105324024" target="_blank" rel="noopener">CSDN博文</a></p><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Valine：一款快速、简洁且高效的无后端评论系统。</p><ul><li><strong>存在bug</strong></li></ul><a id="more"></a>    <h2 id="注册及简单配置"><a href="#注册及简单配置" class="headerlink" title="注册及简单配置"></a>注册及简单配置</h2><p>1.注册<a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a><br>2.创建创建Valine应用，选择开发板即可，名称任意。例如：Valine。<br>3.选择刚刚创建好的应用，点击【设置】 -&gt; 【应用 Keys】，获取 <strong>AppID</strong> 和 <strong>AppKey</strong>。<br>4.我的是hexo博客，yilia主题。以我自己的为例：<br>打开 <strong>主题</strong> 目录下的_config.yml。添加以下代码:    </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">valine: </span><br><span class="line"> appid: &#39;&#39;  #Leancloud应用的AppID</span><br><span class="line"> appkey: &#39;&#39;  #Leancloud应用的AppKey</span><br><span class="line"> verify: false #验证码</span><br><span class="line"> notify: false #评论回复提醒</span><br><span class="line"> avatar: robohash #评论列表头像样式：&#39;&#39;&#x2F;mm&#x2F;identicon&#x2F;monsterid&#x2F;wavatar&#x2F;retro&#x2F;hide</span><br><span class="line"> #头像类型可见： https:&#x2F;&#x2F;valine.js.org&#x2F;avatar.html</span><br><span class="line"> placeholder: 留下你来过的痕迹~ #评论框占位符</span><br><span class="line">&#96;&#96;&#96;    </span><br><span class="line"></span><br><span class="line">article.ejs  </span><br><span class="line">在themes&#x2F;yilia&#x2F;layout&#x2F;_partial&#x2F;article.ejs文件中添加如下几行，位置随意</span><br></pre></td></tr></table></figure><p>&lt;% if (!index){ %&gt;<br>        &lt;% if (theme.valine &amp;&amp; theme.valine.appid &amp;&amp; theme.valine.appkey){ %&gt;<br>            <section id="comments" class="comments"><br>              <style><br>                .comments{margin:30px;padding:10px;background:#fff}<br>                @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}<br>              </style><br>              &lt;%- partial(‘post/valine’, {<br>                key: post.slug,<br>                title: post.title,<br>                url: config.url+url_for(post.path)<br>                }) %&gt;<br>          </section><br>        &lt;% } %&gt;<br>&lt;% } %&gt;</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">valine.ejs  </span><br><span class="line">这个文件需要新建  </span><br><span class="line">路径：themes&#x2F;yilia-plus&#x2F;layout&#x2F;_partial&#x2F;post&#x2F;valine.ejs</span><br></pre></td></tr></table></figure><div id="vcomment" class="comment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src='//unpkg.com/valine/dist/Valine.min.js'></script><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>    var notify = '<%= theme.valine.notify %>' == true ? true : false;    var verify = '<%= theme.valine.verify %>' == true ? true : false;    new Valine({        av: AV,        el: '#vcomment',        notify: notify,        app_id: "<%= theme.valine.appid %>",        app_key: "<%= theme.valine.appkey %>",        placeholder: "<%= theme.valine.placeholder %>",        avatar:"<%= theme.valine.avatar %>",    });</script>```<p>6.【设置】-&gt;【安全中心】-&gt;【web安全域名】里填写你的博客访问地址<br>正常情况下，这样已经可以简单的使用了。</p><h2 id="云引擎的设置（进阶）"><a href="#云引擎的设置（进阶）" class="headerlink" title="云引擎的设置（进阶）"></a>云引擎的设置（进阶）</h2><ul><li>进入【云引擎】-【设置】界面。    </li></ul><p>1.源码部署<br>其中，源码部署中的代码库为：<a href="https://gitee.com/giteerepositories/Valine-Admin" target="_blank" rel="noopener">https://gitee.com/giteerepositories/Valine-Admin</a>  ,填写完毕后点击下方保存。<br>（特别说明，这是从Github上导入的他人的，由于GitHub上部署起来比较慢，所以我导入到了gitee上，这样部署起来比较快。<a href="https://github.com/DesertsP/Valine-Admin.git" target="_blank" rel="noopener">原GitHub地址</a>）    </p><p>2.自定义环境变量  </p><p>其中，只填写几个必填的就可以了，选填的看个人喜好自己设置。  </p><p>具体格式示例如下：<br>名称  |  示例  | 说明<br>| ——–   | —–:   | :—-: |<br>SITE_NAME  |  GH670  |  [必填]博客名称  wblog.tech<br>SITE_URL  |    <a href="https://wblog.tech" target="_blank" rel="noopener">https://wblog.tech</a>  |    [必填]首页地址<br>SMTP_SERVICE  |    “QQ”      |  [新版支持]邮件服务提供商，支持 QQ、163、126、Gmail 以及 更多<br>SMTP_USER  |    <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>  |    [必填]SMTP登录用户<br>SMTP_PASS  |    XXXXXXXX       | [必填]SMTP登录密码（QQ邮箱需要获取独立密码）<br>SENDER_NAME  |    GH670  |     [必填]发件人<br>SENDER_EMAIL  |    <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>      |  [必填]发件邮箱<br>BLOGGER_EMAIL  |    <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>  |    [可选]如果自己在回复，设置这个可以不向自己的邮箱发送邮件<br>ADMIN_URL  |    <a href="https://xxx.leanapp.cn/" target="_blank" rel="noopener">https://xxx.leanapp.cn/</a>      |  [建议]Web主机二级域名，用于自动唤醒<br>BLOGGER_EMAIL  |      <a href="mailto:xxxxx@qq.com">xxxxx@qq.com</a>  |    [可选]博主通知收件地址，默认使用SENDER_EMAIL<br>AKISMET_KEY      |  xxxxxxxxxxxx  |     [可选]Akismet Key 用于垃圾评论检测，设为MANUAL_REVIEW开启人工审核，留空不使用反垃圾  </p><p>  <strong>参数务必填写正确</strong>    </p><p>  特别注意的是：  </p><ul><li>SMTP_PASS的填写，我使用的是QQ邮箱，这里的SMTP_PASS登录密码的填写 <strong>不是填QQ邮箱的登录密码</strong>。<br>这个密码的获取过程是：<br>【打开QQ邮箱】-&gt;【选择设置】-&gt;【账户】-&gt;【找到SMTP_PASS，点击开启】  <ul><li>Web主机二级域名的获取：云引擎 -&gt; 设置，在Web主机域名位置点击申请即可。  </li></ul></li></ul><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>【云引擎】-&gt;【部署】<br>分支使用master，点击部署即可。  </p><h2 id="Valine评论管理"><a href="#Valine评论管理" class="headerlink" title="Valine评论管理"></a>Valine评论管理</h2><p>访问设置的二级域名https://二级域名.leanapp.cn/sign-up ，注册管理员登录信息。<br>设置完管理员的登录信息。<br>之后，即可通过https://二级域名.leanapp.cn/管理评论</p><h2 id="定时唤醒-amp-邮件提醒"><a href="#定时唤醒-amp-邮件提醒" class="headerlink" title="定时唤醒&amp;邮件提醒"></a>定时唤醒&amp;邮件提醒</h2><p>添加定时唤醒是为了防止应用死机导致邮件提醒等漏发。<br>进入【云引擎】-【定时任务】中，创建定时器，创建两个定时任务  </p><ul><li>1.生产环境选择self-wake云函数，Cron表达式为0 0/30 7-23 * * ?<br>表示每天早6点到晚23点每隔30分钟访问云引擎，ADMIN_URL环境变量务必设置正确，这样可以保持每天的绝大多数时间邮件服务是正常的。  </li><li>2.生产环境选择resend_mails云函数，Cron表达式为0 0 8 * * ?<br>表示每天早上八点检查过去24小时内漏发的通知邮件并补发。  </li></ul><p>添加定时器后记得点击启动方可生效。</p><p>至此，Valine Admin 已经可以正常工作。</p><p><a href="https://deserts.io/valine-admin-document/" target="_blank" rel="noopener">参考博文</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-valine评论系统
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-404</title>
+    <link href="https://gh670.github.io/hexo-404.html"/>
+    <id>https://gh670.github.io/hexo-404.html</id>
+    <published>2020-04-02T09:30:25.279Z</published>
+    <updated>2020-04-08T05:13:45.696Z</updated>
+    
+    <content type="html"><![CDATA[<p>在/source/目录下新建404.md在头部添加属性permalink: /404.html，页面内容可以自定义。</p><p>在博客/source/目录下新建404.md文件，其中输入一下内容，即可实现404腾讯公益界面，注意：其中homePageUrl=”<a href="https://www.wblog.tech/&quot;的地址要换成自己的！" target="_blank" rel="noopener">https://www.wblog.tech/&quot;的地址要换成自己的！</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404 Not Found：该页无法显示</span><br><span class="line">date: 2019-07-26 21:51:29</span><br><span class="line">permalink: &#x2F;404.html</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">         &lt;meta charset&#x3D;&quot;UTF-8&quot; &#x2F;&gt;</span><br><span class="line">         &lt;title&gt;404&lt;&#x2F;title&gt;                           </span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">         &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;&#x2F;qzonestyle.gtimg.cn&#x2F;qzone&#x2F;hybrid&#x2F;app&#x2F;404&#x2F;search_children.js&quot; homePageName&#x3D;&quot;返回首页&quot; homePageUrl&#x3D;&quot;https:&#x2F;&#x2F;www.wblog.tech&#x2F;&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><p>转自：<a href="https://www.yansheng.xyz/article/3efe2740.html" target="_blank" rel="noopener">https://www.yansheng.xyz/article/3efe2740.html</a><br>如有侵权，请联系删除！谢谢</p>]]></content>
+    
+    <summary type="html">
+    
+      hexo 实现404腾讯公益界面
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法相关-小知识点</title>
+    <link href="https://gh670.github.io/algorithm.html"/>
+    <id>https://gh670.github.io/algorithm.html</id>
+    <published>2020-04-01T12:08:20.000Z</published>
+    <updated>2020-04-04T10:14:55.843Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一部分的算法小知识"><a href="#一部分的算法小知识" class="headerlink" title="一部分的算法小知识~"></a>一部分的算法小知识~</h3><p>1.万能头文件<br>#include &lt;bits/stdc++.h&gt;<br>包含C++的所有头文件，但会降低编程速度，编译原理相关问题。</p>]]></content>
+    
+    <summary type="html">
+    
+      算法相关
+    
+    </summary>
+    
+    
+    
+      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 个性化-左侧</title>
+    <link href="https://gh670.github.io/hexo-gexinghua.html"/>
+    <id>https://gh670.github.io/hexo-gexinghua.html</id>
+    <published>2020-04-01T00:54:05.255Z</published>
+    <updated>2020-04-08T05:13:23.409Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="在左侧显示总文章数"><a href="#在左侧显示总文章数" class="headerlink" title="在左侧显示总文章数"></a>在左侧显示总文章数</h5><p>修改 themes\yilia\layout_partial\left-col.ejs</p><p>在</p><a id="more"></a><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav <span class="class"><span class="keyword">class</span></span>=<span class="string">"header-menu"</span>&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">    &lt;% <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> theme.menu)&#123; %&gt;</span><br><span class="line">        &lt;li&gt;<span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%- url_for(theme.menu[i]) %&gt;"</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;%&#125;%&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/u</span>l&gt;</span><br><span class="line">&lt;<span class="regexp">/nav&gt;</span></span><br></pre></td></tr></table></figure><p>后面加入</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">&lt;a&gt;总文章数 &lt;%=site.posts.length%&gt;&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>nav&gt;</span><br></pre></td></tr></table></figure><p>OK！</p><h5 id="建立新的标签页"><a href="#建立新的标签页" class="headerlink" title="建立新的标签页"></a>建立新的标签页</h5><ul><li>hexo new page ***</li></ul><h5 id="一言"><a href="#一言" class="headerlink" title="一言"></a>一言</h5><p>添加失败。未消除1</p><h5 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h5><p>页面转换时，音乐暂停播放。</p><h6 id="知云天气"><a href="#知云天气" class="headerlink" title="知云天气"></a>知云天气</h6>]]></content>
+    
+    <summary type="html">
+    
+      hexo 个性化
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown</title>
+    <link href="https://gh670.github.io/basis-markdown.html"/>
+    <id>https://gh670.github.io/basis-markdown.html</id>
+    <published>2020-03-31T16:00:00.000Z</published>
+    <updated>2020-04-12T13:29:51.130Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="markdown格式"><a href="#markdown格式" class="headerlink" title="markdown格式"></a>markdown格式</h3><ol><li>文本右/居中/左对齐</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p align&#x3D;&quot;right&quot;&gt;右对齐&lt;&#x2F;p&gt;</span><br><span class="line">&lt;center&gt;居中对齐&lt;&#x2F;center&gt;</span><br><span class="line">&lt;p align&#x3D;&quot;left&quot;&gt;右对齐&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure><a id="more"></a><ol start="2"><li><p>表格的设置格式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 水果        | 价格    |  数量  |</span><br><span class="line">| --------   | -----:   | :----: |</span><br><span class="line">| 香蕉        | $1      |   5    |</span><br><span class="line">| 苹果        | $1      |   6    |</span><br><span class="line">| 草莓        | $1      |   7    |</span><br></pre></td></tr></table></figure></li><li><p>为字体增加颜色  </p><pre><code>&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;&lt;font color=#0099ff size=7 face=&quot;黑体&quot;&gt;color=#0099ff size=72 face=&quot;黑体&quot;&lt;/font&gt;&lt;font color=#00ffff size=72&gt;color=#00ffff&lt;/font&gt;&lt;font color=gray size=72&gt;color=gray&lt;/font&gt;</code></pre><p>如下：<br><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color=#0099ff size=7 face="黑体">color=#0099ff size=72 face=”黑体”</font><br><font color=#00ffff size=72>color=#00ffff</font><br><font color=gray size=72>color=gray</font>    </p></li></ol><ol start="4"><li>在markdown文档里增加表情~  </li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;markdown格式&quot;&gt;&lt;a href=&quot;#markdown格式&quot; class=&quot;headerlink&quot; title=&quot;markdown格式&quot;&gt;&lt;/a&gt;markdown格式&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;文本右/居中/左对齐&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;p align&amp;#x3D;&amp;quot;right&amp;quot;&amp;gt;右对齐&amp;lt;&amp;#x2F;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;center&amp;gt;居中对齐&amp;lt;&amp;#x2F;center&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;p align&amp;#x3D;&amp;quot;left&amp;quot;&amp;gt;右对齐&amp;lt;&amp;#x2F;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="基础" scheme="https://GH670.github.io/tags/basis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Helllo World</title>
+    <link href="https://gh670.github.io/basis-hello-world.html"/>
+    <id>https://gh670.github.io/basis-hello-world.html</id>
+    <published>2020-03-25T00:57:35.557Z</published>
+    <updated>2020-04-04T10:09:38.492Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><pre><code>  public class HelloWorld{public static void main(String []args){    System.out.println(&quot;hello world&quot;);}</code></pre><h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><pre><code> #include &lt;iostream&gt; using namespace std; int main()  {    cout &lt;&lt; &quot;Hello World!\n&quot;; //分号是一个很重要的东西，他的用法，在你看过大量程序后，自己就会明白    return 0;}  </code></pre><h3 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h3><pre><code>#include&lt;stdio.h&gt;int main(){    printf(&quot;hello world!\n&quot;);    return 0;}</code></pre><h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre><code>print(&quot;hellow world!&quot;)</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      java c++ c python
+    
+    </summary>
+    
+    
+    
+      <category term="基础" scheme="https://GH670.github.io/tags/basis/"/>
+    
+  </entry>
+  
+</feed>
