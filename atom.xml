@@ -96,9 +96,9 @@
     
     
     
-      <category term="github" scheme="https://GH670.github.io/tags/github/"/>
-    
       <category term="git" scheme="https://GH670.github.io/tags/git/"/>
+    
+      <category term="github" scheme="https://GH670.github.io/tags/github/"/>
     
   </entry>
   
