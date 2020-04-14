@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gh670.github.io/"/>
-  <updated>2020-04-13T13:57:04.103Z</updated>
+  <updated>2020-04-14T00:47:25.097Z</updated>
   <id>https://gh670.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客安装RSS插件</title>
+    <link href="https://gh670.github.io/hexo-rss.html"/>
+    <id>https://gh670.github.io/hexo-rss.html</id>
+    <published>2020-04-14T00:33:42.426Z</published>
+    <updated>2020-04-14T00:47:25.097Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>RSS（简易信息聚合，也叫Really Simple Syndication、聚合RSS、聚合内容），是一种消息来源格式规范，用以聚合经常发布更新数据的网站，例如博客文章、新闻、音频或视频的网摘。RSS文件（或称做摘要、网络摘要、或频更新，提供到频道）包含了全文或是节录的文字，再加上发用者所订阅之网摘布数据和授权的元数据。通常在时效性比较强的内容上使用RSS订阅能更快速获取信息，网站提供RSS输出，有利于让用户获取网站内容的最新更新。网络用户可以在客户端借助于支持RSS的聚合工具软件（例如SharpReader、NewzCrawler、FeedDemon），在不打开网站内容页面的情况下阅读支持RSS输出的网站内容。</p><a id="more"></a><p>其优势在于不需要安装任何软件就可以获得RSS阅读的便利，并且可以保存阅读状态，推荐和收藏自己感兴趣的文章。提供此服务的有两类网站，一种是专门提供RSS阅读器的网站，例如国外的Google Reader，国内的鲜果、抓虾；另一种是提供个性化首页的网站，例如国外的netvibes、pageflakes，国内的雅蛙、阔地。  </p><p>换种说法：<br>学生时代，相信大家的班级里都有这样两种人：调皮的学生和听话的学生。社交媒体、今日头条等聚合阅读工具就像是前者，它们不会乖乖地按照你的要求做事，总能给你意外的惊喜（或惊吓）。相比之下，RSS 这位学生更听话，每天按时上下课，交作业，从来不会出岔子。虽然调皮的学生可以活跃班级的气氛，给生活增添乐趣，但有什么重要的任务，老师往往会交给乖学生去办。 :simple_smile:  </p><h2 id="Hexo博客配置RSS插件"><a href="#Hexo博客配置RSS插件" class="headerlink" title="Hexo博客配置RSS插件"></a>Hexo博客配置RSS插件</h2><h3 id="安装rss插件"><a href="#安装rss插件" class="headerlink" title="安装rss插件"></a>安装rss插件</h3><p>在站点根目录下安装：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line">## 配置_config.yml文件，启用插件</span><br><span class="line">在本地hexo根目录下的_config.yml文件中</span><br></pre></td></tr></table></figure><h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><p>plugins:<br>  hexo-generator-feed<br>#Feed Atom<br>feed:<br>  type: atom<br>  path: atom.xml<br>  limit: 20</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## 添加主题配置，在主题目录下的_config.yml目录下，添加如下配置。</span><br></pre></td></tr></table></figure><p>rss: /atom.xml      # RSS订阅</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 重新部署清缓存</span><br></pre></td></tr></table></figure><p>hexo g / d / clean</p><p>```<br><strong>大功告成!</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      Hexo博客安装RSS插件
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>三分查找-算法</title>
@@ -96,9 +117,9 @@
     
     
     
-      <category term="git" scheme="https://GH670.github.io/tags/git/"/>
-    
       <category term="github" scheme="https://GH670.github.io/tags/github/"/>
+    
+      <category term="git" scheme="https://GH670.github.io/tags/git/"/>
     
   </entry>
   
@@ -420,27 +441,6 @@
 &lt;li&gt;文本右/居中/左对齐&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;p align&amp;#x3D;&amp;quot;right&amp;quot;&amp;gt;右对齐&amp;lt;&amp;#x2F;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;center&amp;gt;居中对齐&amp;lt;&amp;#x2F;center&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;p align&amp;#x3D;&amp;quot;left&amp;quot;&amp;gt;右对齐&amp;lt;&amp;#x2F;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="基础" scheme="https://GH670.github.io/tags/basis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Helllo World</title>
-    <link href="https://gh670.github.io/basis-hello-world.html"/>
-    <id>https://gh670.github.io/basis-hello-world.html</id>
-    <published>2020-03-25T00:57:35.557Z</published>
-    <updated>2020-04-04T10:09:38.492Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><pre><code>  public class HelloWorld{public static void main(String []args){    System.out.println(&quot;hello world&quot;);}</code></pre><h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><pre><code> #include &lt;iostream&gt; using namespace std; int main()  {    cout &lt;&lt; &quot;Hello World!\n&quot;; //分号是一个很重要的东西，他的用法，在你看过大量程序后，自己就会明白    return 0;}  </code></pre><h3 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h3><pre><code>#include&lt;stdio.h&gt;int main(){    printf(&quot;hello world!\n&quot;);    return 0;}</code></pre><h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><pre><code>print(&quot;hellow world!&quot;)</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      java c++ c python
     
     </summary>
     
