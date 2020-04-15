@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gh670.github.io/"/>
-  <updated>2020-04-15T00:35:00.932Z</updated>
+  <updated>2020-04-15T07:58:31.989Z</updated>
   <id>https://gh670.github.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo-增加天气模块</title>
+    <link href="https://gh670.github.io/hexo-weather.html"/>
+    <id>https://gh670.github.io/hexo-weather.html</id>
+    <published>2020-04-15T07:43:16.728Z</published>
+    <updated>2020-04-15T07:58:31.989Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>为你的博客增加天汽模块，实现天气预报功能。</p><a id="more"></a><h2 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h2><ol><li>注册心知天气账号，网址为<a href="https://www.seniverse.com/" target="_blank" rel="noopener">https://www.seniverse.com/</a></li><li>进入控制台，新版插件。选择你喜欢的样式，然后生成代码。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 《添加“心知天气”--&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;tp-weather-widget&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">        (function(T, h, i, n, k, P, a, g, e) &#123;</span><br><span class="line">            g &#x3D; function() &#123;</span><br><span class="line">                P &#x3D; h.createElement(i);</span><br><span class="line">                a &#x3D; h.getElementsByTagName(i)[0];</span><br><span class="line">                P.src &#x3D; k;</span><br><span class="line">                P.charset &#x3D; &quot;utf-8&quot;;</span><br><span class="line">                P.async &#x3D; 1;</span><br><span class="line">                a.parentNode.insertBefore(P, a)</span><br><span class="line">            &#125;;</span><br><span class="line">            T[&quot;ThinkPageWeatherWidgetObject&quot;] &#x3D; n;</span><br><span class="line">            T[n] || (T[n] &#x3D; function() &#123;</span><br><span class="line">                (T[n].q &#x3D; T[n].q || []).push(arguments)</span><br><span class="line">            &#125;);</span><br><span class="line">            T[n].l &#x3D; +new Date();</span><br><span class="line">            if (T.attachEvent) &#123;</span><br><span class="line">                T.attachEvent(&quot;onload&quot;, g)</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                T.addEventListener(&quot;load&quot;, g, false)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;(window, document, &quot;script&quot;, &quot;tpwidget&quot;, &quot;&#x2F;&#x2F;widget.thinkpage.cn&#x2F;widget&#x2F;chameleon.js&quot;))</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        tpwidget(&quot;init&quot;, &#123;</span><br><span class="line">            &quot;flavor&quot;: &quot;slim&quot;,</span><br><span class="line">            &quot;location&quot;: &quot;WM6N2PM3WY2K&quot;,</span><br><span class="line">            &quot;geolocation&quot;: &quot;enabled&quot;,</span><br><span class="line">            &quot;language&quot;: &quot;zh-chs&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;c&quot;,</span><br><span class="line">            &quot;theme&quot;: &quot;chameleon&quot;,</span><br><span class="line">            &quot;container&quot;: &quot;tp-weather-widget&quot;,</span><br><span class="line">            &quot;bubble&quot;: &quot;enabled&quot;,</span><br><span class="line">            &quot;alarmType&quot;: &quot;badge&quot;,</span><br><span class="line">            &quot;color&quot;: &quot;#FFFFFF&quot;,</span><br><span class="line">            &quot;uid&quot;: &quot;U88B4B2797&quot;,</span><br><span class="line">            &quot;hash&quot;: &quot;c9d7cb43b80ffece52c9a1ebbfbca65f&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        tpwidget(&quot;show&quot;);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;!-- 添加“心知天气”》--&gt;</span><br></pre></td></tr></table></figure></li></ol><h2 id="工作进行中"><a href="#工作进行中" class="headerlink" title="工作进行中.."></a>工作进行中..</h2><ol><li>打开themes/yilia-plus/layout/_partial/left-col.ejs</li><li>将上面的插件生成的代码添加到指定位置，位置如下：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;overlay&quot; style&#x3D;&quot;background: &lt;%&#x3D; theme.style &amp;&amp; theme.style.header ? theme.style.header : defaultBg %&gt;&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 添加“心知天气”--&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;intrude-less&quot;&gt;</span><br></pre></td></tr></table></figure><ol start="3"><li>打开themes/yilia-plus/_config.yml中添加如下配置：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 心知天气(如果不用为false):https:&#x2F;&#x2F;www.seniverse.com</span><br><span class="line">xinzhi_weather: true</span><br></pre></td></tr></table></figure><h2 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g &#x2F; s &#x2F; clean    #重新部署</span><br><span class="line">hexo s      #本地预览</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-增加天气模块，心知天气
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo-为博客增加在线聊天功能</title>
     <link href="https://gh670.github.io/hexo-daovoice.html"/>
     <id>https://gh670.github.io/hexo-daovoice.html</id>
     <published>2020-04-14T23:49:48.021Z</published>
-    <updated>2020-04-15T00:35:00.932Z</updated>
+    <updated>2020-04-15T00:40:50.358Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>为你的博客，增加在线聊天功能。<br>一个有趣的功能！</p><a id="more"></a><h2 id="注册登录DaoVoice"><a href="#注册登录DaoVoice" class="headerlink" title="注册登录DaoVoice"></a>注册登录DaoVoice</h2><ol><li>点击地址注册DaoVoice<a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a></li><li>按提示操作并且填写注册邀请码：b04e9b52</li><li>按提示操作即可。</li><li>注册登录配置完成后进入控制台。  </li></ol><h2 id="为你的博客，增加在线聊天"><a href="#为你的博客，增加在线聊天" class="headerlink" title="为你的博客，增加在线聊天"></a>为你的博客，增加在线聊天</h2><ol><li>进入控制台-点击应用设置-点击安装到网站</li><li>（1）选择应用的语言——JavaScript，（2）你想和谁沟通，选择的是注册用户+匿名用户。</li><li>将(2)中下方123的代码，复制粘贴到<br>yilia/layout/_partial/hear.ejS。<br>需要注意的是，23的代码要添加在</scrit>之前。</li><li>在主题目录下的_config.xml配置文件中添加<br>#Daovoice DaoCloud 在线沟通<br>daovoice: true<br>daovoice_app_id: “<strong>用户ID</strong>”   //注意：用户ID不能是其他人的，要填写自己的，可以在刚刚复制的代码中找到用户id.</li></ol><h2 id="聊天设置"><a href="#聊天设置" class="headerlink" title="聊天设置"></a>聊天设置</h2><p>选择应用设置——聊天设置，可以进行聊天窗口的个性化设置。<br>即：定制欢迎辞，定制聊天窗口样式。<br>另外一些功能特点，可以自行探索。  </p><h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><p>hexo g / d / clean<br>进行重新部署。 </p><blockquote><p>最后，经过一系列的探索加实践，还是评论系统加邮件提醒香啊~<br>欢迎到我的博客进行参观留言交流：<a href="https://wblog.tech/" target="_blank" rel="noopener">https://wblog.tech/</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>为你的博客，增加在线聊天功能。<br>一个有趣的功能！</p><a id="more"></a><h2 id="注册登录DaoVoice"><a href="#注册登录DaoVoice" class="headerlink" title="注册登录DaoVoice"></a>注册登录DaoVoice</h2><ol><li>点击地址注册DaoVoice<a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a></li><li>按提示操作并且填写注册邀请码：b04e9b52</li><li>按提示操作即可。</li><li>注册登录配置完成后进入控制台。  </li></ol><h2 id="为你的博客，增加在线聊天"><a href="#为你的博客，增加在线聊天" class="headerlink" title="为你的博客，增加在线聊天"></a>为你的博客，增加在线聊天</h2><ol><li>进入控制台-点击应用设置-点击安装到网站</li><li>（1）选择应用的语言——JavaScript，（2）你想和谁沟通，选择的是注册用户+匿名用户。</li><li>将(2)中下方123的代码，复制粘贴到<br>yilia/layout/_partial/hear.ejS。<br>需要注意的是，23的代码要添加在</scrit>之前。</li><li>在主题目录下的_config.xml配置文件中添加<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#Daovoice DaoCloud 在线沟通</span><br><span class="line">daovoice: true</span><br><span class="line">daovoice_app_id: “**用户ID**”   &#x2F;&#x2F;注意：用户ID不能是其他人的，要填写自己的，可以在刚刚复制的代码中找到用户id.</span><br></pre></td></tr></table></figure></li></ol><h2 id="聊天设置"><a href="#聊天设置" class="headerlink" title="聊天设置"></a>聊天设置</h2><p>选择应用设置——聊天设置，可以进行聊天窗口的个性化设置。<br>即：定制欢迎辞，定制聊天窗口样式。<br>另外一些功能特点，可以自行探索。  </p><h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><p>hexo g / d / clean<br>进行重新部署。 </p><blockquote><p>最后，经过一系列的探索加实践，还是评论系统加邮件提醒香啊~<br>欢迎到我的博客进行参观留言交流：<a href="https://wblog.tech/" target="_blank" rel="noopener">https://wblog.tech/</a></p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -423,27 +444,6 @@
     
     
       <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 个性化-左侧</title>
-    <link href="https://gh670.github.io/hexo-gexinghua.html"/>
-    <id>https://gh670.github.io/hexo-gexinghua.html</id>
-    <published>2020-04-01T00:54:05.255Z</published>
-    <updated>2020-04-08T05:13:23.409Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="在左侧显示总文章数"><a href="#在左侧显示总文章数" class="headerlink" title="在左侧显示总文章数"></a>在左侧显示总文章数</h5><p>修改 themes\yilia\layout_partial\left-col.ejs</p><p>在</p><a id="more"></a><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav <span class="class"><span class="keyword">class</span></span>=<span class="string">"header-menu"</span>&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">    &lt;% <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> theme.menu)&#123; %&gt;</span><br><span class="line">        &lt;li&gt;<span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%- url_for(theme.menu[i]) %&gt;"</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">i</span> %&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span>&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;%&#125;%&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/u</span>l&gt;</span><br><span class="line">&lt;<span class="regexp">/nav&gt;</span></span><br></pre></td></tr></table></figure><p>后面加入</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav&gt;</span><br><span class="line">&lt;a&gt;总文章数 &lt;%=site.posts.length%&gt;&lt;<span class="regexp">/a&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>nav&gt;</span><br></pre></td></tr></table></figure><p>OK！</p><h5 id="建立新的标签页"><a href="#建立新的标签页" class="headerlink" title="建立新的标签页"></a>建立新的标签页</h5><ul><li>hexo new page ***</li></ul><h5 id="一言"><a href="#一言" class="headerlink" title="一言"></a>一言</h5><p>添加失败。未消除1</p><h5 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h5><p>页面转换时，音乐暂停播放。</p><h6 id="知云天气"><a href="#知云天气" class="headerlink" title="知云天气"></a>知云天气</h6>]]></content>
-    
-    <summary type="html">
-    
-      hexo 个性化
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
     
   </entry>
   
