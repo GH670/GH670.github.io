@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/test-ques.html</loc>
+    
+    <lastmod>2020-04-15T10:02:49.214Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/hexo-gexinghua.html</loc>
+    
+    <lastmod>2020-04-15T10:02:03.677Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/github-push.html</loc>
+    
+    <lastmod>2020-04-15T09:55:42.167Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/hexo-weather.html</loc>
     
     <lastmod>2020-04-15T08:05:25.835Z</lastmod>
@@ -26,13 +47,6 @@
     <loc>https://gh670.github.io/hexo-rss.html</loc>
     
     <lastmod>2020-04-14T01:12:41.824Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/test-ques.html</loc>
-    
-    <lastmod>2020-04-14T01:00:35.921Z</lastmod>
     
   </url>
   
@@ -159,13 +173,6 @@
     <loc>https://gh670.github.io/hexo-404.html</loc>
     
     <lastmod>2020-04-08T05:13:45.696Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/hexo-gexinghua.html</loc>
-    
-    <lastmod>2020-04-08T05:13:23.409Z</lastmod>
     
   </url>
   

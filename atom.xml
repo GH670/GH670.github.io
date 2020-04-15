@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gh670.github.io/"/>
-  <updated>2020-04-15T08:05:25.835Z</updated>
+  <updated>2020-04-15T09:55:42.167Z</updated>
   <id>https://gh670.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GitHub——向远程仓库提交</title>
+    <link href="https://gh670.github.io/github-push.html"/>
+    <id>https://gh670.github.io/github-push.html</id>
+    <published>2020-04-15T09:29:35.339Z</published>
+    <updated>2020-04-15T09:55:42.167Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>简单记录一下，自己第一次向远程仓库提交的过程，及出现的问题。  </p><a id="more"></a><h2 id="将本地仓库提交至远端"><a href="#将本地仓库提交至远端" class="headerlink" title="将本地仓库提交至远端"></a>将本地仓库提交至远端</h2><ol><li>建立本地文件夹，将所需要提交的所有文件放置在里面</li><li>本地打开改文件夹，空白处鼠标右键选择Git Bush Here。</li><li>打开界面后输入git init，初始化此本地仓库，将这个目录变成git可以管理的仓库。</li><li>使用git add .将文件添加到暂存区里面去，注意不要遗忘最后的“.”。</li><li>执行git commit -m ‘描述内容’ 命令，将文件提交到仓库。</li><li>输入git remote add origin ‘远程仓库地址’ 指令，关联git仓库。</li><li>执行git pull –rebase origin master 命令，将文件与远程仓库进行合并。</li><li>最后将本地文件推送至GitHub仓库中，使用命令：git push -u origin master。</li></ol><h2 id="注意问题"><a href="#注意问题" class="headerlink" title="注意问题"></a>注意问题</h2><ol><li>命令切勿输入错误，否则报错。</li><li>输入git remote add origin ‘远程仓库地址’ 指令时若报错显示：fatal: remote origin already exists. 则说明远程源已存在。此时，可输入git remote -v进行查看，若是此次需要关联的仓库，则可忽略，如果不是，可以输入git remote rm origin取消仓库关联，然后再次进行所需要的仓库关联操作。</li><li>最后执行git push -u origin master时，可能会弹出窗口需要输入你的GitHub账户密码进行之后的推送操作。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-为博客增加在线聊天功能
+    
+    </summary>
+    
+    
+    
+      <category term="git" scheme="https://GH670.github.io/tags/git/"/>
+    
+      <category term="github" scheme="https://GH670.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-增加天气模块</title>
@@ -159,9 +182,9 @@
     
     
     
-      <category term="github" scheme="https://GH670.github.io/tags/github/"/>
-    
       <category term="git" scheme="https://GH670.github.io/tags/git/"/>
+    
+      <category term="github" scheme="https://GH670.github.io/tags/github/"/>
     
   </entry>
   
@@ -423,27 +446,6 @@
     
     
       <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法相关-小知识点</title>
-    <link href="https://gh670.github.io/algorithm.html"/>
-    <id>https://gh670.github.io/algorithm.html</id>
-    <published>2020-04-01T12:08:20.000Z</published>
-    <updated>2020-04-04T10:14:55.843Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一部分的算法小知识"><a href="#一部分的算法小知识" class="headerlink" title="一部分的算法小知识~"></a>一部分的算法小知识~</h3><p>1.万能头文件<br>#include &lt;bits/stdc++.h&gt;<br>包含C++的所有头文件，但会降低编程速度，编译原理相关问题。</p>]]></content>
-    
-    <summary type="html">
-    
-      算法相关
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
     
   </entry>
   
