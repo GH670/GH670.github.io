@@ -6,22 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://GH670.github.io">
-  <title>Github-gitee | GH670</title>
+  <title>Hexo-为博客增加在线聊天功能 | GH670</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="Github-gitee">
+  <meta name="description" content="Hexo-为博客增加在线聊天功能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github-gitee">
-<meta property="og:url" content="https://gh670.github.io/git-Github-gitee.html">
+<meta property="og:title" content="Hexo-为博客增加在线聊天功能">
+<meta property="og:url" content="https://gh670.github.io/hexo-daovoice.html">
 <meta property="og:site_name" content="GH670">
-<meta property="og:description" content="Github-gitee">
+<meta property="og:description" content="Hexo-为博客增加在线聊天功能">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-11T04:43:05.290Z">
-<meta property="article:modified_time" content="2020-04-11T04:50:33.760Z">
+<meta property="article:published_time" content="2020-04-14T23:49:48.021Z">
+<meta property="article:modified_time" content="2020-04-15T00:35:00.932Z">
 <meta property="article:author" content="GH670">
-<meta property="article:tag" content="github">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="GH670" type="application/atom+xml">
@@ -341,14 +340,14 @@ var _hmt = _hmt || [];
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-【Git】Github-gitee" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【Hexo】Hexo-voice" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Github-gitee
+      Hexo-为博客增加在线聊天功能
     </h1>
   
 
@@ -360,8 +359,8 @@ var _hmt = _hmt || [];
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/git-Github-gitee.html" class="archive-article-date">
-        <time datetime="2020-04-11T04:43:05.290Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
+<a href="/hexo-daovoice.html" class="archive-article-date">
+        <time datetime="2020-04-14T23:49:48.021Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
 </a>
 
   
@@ -374,7 +373,7 @@ var _hmt = _hmt || [];
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">57字</span>
+      <span class="post-count">338字</span>
     </span>
   </span>
 
@@ -395,11 +394,26 @@ var _hmt = _hmt || [];
 
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="摘要："><a href="#摘要：" class="headerlink" title="摘要："></a>摘要：</h3><p>github 与 gitee<br>不定期更新，无干货。 </p>
+    <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>为你的博客，增加在线聊天功能。<br>一个有趣的功能！</p>
 <a id="more"></a>
-<p>Github与gitee  </p>
-<p>cd **   //进入目标文件<br>hexo clean      //清理<br>hexo g<br>hexo d        //更新加部署  </p>
-<p>区别：<br> GitHub自动部署；gitee需手动部署：进入目标仓库，服务，gitee pages.</p>
+
+<h2 id="注册登录DaoVoice"><a href="#注册登录DaoVoice" class="headerlink" title="注册登录DaoVoice"></a>注册登录DaoVoice</h2><ol>
+<li>点击地址注册DaoVoice<a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a></li>
+<li>按提示操作并且填写注册邀请码：b04e9b52</li>
+<li>按提示操作即可。</li>
+<li>注册登录配置完成后进入控制台。  </li>
+</ol>
+<h2 id="为你的博客，增加在线聊天"><a href="#为你的博客，增加在线聊天" class="headerlink" title="为你的博客，增加在线聊天"></a>为你的博客，增加在线聊天</h2><ol>
+<li>进入控制台-点击应用设置-点击安装到网站</li>
+<li>（1）选择应用的语言——JavaScript，（2）你想和谁沟通，选择的是注册用户+匿名用户。</li>
+<li>将(2)中下方123的代码，复制粘贴到<br>yilia/layout/_partial/hear.ejS。<br>需要注意的是，23的代码要添加在</scrit>之前。</li>
+<li>在主题目录下的_config.xml配置文件中添加<br>#Daovoice DaoCloud 在线沟通<br>daovoice: true<br>daovoice_app_id: “<strong>用户ID</strong>”   //注意：用户ID不能是其他人的，要填写自己的，可以在刚刚复制的代码中找到用户id.</li>
+</ol>
+<h2 id="聊天设置"><a href="#聊天设置" class="headerlink" title="聊天设置"></a>聊天设置</h2><p>选择应用设置——聊天设置，可以进行聊天窗口的个性化设置。<br>即：定制欢迎辞，定制聊天窗口样式。<br>另外一些功能特点，可以自行探索。  </p>
+<h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><p>hexo g / d / clean<br>进行重新部署。 </p>
+<blockquote>
+<p>最后，经过一系列的探索加实践，还是评论系统加邮件提醒香啊~<br>欢迎到我的博客进行参观留言交流：<a href="https://wblog.tech/" target="_blank" rel="noopener">https://wblog.tech/</a></p>
+</blockquote>
 
     
 
@@ -446,7 +460,7 @@ var _hmt = _hmt || [];
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https:/GH670.github.io/git-Github-gitee.html" title="Github-gitee" target="_blank">https:/GH670.github.io/git-Github-gitee.html</a>
+          <a href="https:/GH670.github.io/hexo-daovoice.html" title="Hexo-为博客增加在线聊天功能" target="_blank">https:/GH670.github.io/hexo-daovoice.html</a>
         </li>
         
         <li>
@@ -469,11 +483,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -529,7 +539,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gh670.github.io/git-Github-gitee.html" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gh670.github.io/hexo-daovoice.html" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -544,18 +554,9 @@ var _hmt = _hmt || [];
 
 <nav id="article-nav">
   
-    <a href="/hexo-github-picgo.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Github+PicGo 搭建图床
-        
-      </div>
-    </a>
   
-  
-    <a href="/ccf201509-1.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CCF 201509-1 数列分段</div>
+    <a href="/hexo-rss.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo博客安装RSS插件</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -574,6 +575,19 @@ var _hmt = _hmt || [];
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册登录DaoVoice"><span class="toc-number">2.</span> <span class="toc-text">注册登录DaoVoice</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为你的博客，增加在线聊天"><span class="toc-number">3.</span> <span class="toc-text">为你的博客，增加在线聊天</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#聊天设置"><span class="toc-number">4.</span> <span class="toc-text">聊天设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo部署"><span class="toc-number">5.</span> <span class="toc-text">hexo部署</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/hexo-daovoice.html</loc>
+    
+    <lastmod>2020-04-15T00:35:00.932Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/photos/data.json</loc>
     
     <lastmod>2020-04-14T03:28:11.752Z</lastmod>

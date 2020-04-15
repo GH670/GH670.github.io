@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gh670.github.io/"/>
-  <updated>2020-04-14T01:12:41.824Z</updated>
+  <updated>2020-04-15T00:35:00.932Z</updated>
   <id>https://gh670.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-为博客增加在线聊天功能</title>
+    <link href="https://gh670.github.io/hexo-daovoice.html"/>
+    <id>https://gh670.github.io/hexo-daovoice.html</id>
+    <published>2020-04-14T23:49:48.021Z</published>
+    <updated>2020-04-15T00:35:00.932Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>为你的博客，增加在线聊天功能。<br>一个有趣的功能！</p><a id="more"></a><h2 id="注册登录DaoVoice"><a href="#注册登录DaoVoice" class="headerlink" title="注册登录DaoVoice"></a>注册登录DaoVoice</h2><ol><li>点击地址注册DaoVoice<a href="http://www.daovoice.io/" target="_blank" rel="noopener">http://www.daovoice.io/</a></li><li>按提示操作并且填写注册邀请码：b04e9b52</li><li>按提示操作即可。</li><li>注册登录配置完成后进入控制台。  </li></ol><h2 id="为你的博客，增加在线聊天"><a href="#为你的博客，增加在线聊天" class="headerlink" title="为你的博客，增加在线聊天"></a>为你的博客，增加在线聊天</h2><ol><li>进入控制台-点击应用设置-点击安装到网站</li><li>（1）选择应用的语言——JavaScript，（2）你想和谁沟通，选择的是注册用户+匿名用户。</li><li>将(2)中下方123的代码，复制粘贴到<br>yilia/layout/_partial/hear.ejS。<br>需要注意的是，23的代码要添加在</scrit>之前。</li><li>在主题目录下的_config.xml配置文件中添加<br>#Daovoice DaoCloud 在线沟通<br>daovoice: true<br>daovoice_app_id: “<strong>用户ID</strong>”   //注意：用户ID不能是其他人的，要填写自己的，可以在刚刚复制的代码中找到用户id.</li></ol><h2 id="聊天设置"><a href="#聊天设置" class="headerlink" title="聊天设置"></a>聊天设置</h2><p>选择应用设置——聊天设置，可以进行聊天窗口的个性化设置。<br>即：定制欢迎辞，定制聊天窗口样式。<br>另外一些功能特点，可以自行探索。  </p><h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><p>hexo g / d / clean<br>进行重新部署。 </p><blockquote><p>最后，经过一系列的探索加实践，还是评论系统加邮件提醒香啊~<br>欢迎到我的博客进行参观留言交流：<a href="https://wblog.tech/" target="_blank" rel="noopener">https://wblog.tech/</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-为博客增加在线聊天功能
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo博客安装RSS插件</title>
@@ -117,9 +138,9 @@
     
     
     
-      <category term="git" scheme="https://GH670.github.io/tags/git/"/>
-    
       <category term="github" scheme="https://GH670.github.io/tags/github/"/>
+    
+      <category term="git" scheme="https://GH670.github.io/tags/git/"/>
     
   </entry>
   
@@ -423,30 +444,6 @@
     
     
       <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown</title>
-    <link href="https://gh670.github.io/basis-markdown.html"/>
-    <id>https://gh670.github.io/basis-markdown.html</id>
-    <published>2020-03-31T16:00:00.000Z</published>
-    <updated>2020-04-12T13:29:51.130Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="markdown格式"><a href="#markdown格式" class="headerlink" title="markdown格式"></a>markdown格式</h3><ol><li>文本右/居中/左对齐</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p align&#x3D;&quot;right&quot;&gt;右对齐&lt;&#x2F;p&gt;</span><br><span class="line">&lt;center&gt;居中对齐&lt;&#x2F;center&gt;</span><br><span class="line">&lt;p align&#x3D;&quot;left&quot;&gt;右对齐&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure><a id="more"></a><ol start="2"><li><p>表格的设置格式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 水果        | 价格    |  数量  |</span><br><span class="line">| --------   | -----:   | :----: |</span><br><span class="line">| 香蕉        | $1      |   5    |</span><br><span class="line">| 苹果        | $1      |   6    |</span><br><span class="line">| 草莓        | $1      |   7    |</span><br></pre></td></tr></table></figure></li><li><p>为字体增加颜色  </p><pre><code>&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;&lt;font color=#0099ff size=7 face=&quot;黑体&quot;&gt;color=#0099ff size=72 face=&quot;黑体&quot;&lt;/font&gt;&lt;font color=#00ffff size=72&gt;color=#00ffff&lt;/font&gt;&lt;font color=gray size=72&gt;color=gray&lt;/font&gt;</code></pre><p>如下：<br><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color=#0099ff size=7 face="黑体">color=#0099ff size=72 face=”黑体”</font><br><font color=#00ffff size=72>color=#00ffff</font><br><font color=gray size=72>color=gray</font>    </p></li></ol><ol start="4"><li>在markdown文档里增加表情~  </li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;markdown格式&quot;&gt;&lt;a href=&quot;#markdown格式&quot; class=&quot;headerlink&quot; title=&quot;markdown格式&quot;&gt;&lt;/a&gt;markdown格式&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;文本右/居中/左对齐&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;p align&amp;#x3D;&amp;quot;right&amp;quot;&amp;gt;右对齐&amp;lt;&amp;#x2F;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;center&amp;gt;居中对齐&amp;lt;&amp;#x2F;center&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;p align&amp;#x3D;&amp;quot;left&amp;quot;&amp;gt;右对齐&amp;lt;&amp;#x2F;p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-    
-      <category term="基础" scheme="https://GH670.github.io/tags/basis/"/>
     
   </entry>
   
