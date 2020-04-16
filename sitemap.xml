@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/git-false.html</loc>
+    
+    <lastmod>2020-04-16T11:29:07.620Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/photos/data.json</loc>
+    
+    <lastmod>2020-04-16T10:57:07.465Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/test-ques.html</loc>
     
     <lastmod>2020-04-15T10:02:49.214Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://gh670.github.io/hexo-daovoice.html</loc>
     
     <lastmod>2020-04-15T00:40:50.358Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/photos/data.json</loc>
-    
-    <lastmod>2020-04-14T03:28:11.752Z</lastmod>
     
   </url>
   
@@ -247,13 +254,6 @@
   </url>
   
   <url>
-    <loc>https://gh670.github.io/git-false.html</loc>
-    
-    <lastmod>2020-04-04T09:04:22.941Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gh670.github.io/python-some.html</loc>
     
     <lastmod>2020-04-04T09:02:22.987Z</lastmod>
@@ -271,6 +271,13 @@
     <loc>https://gh670.github.io/404.html</loc>
     
     <lastmod>2020-04-02T09:29:29.242Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gh670.github.io/tech/index.html</loc>
+    
+    <lastmod>2020-04-02T01:05:22.206Z</lastmod>
     
   </url>
   
