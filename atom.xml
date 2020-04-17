@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gh670.github.io/"/>
-  <updated>2020-04-17T02:11:13.773Z</updated>
+  <updated>2020-04-17T11:41:11.964Z</updated>
   <id>https://gh670.github.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo-解决picgo+github图床上传的各种问题</title>
+    <link href="https://gh670.github.io/hexo-picgoup.html"/>
+    <id>https://gh670.github.io/hexo-picgoup.html</id>
+    <published>2020-04-17T10:20:58.754Z</published>
+    <updated>2020-04-17T11:41:11.964Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>在使用picgo+github搭建博客图床的时候，通常会遇到上传失败等问题，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/GH670/Blog-Back-Up-P-V@master/2020/04/17/1d80cdc57bdd47ce515cf9e607e46133.png" alt=""><br>PicGo并不怎么稳定。下面介绍一种完美解决的方案，亲测有效！<br>（图片OK，但是视频上传目测不可；另，就偶尔上传比较慢，可能是我网的问题，我网确实不怎么样）</p><h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><ol><li>VPN</li><li>google或outlook邮箱</li></ol><h2 id="处理解决步骤："><a href="#处理解决步骤：" class="headerlink" title="处理解决步骤："></a>处理解决步骤：</h2><h3 id="1-创建虚拟主机"><a href="#1-创建虚拟主机" class="headerlink" title="1. 创建虚拟主机"></a>1. 创建虚拟主机</h3><ol><li>进入下方网址<br><a href="https://www.000webhost.com/" target="_blank" rel="noopener">https://www.000webhost.com/</a>  ,浏览网页选择下方箭头所指。<br>(没有该网站账号密码没有关系，选择之后注册登录即可，当然也可以先注册登录再选择。)<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/8ce62c6db13d1462df4ae02a382ca29c.png" alt=""></li><li>选择图示。建立自己的网站，会让你输入用户名密码。<br>（网站用户名密码自定义设置）<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/5587cd173cd826697f57e0847eff30e7.png" alt=""></li><li>选择Upload your site<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/079856396959da531f545727c5fd4481.png" alt=""></li><li>之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。</li><li>登录完毕之后暂时<strong>最小化</strong>浏览器界面，进行其他的操作。</li><li>配置up.php<br>项目地址：<a href="https://github.com/kjhuanhao/autoPicCdn" target="_blank" rel="noopener">https://github.com/kjhuanhao/autoPicCdn</a><br>下载此项目，修改其中的<strong>up.php</strong>文件。<br>只需修改下列代码，按提示修改即可：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(&quot;REPO&quot;,&quot;仓库&quot;);&#x2F;&#x2F;必须是下面用户名下的公开仓库</span><br><span class="line">define(&quot;USER&quot;,&quot;github仓库名&quot;);&#x2F;&#x2F;必须是当前GitHub用户名</span><br><span class="line">define(&quot;MAIL&quot;,&quot;yumusb@foxmail.com&quot;);&#x2F;&#x2F;</span><br><span class="line">define(&quot;TOKEN&quot;,&quot;token&quot;);&#x2F;&#x2F;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;tokens 去这个页面生成一个有写权限的token（write:packages前打勾）</span><br></pre></td></tr></table></figure></li></ol><p><strong>特别注意：token只会生成一次，且生成后不再显示，如果忘记需要重新生成，但是之前生成的就是失效。注意保存！</strong>  </p><p>修改完毕之后保存即可。  </p><ol start="7"><li><p>上传up.php<br>回到刚刚的浏览器中界面，如图所示操作。其中我的存在up.php文件，是因为我已经上传完毕，正常情况下是什么这个问价的。<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eb903eaa71ccc323c497ae71179ed84b.png" alt="">  </p></li><li><p>保存地址<br>访问下列地址:<br><a href="https://www.000webhost.com/members/website/list" target="_blank" rel="noopener">https://www.000webhost.com/members/website/list</a><br>复制下方箭头所指地址：<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eaa794ea9f9d66ba158beeba6a47e17a.png" alt=""><br>（注：鼠标移至该地址上方图片可选择管理网站，如果因网络不佳中途是关闭网址，可以访问上述超链接进入该网址选择管理网站，进入网站的管理界面，选择其中的File Manager可进入上传up.php的界面。）  </p></li><li><p>配置picgo<br>打开picgo ——&gt; 选择插件设置 ——&gt;  搜索<strong>web-uploader</strong><br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/3d72ccc341177e78689395a1592da881.png" alt=""><br>之后点击插件模块右下角的设置样式，选择配置uploader -up -uploader</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">API地址填写刚刚复制的地址 + &#x2F;up.php</span><br><span class="line">POST参数名填写pic</span><br><span class="line">JSON路径填写data.url</span><br></pre></td></tr></table></figure><p>填写完毕之后，保存即可！</p><ol start="10"><li>自定义web图床<br>上述全部设置完毕之后，在picgo上传区选择自定义图床。之后，就可以进行图片的上传了！</li></ol><blockquote><p>注：参考大佬文章——&gt; <a href="https://mrhuanhao.cn/2020/03/28/solvepicnet/" target="_blank" rel="noopener">https://mrhuanhao.cn/2020/03/28/solvepicnet/</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      解决picgo+github图床上传的各种问题
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo-localhost</title>
     <link href="https://gh670.github.io/hexo-localhost.html"/>
     <id>https://gh670.github.io/hexo-localhost.html</id>
     <published>2020-04-17T02:03:43.629Z</published>
-    <updated>2020-04-17T02:11:13.773Z</updated>
+    <updated>2020-04-17T02:30:45.570Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>hexo 报错<br>TypeError [ERR_INVALID_URL]: Invalid URL:…检查是否成功  </p><a id="more"></a><h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><p><img src="https://img-ask.csdn.net/upload/202004/17/1587081764_605696.png" alt=""></p><h2 id="特别注意："><a href="#特别注意：" class="headerlink" title="特别注意："></a>特别注意：</h2><p>markdown格式书写规范。<br>上述书写自我感觉有点危险。。。<br>好吧，实践证明，就是很危险！</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>学习排查bug..</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>hexo 报错<br>TypeError [ERR_INVALID_URL]: Invalid URL:…检查是否成功  </p><a id="more"></a><h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><p><img src="https://img-ask.csdn.net/upload/202004/17/1587081764_605696.png" alt=""></p><h2 id="特别注意："><a href="#特别注意：" class="headerlink" title="特别注意："></a>特别注意：</h2><p>markdown格式书写规范。<br>上述书写自我感觉有点危险。。。<br>好吧，实践证明，就是很危险,现已更改…！</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>排查bug:  </p><ol><li>反向搜查</li><li>错误提示排查</li><li>记得备份！  </li></ol><p>另：实践测试——data</p>]]></content>
     
     <summary type="html">
     
@@ -408,27 +429,6 @@
     <summary type="html">
     
       Hexo-为博客增加在线聊天功能
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github+PicGo 搭建图床</title>
-    <link href="https://gh670.github.io/hexo-github-picgo.html"/>
-    <id>https://gh670.github.io/hexo-github-picgo.html</id>
-    <published>2020-04-17T01:33:20.994Z</published>
-    <updated>2020-04-13T05:10:31.427Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p><strong>使用GitHub+picgo搭建免费图床。</strong>  </p><ul><li>待改善 </li></ul><a id="more"></a>  <h2 id="大体流程："><a href="#大体流程：" class="headerlink" title="大体流程："></a>大体流程：</h2><h3 id="1-GitHub部分配置"><a href="#1-GitHub部分配置" class="headerlink" title="1. GitHub部分配置"></a>1. GitHub部分配置</h3><ol><li>进入GitHub创建一个新的仓库   </li><li>点击右上角头像进入Settings </li><li>进入Developer settings  </li><li>选择Personal access okens，点击 Generate new token，创建 token  </li><li>命名为picgo（图床），赋予仓库权限。repo全选  </li><li>最后点击Generate token即可看到显示的token页面，复制token,之后在对picgo的配置过程中，会用到。    <h3 id="2-picgo配置"><a href="#2-picgo配置" class="headerlink" title="2. picgo配置"></a>2. picgo配置</h3></li><li>下载PicGo，图片上传工具PicGo下载地址:<a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener">https://github.com/Molunerfinn/PicGo/releases</a>  </li><li>下载完毕安装即可，下面进行对picgo的配置。  </li><li>选择图床设置-GitHub图床<br>（1）设定仓库名：这个是刚刚第一步所新建仓库的名称，我的为cdn，此处填写格式username/repo。<br>（2）设定分支名：master，采用默认分支即可<br>（3）设定Token：此处填写上一步得到的Token，添加到输入框即可。<br>（4）指定存储路径：自定义，例：images/，相当于在刚刚新建的仓库下新建了一个文件夹。<br>（5）设定自定义域名：<br> cdn加速格式：<a href="https://cdn.jsdelivr.net/gh/username/repo，username为GitHub用户名，repo为新建的仓库，用于存储图片" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/username/repo，username为GitHub用户名，repo为新建的仓库，用于存储图片</a><br> 普通格式：<a href="https://github.com/username/repo" target="_blank" rel="noopener">https://github.com/username/repo</a><br> 或<a href="https://raw.githubusercontent.com/用户名/RepositoryName/分支名" target="_blank" rel="noopener">https://raw.githubusercontent.com/用户名/RepositoryName/分支名</a> （建议）<br>（6）设置快捷键ctrl+shit+C: 在qq截屏ctrl+alt+a后，再ctrl+shit+C可以快速上传    <h3 id="3-上传"><a href="#3-上传" class="headerlink" title="3. 上传"></a>3. 上传</h3></li><li>快捷键上传<br>ctrl+shit+c<br>进入picgo设置——修改快捷键——编辑——按下你想要设定的快捷键保存即可。</li><li>拖拽上传：<br>注意：上传时要选择markdown格式，在picgo相册中可复制图片链接。  </li></ol><h3 id="存在问题："><a href="#存在问题：" class="headerlink" title="存在问题："></a>存在问题：</h3><ol><li>上传失败，服务端出错</li><li>不稳定</li><li>上传文件命名等？</li><li>间接性上传失败。</li><li>图片链接失败</li></ol><blockquote><p>虽然免费…实在是不如阿里oss好用啊~</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      Github+PicGo 搭建图床
     
     </summary>
     
