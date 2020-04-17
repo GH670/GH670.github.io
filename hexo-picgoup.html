@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eaa794ea9f9d66ba158beeba6a47e17a.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/3d72ccc341177e78689395a1592da881.png">
 <meta property="article:published_time" content="2020-04-17T10:20:58.754Z">
-<meta property="article:modified_time" content="2020-04-17T11:41:11.964Z">
+<meta property="article:modified_time" content="2020-04-17T11:47:51.688Z">
 <meta property="article:author" content="GH670">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -381,7 +381,7 @@ var _hmt = _hmt || [];
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">752字</span>
+      <span class="post-count">755字</span>
     </span>
   </span>
 
@@ -403,34 +403,25 @@ var _hmt = _hmt || [];
   <div class="article-entry" itemprop="articleBody">
     
     <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>在使用picgo+github搭建博客图床的时候，通常会遇到上传失败等问题，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/GH670/Blog-Back-Up-P-V@master/2020/04/17/1d80cdc57bdd47ce515cf9e607e46133.png" alt=""><br>PicGo并不怎么稳定。下面介绍一种完美解决的方案，亲测有效！<br>（图片OK，但是视频上传目测不可；另，就偶尔上传比较慢，可能是我网的问题，我网确实不怎么样）</p>
+<a id="more"></a>
 <h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><ol>
 <li>VPN</li>
 <li>google或outlook邮箱</li>
 </ol>
-<h2 id="处理解决步骤："><a href="#处理解决步骤：" class="headerlink" title="处理解决步骤："></a>处理解决步骤：</h2><h3 id="1-创建虚拟主机"><a href="#1-创建虚拟主机" class="headerlink" title="1. 创建虚拟主机"></a>1. 创建虚拟主机</h3><ol>
-<li>进入下方网址<br><a href="https://www.000webhost.com/" target="_blank" rel="noopener">https://www.000webhost.com/</a>  ,浏览网页选择下方箭头所指。<br>(没有该网站账号密码没有关系，选择之后注册登录即可，当然也可以先注册登录再选择。)<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/8ce62c6db13d1462df4ae02a382ca29c.png" alt=""></li>
-<li>选择图示。建立自己的网站，会让你输入用户名密码。<br>（网站用户名密码自定义设置）<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/5587cd173cd826697f57e0847eff30e7.png" alt=""></li>
-<li>选择Upload your site<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/079856396959da531f545727c5fd4481.png" alt=""></li>
-<li>之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。</li>
-<li>登录完毕之后暂时<strong>最小化</strong>浏览器界面，进行其他的操作。</li>
-<li>配置up.php<br>项目地址：<a href="https://github.com/kjhuanhao/autoPicCdn" target="_blank" rel="noopener">https://github.com/kjhuanhao/autoPicCdn</a><br>下载此项目，修改其中的<strong>up.php</strong>文件。<br>只需修改下列代码，按提示修改即可：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(&quot;REPO&quot;,&quot;仓库&quot;);&#x2F;&#x2F;必须是下面用户名下的公开仓库</span><br><span class="line">define(&quot;USER&quot;,&quot;github仓库名&quot;);&#x2F;&#x2F;必须是当前GitHub用户名</span><br><span class="line">define(&quot;MAIL&quot;,&quot;yumusb@foxmail.com&quot;);&#x2F;&#x2F;</span><br><span class="line">define(&quot;TOKEN&quot;,&quot;token&quot;);&#x2F;&#x2F;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;tokens 去这个页面生成一个有写权限的token（write:packages前打勾）</span><br></pre></td></tr></table></figure></li>
-</ol>
+<h2 id="处理解决步骤："><a href="#处理解决步骤：" class="headerlink" title="处理解决步骤："></a>处理解决步骤：</h2><h3 id="1-进入下方网址"><a href="#1-进入下方网址" class="headerlink" title="1. 进入下方网址"></a>1. 进入下方网址</h3><p><a href="https://www.000webhost.com/" target="_blank" rel="noopener">https://www.000webhost.com/</a>  ,浏览网页选择下方箭头所指。<br>(没有该网站账号密码没有关系，选择之后注册登录即可，当然也可以先注册登录再选择。)<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/8ce62c6db13d1462df4ae02a382ca29c.png" alt=""></p>
+<h3 id="2-选择图示。建立自己的网站，会让你输入用户名密码。"><a href="#2-选择图示。建立自己的网站，会让你输入用户名密码。" class="headerlink" title="2. 选择图示。建立自己的网站，会让你输入用户名密码。"></a>2. 选择图示。建立自己的网站，会让你输入用户名密码。</h3><p>（网站用户名密码自定义设置）<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/5587cd173cd826697f57e0847eff30e7.png" alt=""></p>
+<h3 id="3-选择Upload-your-site"><a href="#3-选择Upload-your-site" class="headerlink" title="3. 选择Upload your site"></a>3. 选择Upload your site</h3><p><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/079856396959da531f545727c5fd4481.png" alt=""></p>
+<h3 id="4-之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。"><a href="#4-之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。" class="headerlink" title="4. 之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。"></a>4. 之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。</h3><h3 id="5-登录完毕之后暂时最小化浏览器界面，进行其他的操作。"><a href="#5-登录完毕之后暂时最小化浏览器界面，进行其他的操作。" class="headerlink" title="5. 登录完毕之后暂时最小化浏览器界面，进行其他的操作。"></a>5. 登录完毕之后暂时<strong>最小化</strong>浏览器界面，进行其他的操作。</h3><h3 id="6-配置up-php"><a href="#6-配置up-php" class="headerlink" title="6. 配置up.php"></a>6. 配置up.php</h3><p>项目地址：<a href="https://github.com/kjhuanhao/autoPicCdn" target="_blank" rel="noopener">https://github.com/kjhuanhao/autoPicCdn</a><br>下载此项目，修改其中的<strong>up.php</strong>文件。<br>只需修改下列代码，按提示修改即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(&quot;REPO&quot;,&quot;仓库&quot;);&#x2F;&#x2F;必须是下面用户名下的公开仓库</span><br><span class="line">define(&quot;USER&quot;,&quot;github仓库名&quot;);&#x2F;&#x2F;必须是当前GitHub用户名</span><br><span class="line">define(&quot;MAIL&quot;,&quot;yumusb@foxmail.com&quot;);&#x2F;&#x2F;</span><br><span class="line">define(&quot;TOKEN&quot;,&quot;token&quot;);&#x2F;&#x2F;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;tokens 去这个页面生成一个有写权限的token（write:packages前打勾）</span><br></pre></td></tr></table></figure>
 <p><strong>特别注意：token只会生成一次，且生成后不再显示，如果忘记需要重新生成，但是之前生成的就是失效。注意保存！</strong>  </p>
 <p>修改完毕之后保存即可。  </p>
-<ol start="7">
-<li><p>上传up.php<br>回到刚刚的浏览器中界面，如图所示操作。其中我的存在up.php文件，是因为我已经上传完毕，正常情况下是什么这个问价的。<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eb903eaa71ccc323c497ae71179ed84b.png" alt="">  </p>
-</li>
-<li><p>保存地址<br>访问下列地址:<br><a href="https://www.000webhost.com/members/website/list" target="_blank" rel="noopener">https://www.000webhost.com/members/website/list</a><br>复制下方箭头所指地址：<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eaa794ea9f9d66ba158beeba6a47e17a.png" alt=""><br>（注：鼠标移至该地址上方图片可选择管理网站，如果因网络不佳中途是关闭网址，可以访问上述超链接进入该网址选择管理网站，进入网站的管理界面，选择其中的File Manager可进入上传up.php的界面。）  </p>
-</li>
-<li><p>配置picgo<br>打开picgo ——&gt; 选择插件设置 ——&gt;  搜索<strong>web-uploader</strong><br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/3d72ccc341177e78689395a1592da881.png" alt=""><br>之后点击插件模块右下角的设置样式，选择配置uploader -up -uploader</p>
-</li>
-</ol>
+<h3 id="7-上传up-php"><a href="#7-上传up-php" class="headerlink" title="7. 上传up.php"></a>7. 上传up.php</h3><p>回到刚刚的浏览器中界面，如图所示操作。其中我的存在up.php文件，是因为我已经上传完毕，正常情况下是什么这个问价的。<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eb903eaa71ccc323c497ae71179ed84b.png" alt="">  </p>
+<h3 id="8-保存地址"><a href="#8-保存地址" class="headerlink" title="8. 保存地址"></a>8. 保存地址</h3><p>访问下列地址:<br><a href="https://www.000webhost.com/members/website/list" target="_blank" rel="noopener">https://www.000webhost.com/members/website/list</a><br>复制下方箭头所指地址：<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eaa794ea9f9d66ba158beeba6a47e17a.png" alt=""><br>（注：鼠标移至该地址上方图片可选择管理网站，如果因网络不佳中途是关闭网址，可以访问上述超链接进入该网址选择管理网站，进入网站的管理界面，选择其中的File Manager可进入上传up.php的界面。）  </p>
+<h3 id="9-配置picgo"><a href="#9-配置picgo" class="headerlink" title="9. 配置picgo"></a>9. 配置picgo</h3><p>打开picgo ——&gt; 选择插件设置 ——&gt;  搜索<strong>web-uploader</strong><br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/3d72ccc341177e78689395a1592da881.png" alt=""><br>之后点击插件模块右下角的设置样式，选择配置uploader -up -uploader</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">API地址填写刚刚复制的地址 + &#x2F;up.php</span><br><span class="line">POST参数名填写pic</span><br><span class="line">JSON路径填写data.url</span><br></pre></td></tr></table></figure>
 
 <p>填写完毕之后，保存即可！</p>
-<ol start="10">
-<li>自定义web图床<br>上述全部设置完毕之后，在picgo上传区选择自定义图床。之后，就可以进行图片的上传了！</li>
-</ol>
+<h3 id="10-自定义web图床"><a href="#10-自定义web图床" class="headerlink" title="10. 自定义web图床"></a>10. 自定义web图床</h3><p>上述全部设置完毕之后，在picgo上传区选择自定义图床。之后，就可以进行图片的上传了！</p>
 <blockquote>
 <p>注：参考大佬文章——&gt; <a href="https://mrhuanhao.cn/2020/03/28/solvepicnet/" target="_blank" rel="noopener">https://mrhuanhao.cn/2020/03/28/solvepicnet/</a></p>
 </blockquote>
@@ -603,7 +594,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#所需工具"><span class="toc-number">2.</span> <span class="toc-text">所需工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#处理解决步骤："><span class="toc-number">3.</span> <span class="toc-text">处理解决步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-创建虚拟主机"><span class="toc-number">3.1.</span> <span class="toc-text">1. 创建虚拟主机</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#所需工具"><span class="toc-number">2.</span> <span class="toc-text">所需工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#处理解决步骤："><span class="toc-number">3.</span> <span class="toc-text">处理解决步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-进入下方网址"><span class="toc-number">3.1.</span> <span class="toc-text">1. 进入下方网址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-选择图示。建立自己的网站，会让你输入用户名密码。"><span class="toc-number">3.2.</span> <span class="toc-text">2. 选择图示。建立自己的网站，会让你输入用户名密码。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-选择Upload-your-site"><span class="toc-number">3.3.</span> <span class="toc-text">3. 选择Upload your site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。"><span class="toc-number">3.4.</span> <span class="toc-text">4. 之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-登录完毕之后暂时最小化浏览器界面，进行其他的操作。"><span class="toc-number">3.5.</span> <span class="toc-text">5. 登录完毕之后暂时最小化浏览器界面，进行其他的操作。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-配置up-php"><span class="toc-number">3.6.</span> <span class="toc-text">6. 配置up.php</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-上传up-php"><span class="toc-number">3.7.</span> <span class="toc-text">7. 上传up.php</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-保存地址"><span class="toc-number">3.8.</span> <span class="toc-text">8. 保存地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-配置picgo"><span class="toc-number">3.9.</span> <span class="toc-text">9. 配置picgo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-自定义web图床"><span class="toc-number">3.10.</span> <span class="toc-text">10. 自定义web图床</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -800,15 +791,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">code</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">code</a>
               </li>
              
               <li class="article-tag-list-item">
