@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/test-ques.html</loc>
+    
+    <lastmod>2020-04-18T01:48:52.172Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/hexo-picgoup.html</loc>
     
     <lastmod>2020-04-17T11:47:51.688Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://gh670.github.io/photos/data.json</loc>
     
     <lastmod>2020-04-16T10:57:07.465Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/test-ques.html</loc>
-    
-    <lastmod>2020-04-15T10:02:49.214Z</lastmod>
     
   </url>
   
