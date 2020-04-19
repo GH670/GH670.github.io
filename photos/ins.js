@@ -129,7 +129,7 @@
 
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
                 <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
-                  <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
+                  <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/photos_source/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
                 <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
             </figure>';
@@ -145,7 +145,7 @@
 
     var replacer = function replacer(str) {
       var arr = str.split("/");
-      return "/assets/ins/" + arr[arr.length - 1];
+      return "/photos_source/assets/ins/" + arr[arr.length - 1];
     };
 
     var ctrler = function ctrler(data) {
