@@ -18,7 +18,7 @@
 <meta property="og:description" content="博客搭建过程中遇到的问题集">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-17T01:33:21.033Z">
-<meta property="article:modified_time" content="2020-04-18T13:57:50.105Z">
+<meta property="article:modified_time" content="2020-04-19T01:58:24.145Z">
 <meta property="article:author" content="GH670">
 <meta property="article:tag" content="测试">
 <meta name="twitter:card" content="summary">
@@ -373,7 +373,7 @@ var _hmt = _hmt || [];
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1.3k字</span>
+      <span class="post-count">1.4k字</span>
     </span>
   </span>
 
@@ -428,12 +428,10 @@ var _hmt = _hmt || [];
 </li>
 <li><p>README（√）<br>Q:更新部署一次，README.md消失一次，并且，将README.md放置在source文件目录下更新部署之后，导致.md转化成.html。<br>A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。（接1）<br>例如：skip_render : README.md  （注意格式规范）  </p>
 </li>
-<li><p>Gitment—-基于GitHub的评论系统/Giteement-集成码云评论 （√）<br>注册一个新的 OAuth Application：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br>Application name 应用名称(根据实际来填写)<br>Homepage URL 主页网址(应用程序主页的完整URL)<br>Application description 应用说明(应用描述)<br>Authorization callback URL 授权回调URL(一般是博客的域名)<br>gitment_repo: ‘’          #存储评论的 repo name(需要在Github创建)      </p>
+<li><p>Gitment—-基于GitHub的评论系统/Giteement-集成码云评论 （√）<br>注册一个新的 OAuth Application：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br>Application name 应用名称(根据实际来填写)<br>Homepage URL 主页网址(应用程序主页的完整URL)<br>Application description 应用说明(应用描述)<br>Authorization callback URL 授权回调URL(一般是博客的域名)<br>gitment_repo: ‘’          #存储评论的 repo name(需要在Github创建)<br>Q:无初始化按钮，只显示且不能评论。<br>A:Application与_config.yml中gitment_repo一致。<br>Q:[object ProgressEvent]<br>A:估计。。。作者服务器到期/?<br>更改Gitment为giteement.<br>现已更改为Valine</p>
 </li>
-</ol>
-<p>Q:无初始化按钮，只显示且不能评论。<br>A:Application与_config.yml中gitment_repo一致。<br>Q:[object ProgressEvent]<br>A:估计。。。作者服务器到期/?<br>更改Gitment为giteement.  </p>
-<ol start="12">
-<li>Valine评论系统（？）<br>管理后台数据，评论管理问题。<br>目前情况为评论全开?有gitee与valine两个评论系统开启。<br>增加hexo-valine评论管理系统  </li>
+<li><p>Valine评论系统（？）<br>管理后台数据，评论管理问题。<br>目前情况为评论全开?有gitee与valine两个评论系统开启。<br>增加hexo-valine评论管理系统  </p>
+</li>
 </ol>
 <p><a href="https://deserts.io/valine-admin-document/" target="_blank" rel="noopener">参考1</a><br><a href="https://blog.csdn.net/qq_36949103/article/details/105206740" target="_blank" rel="noopener">参考2</a><br><a href="https://blog.csdn.net/weixin_44330881/article/details/102819061" target="_blank" rel="noopener">参考3</a><br><a href="https://blog.csdn.net/z_johnny/article/details/104211572?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9" target="_blank" rel="noopener">参考4</a><br><a href="https://blog.csdn.net/AC916305619/article/details/105239277?depth_1-utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3&utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3" target="_blank" rel="noopener">参考5</a></p>
 <ol start="13">
@@ -443,23 +441,26 @@ var _hmt = _hmt || [];
 <ol start="14">
 <li><p>网易云音乐（？）<br>点击跳转界面暂停播放<br>作者添加的网易云已更换</p>
 </li>
-<li><p>相册&amp;视频<br>相册显示失败。视频正常！<br><a href="https://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">相册&amp;视频1</a><br><a href="https://www.yansheng.xyz/article/d0ba4c3d.html" target="_blank" rel="noopener">相册&amp;视频2</a><br>视频ok.<br>相册，应该是路径存在一些问题。<br>运行tool.py  ↓<br>fatal: ‘origin’ does not appear to be a git repository<br>fatal: Could not read from remote repository.  </p>
+<li><p>相册&amp;视频<br>相册显示失败。视频正常！<br><a href="https://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">相册&amp;视频1</a><br><a href="https://www.yansheng.xyz/article/d0ba4c3d.html" target="_blank" rel="noopener">相册&amp;视频2</a><br>视频ok.<br>相册，应该是路径存在一些问题。<br>运行tool.py  ↓<br>fatal: ‘origin’ does not appear to be a git repository<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.<br>tool.py依然存在其他问题，实现此功能的git操作部分暂时不清不楚。<br>具体文件有GitHub仓库内，photos_source,source/photos等。<br>网络问题导致大图不可显示，缩略图目前不显示，</p>
 </li>
 </ol>
-<p>Please make sure you have the correct access rights<br>and the repository exists.<br>tool.py依然存在其他问题，实现此功能的git操作部分暂时不清不楚。<br>具体文件有GitHub仓库内，photos_source,source/photos等。  </p>
 <ol start="16">
-<li><p>总文章数<br>修改themes\yilia\layout_partial\left-col.ejs<br><a href="https://blog.csdn.net/weixin_45371411/article/details/102871120?%3E" target="_blank" rel="noopener">参考</a></p>
+<li><p>总文章数<br>修改themes\yilia\layout_partial\left-col.ejs<br><a href="https://blog.csdn.net/weixin_45371411/article/details/102871120?%3E" target="_blank" rel="noopener">参考修改</a></p>
 </li>
-<li><p>标签git和github<br>选择git的时候github标签同样会出现，选择github，git标签就不会出现。<br>由于github的前部为git？      </p>
+<li><p>标签git和github<br>选择git的时候github标签同样会出现，选择github，git标签就不会出现。<br>疑为github的前部为git？      </p>
 </li>
 <li><p>关于我<br>关于我部分，乱码?<br>显示</p>
-<pre><code>&lt;br&gt;&lt;/br&gt;</code></pre><p>?</p>
+<pre><code>&lt;br&gt;&lt;/br&gt;</code></pre><p>? 时而正常时而乱码，疑为网络加载问题。</p>
 </li>
-<li><p>github+picgo<br>不稳定，存在一点bug。<br>自定义web图床</p>
+<li><p>github+picgo  </p>
 </li>
 </ol>
+<ul>
+<li>不稳定，存在一点bug。  </li>
+<li>自定义web图床解决上述问题，目前不可上传视频。</li>
+</ul>
 <h3 id="待定"><a href="#待定" class="headerlink" title="待定"></a>待定</h3><ol>
-<li>hexo模板yilia主题左侧增加背景<br><a href="https://qianlei6148.github.io/2018/09/30/hexo%E6%A8%A1%E7%89%88yilia%E5%B7%A6%E4%BE%A7%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">参考</a>  </li>
+<li><a href="https://qianlei6148.github.io/2018/09/30/hexo%E6%A8%A1%E7%89%88yilia%E5%B7%A6%E4%BE%A7%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">hexo模板yilia主题左侧增加背景</a>  </li>
 </ol>
 <ol start="2">
 <li><p><a href="https://www.yansheng.xyz/article/252051e3.html" target="_blank" rel="noopener">hexo-yilia添加Dplayer视频播放插件</a></p>
@@ -848,11 +849,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color5">code</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">code</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -872,15 +873,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">随笔记事</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
             
             <div class="clearfix"></div>
