@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gh670.github.io/hexo-gexinghua.html</loc>
+    
+    <lastmod>2020-04-19T09:51:32.666Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gh670.github.io/test-ques.html</loc>
     
     <lastmod>2020-04-19T06:15:11.228Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://gh670.github.io/hexo-localhost.html</loc>
     
     <lastmod>2020-04-17T02:30:45.570Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gh670.github.io/hexo-gexinghua.html</loc>
-    
-    <lastmod>2020-04-17T01:40:32.695Z</lastmod>
     
   </url>
   
