@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>www.wblog.tech/test-ques.html</loc>
+    <loc>www.wblog.tech/hexo-gexinghua.html</loc>
     <lastmod>2020-04-21</lastmod>
   </url>  <url>
-    <loc>www.wblog.tech/hexo-gexinghua.html</loc>
-    <lastmod>2020-04-19</lastmod>
+    <loc>www.wblog.tech/jihua20.html</loc>
+    <lastmod>2020-04-21</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/rijiben.html</loc>
+    <lastmod>2020-04-21</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/c-jiandanzhishidian.html</loc>
+    <lastmod>2020-04-21</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/test-ques.html</loc>
+    <lastmod>2020-04-21</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-picgoup.html</loc>
     <lastmod>2020-04-17</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-localhost.html</loc>
     <lastmod>2020-04-17</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/jihua20.html</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/rijiben.html</loc>
-    <lastmod>2020-04-16</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/git-false.html</loc>
     <lastmod>2020-04-16</lastmod>
