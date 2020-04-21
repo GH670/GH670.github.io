@@ -5,9 +5,9 @@
   <subtitle>挺菜的~，学习中...</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://gh670.github.io/"/>
+  <link href="www.wblog.tech/"/>
   <updated>2020-04-17T11:47:51.688Z</updated>
-  <id>https://gh670.github.io/</id>
+  <id>www.wblog.tech/</id>
   
   <author>
     <name>GH670</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo-解决picgo+github图床上传的各种问题</title>
-    <link href="https://gh670.github.io/hexo-picgoup.html"/>
-    <id>https://gh670.github.io/hexo-picgoup.html</id>
+    <link href="www.wblog.tech/hexo-picgoup.html"/>
+    <id>www.wblog.tech/hexo-picgoup.html</id>
     <published>2020-04-17T10:20:58.754Z</published>
     <updated>2020-04-17T11:47:51.688Z</updated>
     
@@ -33,14 +33,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-localhost</title>
-    <link href="https://gh670.github.io/hexo-localhost.html"/>
-    <id>https://gh670.github.io/hexo-localhost.html</id>
+    <link href="www.wblog.tech/hexo-localhost.html"/>
+    <id>www.wblog.tech/hexo-localhost.html</id>
     <published>2020-04-17T02:03:43.629Z</published>
     <updated>2020-04-17T02:30:45.570Z</updated>
     
@@ -54,14 +54,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>日常记事</title>
-    <link href="https://gh670.github.io/rijiben.html"/>
-    <id>https://gh670.github.io/rijiben.html</id>
+    <link href="www.wblog.tech/rijiben.html"/>
+    <id>www.wblog.tech/rijiben.html</id>
     <published>2020-04-17T01:41:55.195Z</published>
     <updated>2020-04-16T13:28:00.985Z</updated>
     
@@ -75,14 +75,14 @@
     
     
     
-      <category term="随笔记事" scheme="https://GH670.github.io/tags/notes/"/>
+      <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
     
   </entry>
   
   <entry>
     <title>2020年-计划</title>
-    <link href="https://gh670.github.io/jihua20.html"/>
-    <id>https://gh670.github.io/jihua20.html</id>
+    <link href="www.wblog.tech/jihua20.html"/>
+    <id>www.wblog.tech/jihua20.html</id>
     <published>2020-04-17T01:41:55.186Z</published>
     <updated>2020-04-16T13:28:07.496Z</updated>
     
@@ -96,14 +96,14 @@
     
     
     
-      <category term="随笔记事" scheme="https://GH670.github.io/tags/notes/"/>
+      <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
     
   </entry>
   
   <entry>
     <title>算法相关-小知识点</title>
-    <link href="https://gh670.github.io/algorithm.html"/>
-    <id>https://gh670.github.io/algorithm.html</id>
+    <link href="www.wblog.tech/algorithm.html"/>
+    <id>www.wblog.tech/algorithm.html</id>
     <published>2020-04-17T01:33:21.048Z</published>
     <updated>2020-04-04T10:14:55.843Z</updated>
     
@@ -117,14 +117,14 @@
     
     
     
-      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>A-求绝对值</title>
-    <link href="https://gh670.github.io/a-abs.html"/>
-    <id>https://gh670.github.io/a-abs.html</id>
+    <link href="www.wblog.tech/a-abs.html"/>
+    <id>www.wblog.tech/a-abs.html</id>
     <published>2020-04-17T01:33:21.046Z</published>
     <updated>2020-04-10T14:56:11.457Z</updated>
     
@@ -138,14 +138,14 @@
     
     
     
-      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>求最大、最小元素的平均比较次数</title>
-    <link href="https://gh670.github.io/max-min-compare.html"/>
-    <id>https://gh670.github.io/max-min-compare.html</id>
+    <link href="www.wblog.tech/max-min-compare.html"/>
+    <id>www.wblog.tech/max-min-compare.html</id>
     <published>2020-04-17T01:33:21.043Z</published>
     <updated>2020-04-04T10:11:32.731Z</updated>
     
@@ -159,14 +159,14 @@
     
     
     
-      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>三分查找-算法</title>
-    <link href="https://gh670.github.io/a-sanfensearch.html"/>
-    <id>https://gh670.github.io/a-sanfensearch.html</id>
+    <link href="www.wblog.tech/a-sanfensearch.html"/>
+    <id>www.wblog.tech/a-sanfensearch.html</id>
     <published>2020-04-17T01:33:21.041Z</published>
     <updated>2020-04-13T13:57:04.103Z</updated>
     
@@ -180,14 +180,14 @@
     
     
     
-      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>B-计算球的体积</title>
-    <link href="https://gh670.github.io/algorithm-Sphere-volume.html"/>
-    <id>https://gh670.github.io/algorithm-Sphere-volume.html</id>
+    <link href="www.wblog.tech/algorithm-Sphere-volume.html"/>
+    <id>www.wblog.tech/algorithm-Sphere-volume.html</id>
     <published>2020-04-17T01:33:21.037Z</published>
     <updated>2020-04-13T06:14:01.912Z</updated>
     
@@ -201,18 +201,18 @@
     
     
     
-      <category term="算法" scheme="https://GH670.github.io/tags/algorithm/"/>
+      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
     
   </entry>
   
   <entry>
     <title>Question</title>
-    <link href="https://gh670.github.io/test-ques.html"/>
-    <id>https://gh670.github.io/test-ques.html</id>
+    <link href="www.wblog.tech/test-ques.html"/>
+    <id>www.wblog.tech/test-ques.html</id>
     <published>2020-04-17T01:33:21.033Z</published>
-    <updated>2020-04-21T03:50:57.328Z</updated>
+    <updated>2020-04-21T04:00:47.520Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><ul><li>Hexo-ylia博客搭建过程中遇到的问题</li><li>欢迎来访各位大佬————<br>希望大佬们能够在文章内留言，给出一些意见建议。感谢大家！</li><li>注释 ：乱七八糟的测试，不定期更新！</li><li>↓</li><li>友情提示：教程只看一个就好！  <a id="more"></a></li></ul><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol><li>hexo yilia添加URL持久化（×）<br>hexo默认的链接是<a href="http://xxx.yy.com/2013/07/14/hello-world这种类型的，这源于站点目录下的配置_config.yml里的配置:permalink" target="_blank" rel="noopener">http://xxx.yy.com/2013/07/14/hello-world这种类型的，这源于站点目录下的配置_config.yml里的配置:permalink</a>: :year/:month/:day/:title/.这种默认配置的缺点就是一般文件名是中文，导致url链接里有中文出现，这会造成很多问题，如使用gitment，也不利于seo。另外就是年月日都会有分隔符。<br><em>在博客根目录下进行修改，不是在主题目录下</em><br>一个好的URL设计，不仅有利于网络爬虫的爬取，更有利于用户的体验。<br><em>正确的URL设计应该满足：长度尽量短，目录层次尽量少，全小写，连字符使用中划线-，具有描述性，包含关键词等。</em><br>文章URL优化策略（一）：自定义id属性<br>为每篇文章Front-matter添加id属性，作为文章URL，确保id属性的值满足以上条件。<br>编辑站点配置文件：<br>或者、使用官方文档提供的方法。<br><a href="https://www.yansheng.xyz/article/faa5d14.html" target="_blank" rel="noopener">参考1</a><br><a href="https://blog.zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">参考2</a><br>自定义id实现成功，随机算法编码实现失败！ </li></ol><ol start="2"><li>文章目录<br>在测试文章中，文章目录是开启的，显示在文章左侧，正常情况下应该是显示在文章右侧，增加文章目录功能，在themes\yilia-plus\source在增加了新的文件main.234bc0.css，用的是别人的直接拷贝，有些臃肿冗余。<br>使用的是Hexo的toc函数<br>打开themes\yilia\layout_partial文件夹下的article.ejs文件<br>在</header> &lt;% } %&gt;下面加..!<br><strong>博客自带目录功能！</strong><br><a href="https://gh-picture.oss-cn-qingdao.aliyuncs.com/question/%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95.png" target="_blank" rel="noopener">参考</a><br><a href="http://www.lawlite.me/2017/04/17/Hexo-yilia%E4%B8%BB%E9%A2%98%E5%AE%9E%E7%8E%B0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E5%92%8C%E6%B7%BB%E5%8A%A0%E8%A7%86%E9%A2%91/" target="_blank" rel="noopener">文章目录引用自此链接文章</a></li></ol><ol start="3"><li><p>增加每日一言功能（×）<br>在左侧栏增每日一言功能失败，在themes\yilia-plus\layout_partial中的left-col.ejs增加了一行新代码。<br>在themes\yilia-plus\layout_partial中的tools.ejs中增加一言代码?<br>一言代码已添加，无响应。<br><a href="https://developer.hitokoto.cn/" target="_blank" rel="noopener">一言开发者中心</a><br><a href="https://blog.csdn.net/qq_43827595/article/details/101451219" target="_blank" rel="noopener">每日一言参考文1</a><br><a href="https://blog.csdn.net/qq_40922859/article/details/97035497?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5" target="_blank" rel="noopener">每日一言参考文2</a><br><a href="https://blog.csdn.net/qq_37513473/article/details/88617281?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3" target="_blank" rel="noopener">一言参考文</a>    </p></li><li><p>Fork me（√）<br>在hemes\yilia-plus\layout中的layout.ejs中降其内容注释掉</p></li><li><p>文章标签（×）<br>方便百度收录修改，在博客主题目录下增加了permalink，在博客主目录下，为了添加标签增加的那一段代码里将permalink修改为true。</p></li><li><p>百度统计；百度站长平台（×）<br>百度站长平台收录，设置不准确，不报错，不收录。<br><a href="https://blog.csdn.net/weixin_41287260/article/details/103049971" target="_blank" rel="noopener">参考</a><br>百度站长平台：主动推送等，sitemap未设置<br>失败</p></li><li><p>&laquo; Prev————Next &raquo;<br>上一页下一页问题，乱码！<br>在themes\yilia\layout_partial\archive.ejs </p></li><li><p>修改第三方CDN（√）<br>文件目录：themes/yilia/layout/_partial/post/valine.ejs</p></li></ol><ol start="9"><li><p>CNAME的设置（√）<br>Q:每次更新部署之后，CNAME消失不见。<br>A:将CNAME文件放置到source文件家目录下。  </p></li><li><p>README（√）<br>Q:更新部署一次，README.md消失一次，并且，将README.md放置在source文件目录下更新部署之后，导致.md转化成.html。<br>A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。（接1）<br>例如：skip_render : README.md  （注意格式规范）  </p></li><li><p>Gitment—-基于GitHub的评论系统/Giteement-集成码云评论 （√）<br>注册一个新的 OAuth Application：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br>Application name 应用名称(根据实际来填写)<br>Homepage URL 主页网址(应用程序主页的完整URL)<br>Application description 应用说明(应用描述)<br>Authorization callback URL 授权回调URL(一般是博客的域名)<br>gitment_repo: ‘’          #存储评论的 repo name(需要在Github创建)<br>Q:无初始化按钮，只显示且不能评论。<br>A:Application与_config.yml中gitment_repo一致。<br>Q:[object ProgressEvent]<br>A:估计。。。作者服务器到期/?<br>更改Gitment为giteement.<br>现已更改为Valine</p></li><li><p>Valine评论系统（？）<br>管理后台数据，评论管理问题。<br>目前情况为评论全开?有gitee与valine两个评论系统开启。<br>增加hexo-valine评论管理系统  </p></li></ol><p><a href="https://deserts.io/valine-admin-document/" target="_blank" rel="noopener">参考1</a><br><a href="https://blog.csdn.net/qq_36949103/article/details/105206740" target="_blank" rel="noopener">参考2</a><br><a href="https://blog.csdn.net/weixin_44330881/article/details/102819061" target="_blank" rel="noopener">参考3</a><br><a href="https://blog.csdn.net/z_johnny/article/details/104211572?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9" target="_blank" rel="noopener">参考4</a><br><a href="https://blog.csdn.net/AC916305619/article/details/105239277?depth_1-utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3&utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3" target="_blank" rel="noopener">参考5</a></p><ol start="13"><li>头像旋转问题?(×) </li></ol><p>-webkit-transition<br>source-src\css\left.scss<br>webpack编译<br><strong>前端问题？</strong></p><ol start="14"><li><p>网易云音乐（？）<br>点击跳转界面暂停播放<br>作者添加的网易云已更换</p></li><li><p>相册&amp;视频<br>相册显示失败。视频正常！<br><a href="https://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">相册&amp;视频1</a><br><a href="https://www.yansheng.xyz/article/d0ba4c3d.html" target="_blank" rel="noopener">相册&amp;视频2</a><br>视频ok.<br>相册，应该是路径存在一些问题。<br>运行tool.py  ↓<br>fatal: ‘origin’ does not appear to be a git repository<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.<br>tool.py依然存在其他问题，实现此功能的git操作部分暂时不清不楚。<br>具体文件有GitHub仓库内，photos_source,source/photos等。<br>网络问题导致大图不可显示，缩略图目前不显示，<br>博客相册显示的为相册视频GitHub仓库中图片，博客本地文件夹中的图片未上传至仓库？<br>教材中路经问题，缩略图以及图片、GitHub仓库路径问题等。</p></li><li><p>总文章数<br>修改themes\yilia\layout_partial\left-col.ejs<br><a href="https://blog.csdn.net/weixin_45371411/article/details/102871120?%3E" target="_blank" rel="noopener">参考修改</a></p></li><li><p>标签git和github<br>选择git的时候github标签同样会出现，选择github，git标签就不会出现。<br>疑为github的前部为git？      </p></li><li><p>关于我<br>关于我部分，乱码?<br>显示</p><pre><code>&lt;br&gt;&lt;/br&gt;</code></pre><p>? 时而正常时而乱码，疑为网络加载问题。</p></li><li><p>github+picgo  </p></li></ol><ul><li>不稳定，存在一点bug。  </li><li>自定义web图床解决上述问题，目前不可上传视频。</li></ul><h3 id="待定"><a href="#待定" class="headerlink" title="待定"></a>待定</h3><ol><li><a href="https://qianlei6148.github.io/2018/09/30/hexo%E6%A8%A1%E7%89%88yilia%E5%B7%A6%E4%BE%A7%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">hexo模板yilia主题左侧增加背景</a>  </li></ol><ol start="2"><li><p><a href="https://www.yansheng.xyz/article/252051e3.html" target="_blank" rel="noopener">hexo-yilia添加Dplayer视频播放插件</a></p></li><li><p><a href="https://wdd.js.org/how-to-get-jsorg-sub-domain.html" target="_blank" rel="noopener">how-to-get-jsorg-sub-domain</a>  </p></li><li><p><a href="https://www.yansheng.xyz/links/index.html" target="_blank" rel="noopener">yilia友链页修改</a></p><h3 id="部分博主"><a href="#部分博主" class="headerlink" title="部分博主"></a>部分博主</h3><p><a href="http://litten.me/" target="_blank" rel="noopener">litten</a><br><a href="https://zhousiwei.gitee.io/yilia-plus-demo/" target="_blank" rel="noopener">試毅-思伟</a><br><a href="http://blog.linhe3306.com/demo/" target="_blank" rel="noopener">lin</a><br><a href="http://www.lawlite.me/" target="_blank" rel="noopener">lawlite</a><br><a href="https://blog.zscself.com/" target="_blank" rel="noopener">F!redent</a><br><a href="http://moxfive.xyz/2015/08/20/blog-building/" target="_blank" rel="noopener">MOxFIVE</a><br><a href="http://www.54tianzhisheng.cn/" target="_blank" rel="noopener">zhisheng</a><br><a href="http://dongshuyan.com/" target="_blank" rel="noopener">Shuyan</a><br><a href="https://tding.top/archives/9a232bbe.html" target="_blank" rel="noopener">小丁的个人博客</a><br><a href="https://blog.xxwhite.com/2018/HexoKeng.html" target="_blank" rel="noopener">MonoLogueChi</a><br><a href="https://anyway1314.cn/" target="_blank" rel="noopener">本该如此</a></p></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><ul><li>Hexo-ylia博客搭建过程中遇到的问题</li><li>欢迎来访各位大佬————<br>希望大佬们能够在文章内留言，给出一些意见建议。感谢大家！</li><li>注释 ：乱七八糟的测试，不定期更新！</li><li>↓</li><li>友情提示：教程只看一个就好！  <a id="more"></a></li></ul><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol><li>hexo yilia添加URL持久化（×）<br>hexo默认的链接是<a href="http://xxx.yy.com/2013/07/14/hello-world这种类型的，这源于站点目录下的配置_config.yml里的配置:permalink" target="_blank" rel="noopener">http://xxx.yy.com/2013/07/14/hello-world这种类型的，这源于站点目录下的配置_config.yml里的配置:permalink</a>: :year/:month/:day/:title/.这种默认配置的缺点就是一般文件名是中文，导致url链接里有中文出现，这会造成很多问题，如使用gitment，也不利于seo。另外就是年月日都会有分隔符。<br><em>在博客根目录下进行修改，不是在主题目录下</em><br>一个好的URL设计，不仅有利于网络爬虫的爬取，更有利于用户的体验。<br><em>正确的URL设计应该满足：长度尽量短，目录层次尽量少，全小写，连字符使用中划线-，具有描述性，包含关键词等。</em><br>文章URL优化策略（一）：自定义id属性<br>为每篇文章Front-matter添加id属性，作为文章URL，确保id属性的值满足以上条件。<br>编辑站点配置文件：<br>或者、使用官方文档提供的方法。<br><a href="https://www.yansheng.xyz/article/faa5d14.html" target="_blank" rel="noopener">参考1</a><br><a href="https://blog.zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">参考2</a><br>自定义id实现成功，随机算法编码实现失败！ </li></ol><ol start="2"><li>文章目录<br>在测试文章中，文章目录是开启的，显示在文章左侧，正常情况下应该是显示在文章右侧，增加文章目录功能，在themes\yilia-plus\source在增加了新的文件main.234bc0.css，用的是别人的直接拷贝，有些臃肿冗余。<br>使用的是Hexo的toc函数<br>打开themes\yilia\layout_partial文件夹下的article.ejs文件<br>在</header> &lt;% } %&gt;下面加..!<br><strong>博客自带目录功能！</strong><br><a href="https://gh-picture.oss-cn-qingdao.aliyuncs.com/question/%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95.png" target="_blank" rel="noopener">参考</a><br><a href="http://www.lawlite.me/2017/04/17/Hexo-yilia%E4%B8%BB%E9%A2%98%E5%AE%9E%E7%8E%B0%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95%E5%92%8C%E6%B7%BB%E5%8A%A0%E8%A7%86%E9%A2%91/" target="_blank" rel="noopener">文章目录引用自此链接文章</a></li></ol><ol start="3"><li><p>增加每日一言功能（×）<br>在左侧栏增每日一言功能失败，在themes\yilia-plus\layout_partial中的left-col.ejs增加了一行新代码。<br>在themes\yilia-plus\layout_partial中的tools.ejs中增加一言代码?<br>一言代码已添加，无响应。<br><a href="https://developer.hitokoto.cn/" target="_blank" rel="noopener">一言开发者中心</a><br><a href="https://blog.csdn.net/qq_43827595/article/details/101451219" target="_blank" rel="noopener">每日一言参考文1</a><br><a href="https://blog.csdn.net/qq_40922859/article/details/97035497?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-5" target="_blank" rel="noopener">每日一言参考文2</a><br><a href="https://blog.csdn.net/qq_37513473/article/details/88617281?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3" target="_blank" rel="noopener">一言参考文</a>    </p></li><li><p>Fork me（√）<br>在hemes\yilia-plus\layout中的layout.ejs中降其内容注释掉</p></li><li><p>文章标签（×）<br>方便百度收录修改，在博客主题目录下增加了permalink，在博客主目录下，为了添加标签增加的那一段代码里将permalink修改为true。</p></li><li><p>百度统计；百度站长平台（×）<br>百度站长平台收录，设置不准确，不报错，不收录。<br><a href="https://blog.csdn.net/weixin_41287260/article/details/103049971" target="_blank" rel="noopener">参考</a><br>百度站长平台：主动推送安装插件后删除，sitemap安装插件后未设置<br>失败</p></li><li><p>&laquo; Prev————Next &raquo;<br>上一页下一页问题，乱码！<br>在themes\yilia\layout_partial\archive.ejs </p></li><li><p>修改第三方CDN（√）<br>文件目录：themes/yilia/layout/_partial/post/valine.ejs</p></li></ol><ol start="9"><li><p>CNAME的设置（√）<br>Q:每次更新部署之后，CNAME消失不见。<br>A:将CNAME文件放置到source文件家目录下。  </p></li><li><p>README（√）<br>Q:更新部署一次，README.md消失一次，并且，将README.md放置在source文件目录下更新部署之后，导致.md转化成.html。<br>A：在_config.yml设置skip_render来忽略的目录，让解释器跳过渲染。（接1）<br>例如：skip_render : README.md  （注意格式规范）  </p></li><li><p>Gitment—-基于GitHub的评论系统/Giteement-集成码云评论 （√）<br>注册一个新的 OAuth Application：<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a><br>Application name 应用名称(根据实际来填写)<br>Homepage URL 主页网址(应用程序主页的完整URL)<br>Application description 应用说明(应用描述)<br>Authorization callback URL 授权回调URL(一般是博客的域名)<br>gitment_repo: ‘’          #存储评论的 repo name(需要在Github创建)<br>Q:无初始化按钮，只显示且不能评论。<br>A:Application与_config.yml中gitment_repo一致。<br>Q:[object ProgressEvent]<br>A:估计。。。作者服务器到期/?<br>更改Gitment为giteement.<br>现已更改为Valine</p></li><li><p>Valine评论系统（？）<br>管理后台数据，评论管理问题。<br>目前情况为评论全开?有gitee与valine两个评论系统开启。<br>增加hexo-valine评论管理系统  </p></li></ol><p><a href="https://deserts.io/valine-admin-document/" target="_blank" rel="noopener">参考1</a><br><a href="https://blog.csdn.net/qq_36949103/article/details/105206740" target="_blank" rel="noopener">参考2</a><br><a href="https://blog.csdn.net/weixin_44330881/article/details/102819061" target="_blank" rel="noopener">参考3</a><br><a href="https://blog.csdn.net/z_johnny/article/details/104211572?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-9" target="_blank" rel="noopener">参考4</a><br><a href="https://blog.csdn.net/AC916305619/article/details/105239277?depth_1-utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3&utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3" target="_blank" rel="noopener">参考5</a></p><ol start="13"><li>头像旋转问题?(×) </li></ol><p>-webkit-transition<br>source-src\css\left.scss<br>webpack编译<br><strong>前端问题？</strong></p><ol start="14"><li><p>网易云音乐（？）<br>点击跳转界面暂停播放<br>作者添加的网易云已更换</p></li><li><p>相册&amp;视频<br>相册显示失败。视频正常！<br><a href="https://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">相册&amp;视频1</a><br><a href="https://www.yansheng.xyz/article/d0ba4c3d.html" target="_blank" rel="noopener">相册&amp;视频2</a><br>视频ok.<br>相册，应该是路径存在一些问题。<br>运行tool.py  ↓<br>fatal: ‘origin’ does not appear to be a git repository<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.<br>tool.py依然存在其他问题，实现此功能的git操作部分暂时不清不楚。<br>具体文件有GitHub仓库内，photos_source,source/photos等。<br>网络问题导致大图不可显示，缩略图目前不显示，<br>博客相册显示的为相册视频GitHub仓库中图片，博客本地文件夹中的图片未上传至仓库？<br>教材中路经问题，缩略图以及图片、GitHub仓库路径问题等。</p></li><li><p>总文章数<br>修改themes\yilia\layout_partial\left-col.ejs<br><a href="https://blog.csdn.net/weixin_45371411/article/details/102871120?%3E" target="_blank" rel="noopener">参考修改</a></p></li><li><p>标签git和github<br>选择git的时候github标签同样会出现，选择github，git标签就不会出现。<br>疑为github的前部为git？      </p></li><li><p>关于我<br>关于我部分，乱码?<br>显示</p><pre><code>&lt;br&gt;&lt;/br&gt;</code></pre><p>? 时而正常时而乱码，疑为网络加载问题。</p></li><li><p>github+picgo  </p></li></ol><ul><li>不稳定，存在一点bug。  </li><li>自定义web图床解决上述问题，目前不可上传视频。</li></ul><h3 id="待定"><a href="#待定" class="headerlink" title="待定"></a>待定</h3><ol><li><a href="https://qianlei6148.github.io/2018/09/30/hexo%E6%A8%A1%E7%89%88yilia%E5%B7%A6%E4%BE%A7%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF/" target="_blank" rel="noopener">hexo模板yilia主题左侧增加背景</a>  </li></ol><ol start="2"><li><p><a href="https://www.yansheng.xyz/article/252051e3.html" target="_blank" rel="noopener">hexo-yilia添加Dplayer视频播放插件</a></p></li><li><p><a href="https://wdd.js.org/how-to-get-jsorg-sub-domain.html" target="_blank" rel="noopener">how-to-get-jsorg-sub-domain</a>  </p></li><li><p><a href="https://www.yansheng.xyz/links/index.html" target="_blank" rel="noopener">yilia友链页修改</a></p><h3 id="部分博主"><a href="#部分博主" class="headerlink" title="部分博主"></a>部分博主</h3><p><a href="http://litten.me/" target="_blank" rel="noopener">litten</a><br><a href="https://zhousiwei.gitee.io/yilia-plus-demo/" target="_blank" rel="noopener">試毅-思伟</a><br><a href="http://blog.linhe3306.com/demo/" target="_blank" rel="noopener">lin</a><br><a href="http://www.lawlite.me/" target="_blank" rel="noopener">lawlite</a><br><a href="https://blog.zscself.com/" target="_blank" rel="noopener">F!redent</a><br><a href="http://moxfive.xyz/2015/08/20/blog-building/" target="_blank" rel="noopener">MOxFIVE</a><br><a href="http://www.54tianzhisheng.cn/" target="_blank" rel="noopener">zhisheng</a><br><a href="http://dongshuyan.com/" target="_blank" rel="noopener">Shuyan</a><br><a href="https://tding.top/archives/9a232bbe.html" target="_blank" rel="noopener">小丁的个人博客</a><br><a href="https://blog.xxwhite.com/2018/HexoKeng.html" target="_blank" rel="noopener">MonoLogueChi</a><br><a href="https://anyway1314.cn/" target="_blank" rel="noopener">本该如此</a></p></li></ol>]]></content>
     
     <summary type="html">
     
@@ -222,14 +222,14 @@
     
     
     
-      <category term="测试" scheme="https://GH670.github.io/tags/test/"/>
+      <category term="测试" scheme="www.wblog.tech/tags/test/"/>
     
   </entry>
   
   <entry>
     <title>Helllo World</title>
-    <link href="https://gh670.github.io/basis-hello-world.html"/>
-    <id>https://gh670.github.io/basis-hello-world.html</id>
+    <link href="www.wblog.tech/basis-hello-world.html"/>
+    <id>www.wblog.tech/basis-hello-world.html</id>
     <published>2020-04-17T01:33:21.027Z</published>
     <updated>2020-04-04T10:09:38.492Z</updated>
     
@@ -243,14 +243,14 @@
     
     
     
-      <category term="基础" scheme="https://GH670.github.io/tags/basis/"/>
+      <category term="基础" scheme="www.wblog.tech/tags/basis/"/>
     
   </entry>
   
   <entry>
     <title>关于python-部分基础知识</title>
-    <link href="https://gh670.github.io/python-some.html"/>
-    <id>https://gh670.github.io/python-some.html</id>
+    <link href="www.wblog.tech/python-some.html"/>
+    <id>www.wblog.tech/python-some.html</id>
     <published>2020-04-17T01:33:21.023Z</published>
     <updated>2020-04-04T09:02:22.987Z</updated>
     
@@ -264,14 +264,14 @@
     
     
     
-      <category term="python" scheme="https://GH670.github.io/tags/python/"/>
+      <category term="python" scheme="www.wblog.tech/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>关于python-bug报错</title>
-    <link href="https://gh670.github.io/python-bug.html"/>
-    <id>https://gh670.github.io/python-bug.html</id>
+    <link href="www.wblog.tech/python-bug.html"/>
+    <id>www.wblog.tech/python-bug.html</id>
     <published>2020-04-17T01:33:21.019Z</published>
     <updated>2020-04-12T10:00:42.492Z</updated>
     
@@ -285,14 +285,14 @@
     
     
     
-      <category term="python" scheme="https://GH670.github.io/tags/python/"/>
+      <category term="python" scheme="www.wblog.tech/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>hexo——阿里云OSS</title>
-    <link href="https://gh670.github.io/hexo-aliyun-oss-picgo.html"/>
-    <id>https://gh670.github.io/hexo-aliyun-oss-picgo.html</id>
+    <link href="www.wblog.tech/hexo-aliyun-oss-picgo.html"/>
+    <id>www.wblog.tech/hexo-aliyun-oss-picgo.html</id>
     <published>2020-04-17T01:33:21.015Z</published>
     <updated>2020-04-12T13:29:06.112Z</updated>
     
@@ -306,16 +306,16 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
-      <category term="阿里云" scheme="https://GH670.github.io/tags/aliyun/"/>
+      <category term="阿里云" scheme="www.wblog.tech/tags/aliyun/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-增加天气模块</title>
-    <link href="https://gh670.github.io/hexo-weather.html"/>
-    <id>https://gh670.github.io/hexo-weather.html</id>
+    <link href="www.wblog.tech/hexo-weather.html"/>
+    <id>www.wblog.tech/hexo-weather.html</id>
     <published>2020-04-17T01:33:21.013Z</published>
     <updated>2020-04-15T08:05:25.835Z</updated>
     
@@ -329,14 +329,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-yilia搭建相关问题</title>
-    <link href="https://gh670.github.io/hexo-dajian.html"/>
-    <id>https://gh670.github.io/hexo-dajian.html</id>
+    <link href="www.wblog.tech/hexo-dajian.html"/>
+    <id>www.wblog.tech/hexo-dajian.html</id>
     <published>2020-04-17T01:33:21.010Z</published>
     <updated>2020-04-07T07:49:40.256Z</updated>
     
@@ -350,14 +350,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 个性化-左侧</title>
-    <link href="https://gh670.github.io/hexo-gexinghua.html"/>
-    <id>https://gh670.github.io/hexo-gexinghua.html</id>
+    <link href="www.wblog.tech/hexo-gexinghua.html"/>
+    <id>www.wblog.tech/hexo-gexinghua.html</id>
     <published>2020-04-17T01:33:21.007Z</published>
     <updated>2020-04-19T09:51:32.666Z</updated>
     
@@ -371,14 +371,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-valine评论系统</title>
-    <link href="https://gh670.github.io/hexo-valine.html"/>
-    <id>https://gh670.github.io/hexo-valine.html</id>
+    <link href="www.wblog.tech/hexo-valine.html"/>
+    <id>www.wblog.tech/hexo-valine.html</id>
     <published>2020-04-17T01:33:21.003Z</published>
     <updated>2020-04-08T05:02:50.973Z</updated>
     
@@ -392,14 +392,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客安装RSS插件</title>
-    <link href="https://gh670.github.io/hexo-rss.html"/>
-    <id>https://gh670.github.io/hexo-rss.html</id>
+    <link href="www.wblog.tech/hexo-rss.html"/>
+    <id>www.wblog.tech/hexo-rss.html</id>
     <published>2020-04-17T01:33:20.999Z</published>
     <updated>2020-04-14T01:12:41.824Z</updated>
     
@@ -413,14 +413,14 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-为博客增加在线聊天功能</title>
-    <link href="https://gh670.github.io/hexo-daovoice.html"/>
-    <id>https://gh670.github.io/hexo-daovoice.html</id>
+    <link href="www.wblog.tech/hexo-daovoice.html"/>
+    <id>www.wblog.tech/hexo-daovoice.html</id>
     <published>2020-04-17T01:33:20.997Z</published>
     <updated>2020-04-15T00:40:50.358Z</updated>
     
@@ -434,7 +434,7 @@
     
     
     
-      <category term="hexo" scheme="https://GH670.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
