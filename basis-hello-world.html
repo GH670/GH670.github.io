@@ -600,33 +600,6 @@ int main()
 
    <!--有响应的，增加valine评论 系统-->>
   
-    <section id="comments" class="comments">
-      <style>
-        .comments{margin:30px;padding:10px;background:#fff}
-        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-      </style>
-      <div id="vcomment" class="comment"></div> 
-<!--<script src="/n1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<!--<script src="/n.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>-->
-<!--更改第三方DN，增加访问速度，现在是官方的-->
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify:verify,
-            app_id: "kVQCjjM5KQdlOecKV2TEf1Cs-gzGzoHsz",
-            app_key: "EsotLcdbI03SC9LGGTzilV6h",
-            placeholder: "留下你来过的痕迹~",
-            avatar:"robohash"
-        });
-    }
-</script>
-  </section>
-
 
 
 
