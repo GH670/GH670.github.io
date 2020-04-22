@@ -597,6 +597,22 @@ var _hmt = _hmt || [];
 
    <!--有响应的，增加valine评论 系统-->>
   
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+<script>
+  var valineConifg = {"appId":"kVQCjjM5KQdlOecKV2TEf1Cs-gzGzoHsz","appKey":"EsotLcdbI03SC9LGGTzilV6h","verify":false,"notify":false,"avatar":"robohash\"\"","placeholder":"友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈","pageSize":12,"visitor":true,"recordIP":true,"version":"latest"};
+  valineConifg.el = '#vcomment';
+    window.onload = function(){
+      new Valine(valineConifg);
+    }
+</script>
+  </section>
+
 
 
 
@@ -805,11 +821,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -817,11 +833,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
              
               <li class="article-tag-list-item">
