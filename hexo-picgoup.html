@@ -634,23 +634,24 @@ var _hmt = _hmt || [];
         .comments{margin:30px;padding:10px;background:#fff}
         @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
       </style>
-      <div id="vcomment" class="comment" ></div>
+      <div id="vcomment" class="comment"></div> 
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
-
-  valineConifg.el = '#vcomment';
-  var valineVersion = '<_ theme.valine.version ' ? 'latest' : 'latest';
-  loadScript('https://cdn.jsdelivr.net/npm/valine@' + valineVersion + '/dist/Valine.min.js',
-    function(){
-      new Valine(valineConifg);
-      if(window.location.hash){
-        var checkExist = setInterval(function() {
-          if (document.getElementById(window.location.hash.replace("#",""))) {
-            location.href = window.location.hash;
-            clearInterval(checkExist);
-          }
-        }, 250);
-      }
-  });
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            recordIP: recordIP,
+            enableQQ: enableQQ,
+            app_id: "kVQCjjM5KQdlOecKV2TEf1Cs-gzGzoHsz",
+            app_key: "EsotLcdbI03SC9LGGTzilV6h",
+            placeholder: "留下你来过的痕迹~",
+            avatar:"robohash"
+        });
+    }
 </script>
   </section>
 
@@ -874,11 +875,11 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
