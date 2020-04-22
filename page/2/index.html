@@ -219,7 +219,7 @@ var _hmt = _hmt || [];
 		</nav>
 <!--
 		<nav>
-			<a>总文章数 37</a>
+			<a>总文章数 39</a>
 		</nav>
 -->		
 		<nav class="header-smart-menu">
@@ -342,6 +342,182 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+
+  
+    <article id="post-【算法】最大最小平均数的平均比较次数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/max-min-compare.html">求最大、最小元素的平均比较次数</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/max-min-compare.html" class="archive-article-date">
+        <time datetime="2020-04-17T01:33:21.043Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h4 id="编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。"><a href="#编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。" class="headerlink" title="编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。"></a>编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 10</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">randa</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n)</span> <span class="comment">//随机产生20以内的10个数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        a[i] = rand()%<span class="number">20</span>+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MaxMin</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n,<span class="keyword">int</span> &amp;comp)</span><span class="comment">//寻找最大最小元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,<span class="built_in">max</span>,<span class="built_in">min</span>;</span><br><span class="line">    <span class="built_in">max</span> = <span class="built_in">min</span> =a[<span class="number">0</span>];</span><br><span class="line">    comp=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">        comp++;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&gt;<span class="built_in">max</span>)</span><br><span class="line">            <span class="built_in">max</span> = a[i];</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            comp++;</span><br><span class="line">            <span class="keyword">if</span>(a[i]&lt;<span class="built_in">min</span>)&#123;</span><br><span class="line">                <span class="built_in">min</span> = a[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%3d"</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n最大值 = %d,最小值 = %d,比较次数 = %d"</span>,<span class="built_in">max</span>,<span class="built_in">min</span>,comp);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[MAXN];</span><br><span class="line">    <span class="keyword">int</span> m,count=<span class="number">0</span>,comp,sumcomp=<span class="number">0</span>;</span><br><span class="line">    srand((<span class="keyword">unsigned</span>)time(<span class="literal">NULL</span>));    </span><br><span class="line">    <span class="keyword">for</span>(m=<span class="number">1</span>;m&lt;=<span class="number">10</span>;m++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n第%2d组:"</span>,++count);</span><br><span class="line">        randa(a,<span class="number">10</span>);</span><br><span class="line">        MaxMin(a,<span class="number">10</span>,comp);</span><br><span class="line">        sumcomp += comp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n平均比较次数 = %g"</span>,<span class="number">1.0</span>*sumcomp/<span class="number">10</span>);</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    
+
+    
+    
+    
+
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/max-min-compare.html">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-【算法】三分查找算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/a-sanfensearch.html">三分查找-算法</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/a-sanfensearch.html" class="archive-article-date">
+        <time datetime="2020-04-17T01:33:21.041Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+
+  <div class="article-entry" itemprop="articleBody">
+    
+    <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">ternarysearch</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> low,<span class="keyword">int</span> high,<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(high&lt;low)</span><br><span class="line">		j=<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">int</span> mid1 =low + (high-low)/<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">int</span> mid2 =high- (high-low)/<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">if</span>(x=a[mid1])</span><br><span class="line">			j = mid1;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(x&lt;a[mid1])</span><br><span class="line">			j = ternarysearch(a,low,mid1<span class="number">-1</span>,x);</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(x=a[mid2])</span><br><span class="line">			j = mid2;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(x&gt;a[mid2])</span><br><span class="line">			j = ternarysearch(a,low,mid2<span class="number">-1</span>,x);</span><br><span class="line">		<span class="keyword">return</span> j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    
+
+    
+    
+    
+
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/a-sanfensearch.html">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
 
   
     <article id="post-【算法】B-计算球的体积" class="article article-type-post  article-index" itemscope itemprop="blogPost">
@@ -1091,190 +1267,6 @@ int main()
 
 
   
-    <article id="post-【Hexo】Valine评论系统" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/hexo-valine.html">Hexo-valine评论系统</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/hexo-valine.html" class="archive-article-date">
-        <time datetime="2020-04-17T01:33:21.003Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h1><p>此文在CSDN中更易查阅，请点击此处转去CSDN中查看：<a href="https://blog.csdn.net/weixin_45784655/article/details/105324024" target="_blank" rel="noopener">CSDN博文</a></p>
-<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Valine：一款快速、简洁且高效的无后端评论系统。</p>
-<ul>
-<li><strong>存在bug</strong></li>
-</ul>
-    
-    <a class="article-more-a" href="/hexo-valine.html#more">more >></a>
-    
-    
-
-    
-    
-    
-
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/hexo-valine.html">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-【Hexo】RSS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/hexo-rss.html">Hexo博客安装RSS插件</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/hexo-rss.html" class="archive-article-date">
-        <time datetime="2020-04-17T01:33:20.999Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>RSS（简易信息聚合，也叫Really Simple Syndication、聚合RSS、聚合内容），是一种消息来源格式规范，用以聚合经常发布更新数据的网站，例如博客文章、新闻、音频或视频的网摘。RSS文件（或称做摘要、网络摘要、或频更新，提供到频道）包含了全文或是节录的文字，再加上发用者所订阅之网摘布数据和授权的元数据。通常在时效性比较强的内容上使用RSS订阅能更快速获取信息，网站提供RSS输出，有利于让用户获取网站内容的最新更新。网络用户可以在客户端借助于支持RSS的聚合工具软件（例如SharpReader、NewzCrawler、FeedDemon），在不打开网站内容页面的情况下阅读支持RSS输出的网站内容。</p>
-    
-    <a class="article-more-a" href="/hexo-rss.html#more">more >></a>
-    
-    
-
-    
-    
-    
-
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/hexo-rss.html">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/"> &lt;&lt; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &gt;&gt; </a>
@@ -1297,6 +1289,7 @@ int main()
 			
 			<a href="https://www.baidu.com/" target="_blank">集广义之大成</a> by GH670
 			-->
+			
 			
 			
       		GitHub:<a href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">hexo-theme-yilia-plus</a> by Litten
@@ -1597,6 +1590,15 @@ int main()
                   <i class="icon-link icon"></i>
                 
                 开源中国
+              </a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://www.runoob.com/" target="_blank" class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                菜鸟教程
               </a>
             </li>
           
