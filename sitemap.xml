@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/jihua20.html</loc>
+    
+    <lastmod>2020-04-23T12:59:01.385Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/test-ques.html</loc>
+    
+    <lastmod>2020-04-23T12:47:32.129Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/hexo-aliyun-oss.html</loc>
+    
+    <lastmod>2020-04-23T11:38:19.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/hexo-localhost.html</loc>
+    
+    <lastmod>2020-04-23T11:34:51.815Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/hexo-404.html</loc>
+    
+    <lastmod>2020-04-23T11:23:59.363Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/hexo-dajian.html</loc>
     
-    <lastmod>2020-04-23T08:34:16.734Z</lastmod>
+    <lastmod>2020-04-23T08:40:10.950Z</lastmod>
     
   </url>
   
@@ -26,13 +61,6 @@
     <loc>www.wblog.tech/rijiben.html</loc>
     
     <lastmod>2020-04-23T06:08:17.329Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/test-ques.html</loc>
-    
-    <lastmod>2020-04-23T05:12:35.697Z</lastmod>
     
   </url>
   
@@ -96,13 +124,6 @@
     <loc>www.wblog.tech/algorithm-Sphere-volume.html</loc>
     
     <lastmod>2020-04-22T08:59:39.453Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/jihua20.html</loc>
-    
-    <lastmod>2020-04-22T08:59:34.347Z</lastmod>
     
   </url>
   
@@ -205,20 +226,6 @@
   </url>
   
   <url>
-    <loc>www.wblog.tech/hexo-404.html</loc>
-    
-    <lastmod>2020-04-22T08:58:04.166Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/hexo-aliyun-oss-picgo.html</loc>
-    
-    <lastmod>2020-04-22T08:58:00.291Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>www.wblog.tech/hexo-wenjianjiexi.html</loc>
     
     <lastmod>2020-04-22T08:57:51.790Z</lastmod>
@@ -243,13 +250,6 @@
     <loc>www.wblog.tech/hexo-daovoice.html</loc>
     
     <lastmod>2020-04-22T08:57:34.382Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/hexo-localhost.html</loc>
-    
-    <lastmod>2020-04-22T08:57:27.781Z</lastmod>
     
   </url>
   

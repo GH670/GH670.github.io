@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/jihua20.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/test-ques.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/hexo-aliyun-oss.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/hexo-localhost.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/hexo-404.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/hexo-dajian.html</loc>
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
@@ -11,9 +26,6 @@
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/rijiben.html</loc>
-    <lastmod>2020-04-23</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/test-ques.html</loc>
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-valine.html</loc>
@@ -38,9 +50,6 @@
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/algorithm-Sphere-volume.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/jihua20.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/suibijishi.html</loc>
@@ -85,12 +94,6 @@
     <loc>www.wblog.tech/github-star.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
-    <loc>www.wblog.tech/hexo-404.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/hexo-aliyun-oss-picgo.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
     <loc>www.wblog.tech/hexo-wenjianjiexi.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
@@ -101,9 +104,6 @@
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-daovoice.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/hexo-localhost.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-picgoup.html</loc>
