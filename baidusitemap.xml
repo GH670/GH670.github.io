@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/hexo-valine.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/test-ques.html</loc>
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/JavaScript%E2%80%94%E2%80%94xiangguan.html</loc>
-    <lastmod>2020-04-23</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/hexo-valine.html</loc>
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/basis-hello-world.html</loc>

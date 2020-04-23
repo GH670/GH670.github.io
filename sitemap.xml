@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/hexo-valine.html</loc>
+    
+    <lastmod>2020-04-23T01:32:31.532Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/test-ques.html</loc>
     
     <lastmod>2020-04-23T00:37:07.582Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>www.wblog.tech/JavaScript%E2%80%94%E2%80%94xiangguan.html</loc>
     
     <lastmod>2020-04-23T00:36:21.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/hexo-valine.html</loc>
-    
-    <lastmod>2020-04-23T00:25:16.942Z</lastmod>
     
   </url>
   
