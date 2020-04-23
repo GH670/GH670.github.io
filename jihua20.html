@@ -616,33 +616,14 @@ var _hmt = _hmt || [];
         .comments{margin:30px;padding:10px;background:#fff}
         @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
       </style>
-      <script async src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js" integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous"></script>
-<script async src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-onload="renderMathInElement(document.body,{delimiters:[{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+      <div id="vcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
 <script>
-  window['MathJax'] = {
-      tex: {
-        inlineMath: [ ['$','$']],
-        autoload: {
-            verb: ['verb'],
-            color: [],
-            colorV2: ['color'],
-            require:['require']
-        },
-        packages: {'[+]': ['braket']}
-      },
-      loader: {load: ['[tex]/braket']},
-      svg: {
-        fontCache: 'global'
-      }
-  };
-  try {(new Function("'use strict'; let a; const b = 2;"))()} catch (e) {
-    var polyfill = document.createElement("script");
-      polyfill.src = "https://polyfill.io/v3/polyfill.min.js?features=es5%2Ces6%2Ces7%2CArray.prototype.forEach%2CElement.prototype.closest'";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(polyfill, s);
-  }
+  var valineConifg = {"appId":"kVQCjjM5KQdlOecKV2TEf1Cs-gzGzoHsz","appKey":"EsotLcdbI03SC9LGGTzilV6h","verify":false,"notify":true,"avatar":"robohash","placeholder":"友情提醒，留下正确的邮箱地址可以第一时间获取评论反馈","pageSize":12,"visitor":true,"recordIP":true,"enableQQ":true,"version":"latest"};
+  valineConifg.el = '#vcomment';
+    window.onload = function(){
+      new Valine(valineConifg);
+    }
 </script>
   </section>
 
@@ -846,11 +827,11 @@ onload="renderMathInElement(document.body,{delimiters:[{left: '$$', right: '$$',
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">code</a>
+                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+                <a href="javascript:void(0)" class="js-tag color5">code</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -866,11 +847,11 @@ onload="renderMathInElement(document.body,{delimiters:[{left: '$$', right: '$$',
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">阿里云</a>
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
