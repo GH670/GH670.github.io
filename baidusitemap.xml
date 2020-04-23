@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/hexo-dajian.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/python-bug.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/JavaScript-xiangguan.html</loc>
+    <lastmod>2020-04-23</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/rijiben.html</loc>
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
@@ -8,9 +17,6 @@
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-valine.html</loc>
-    <lastmod>2020-04-23</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/JavaScript%E2%80%94%E2%80%94xiangguan.html</loc>
     <lastmod>2020-04-23</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/basis-hello-world.html</loc>
@@ -85,9 +91,6 @@
     <loc>www.wblog.tech/hexo-aliyun-oss-picgo.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
-    <loc>www.wblog.tech/hexo-dajian.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
     <loc>www.wblog.tech/hexo-wenjianjiexi.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
@@ -107,9 +110,6 @@
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-rss.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/python-bug.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/python-some.html</loc>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-04-23T00:36:21.383Z</updated>
+  <updated>2020-04-23T08:30:33.639Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>JavaScript——相关</title>
-    <link href="www.wblog.tech/JavaScript%E2%80%94%E2%80%94xiangguan.html"/>
-    <id>www.wblog.tech/JavaScript%E2%80%94%E2%80%94xiangguan.html</id>
+    <link href="www.wblog.tech/JavaScript-xiangguan.html"/>
+    <id>www.wblog.tech/JavaScript-xiangguan.html</id>
     <published>2020-04-23T00:30:29.945Z</published>
-    <updated>2020-04-23T00:36:21.383Z</updated>
+    <updated>2020-04-23T08:30:33.639Z</updated>
     
     <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>javascript相关！<br>记录</p><a id="more"></a><h2 id="Expression-expected-javascript"><a href="#Expression-expected-javascript" class="headerlink" title="Expression expected.javascript"></a>Expression expected.javascript</h2><p>设置valine评论系统，修改valine.ejs插件。使得出现Expression expected.JavaScript错误。<br>百度查询得，javascript里面不可以直接使用EL表达式。<br>大佬：VScode未按照ejs插件?<br>暂不影响使用，待修改！</p>]]></content>
     
@@ -357,9 +357,9 @@
     <link href="www.wblog.tech/python-bug.html"/>
     <id>www.wblog.tech/python-bug.html</id>
     <published>2020-04-17T01:33:21.019Z</published>
-    <updated>2020-04-22T08:57:05.504Z</updated>
+    <updated>2020-04-23T08:32:40.823Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="本文主要更新python使用过程中遇到的相关bug报错问题、"><a href="#本文主要更新python使用过程中遇到的相关bug报错问题、" class="headerlink" title="本文主要更新python使用过程中遇到的相关bug报错问题、"></a>本文主要更新python使用过程中遇到的相关bug报错问题、</h2><h4 id="1-invalid-syntax"><a href="#1-invalid-syntax" class="headerlink" title="1.invalid syntax"></a>1.invalid syntax</h4><p>（1）符号使用不正确：例如缺少（）、或者使用了中文字符。<br>（2）缩进不规范：缩进不正确或者缩进格式不统一。</p><a id="more"></a><h4 id="2-ycharm-运行过程中，突然弹出："><a href="#2-ycharm-运行过程中，突然弹出：" class="headerlink" title="2.ycharm 运行过程中，突然弹出："></a>2.ycharm 运行过程中，突然弹出：</h4><p><img src="https://raw.githubusercontent.com/GH670/img/master/images/pycharm%E4%B9%B1%E7%A0%81.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="本文主要更新python使用过程中遇到的相关bug报错问题、"><a href="#本文主要更新python使用过程中遇到的相关bug报错问题、" class="headerlink" title="本文主要更新python使用过程中遇到的相关bug报错问题、"></a>本文主要更新python使用过程中遇到的相关bug报错问题、</h2><h4 id="1-invalid-syntax"><a href="#1-invalid-syntax" class="headerlink" title="1.invalid syntax"></a>1.invalid syntax</h4><p>（1）符号使用不正确：例如缺少（）、或者使用了中文字符。<br>（2）缩进不规范：缩进不正确或者缩进格式不统一。</p><a id="more"></a><h4 id="2-ycharm-运行过程中，突然弹出："><a href="#2-ycharm-运行过程中，突然弹出：" class="headerlink" title="2.ycharm 运行过程中，突然弹出："></a>2.ycharm 运行过程中，突然弹出：</h4><p><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/23/a55fbbfa2c6da01c22a1e064ca98ccd8.png" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -422,9 +422,9 @@
     <link href="www.wblog.tech/hexo-dajian.html"/>
     <id>www.wblog.tech/hexo-dajian.html</id>
     <published>2020-04-17T01:33:21.010Z</published>
-    <updated>2020-04-22T08:57:56.380Z</updated>
+    <updated>2020-04-23T08:34:16.734Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="1-js脚本打开错误"><a href="#1-js脚本打开错误" class="headerlink" title="1.js脚本打开错误"></a>1.js脚本打开错误</h3><p><img src="https://gh-picture.oss-cn-qingdao.aliyuncs.com/question/js%E8%84%9A%E6%9C%AC%E6%89%93%E5%BC%80%E9%94%99%E8%AF%AF.png" alt=""></p><h3 id="2-发送请求时出错"><a href="#2-发送请求时出错" class="headerlink" title="2.发送请求时出错"></a>2.发送请求时出错</h3><p><img src="https://gh-picture.oss-cn-qingdao.aliyuncs.com/question/%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E6%97%B6%E5%87%BA%E9%94%99.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="1-js脚本打开错误"><a href="#1-js脚本打开错误" class="headerlink" title="1.js脚本打开错误"></a>1.js脚本打开错误</h3><p><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/23/b92c06201d5c916bc089d3d442cd7a3f.png" alt=""></p><h3 id="2-发送请求时出错"><a href="#2-发送请求时出错" class="headerlink" title="2.发送请求时出错"></a>2.发送请求时出错</h3><p><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/23/2233a13f623dd0d0037a92f6c24785df.png" alt=""></p>]]></content>
     
     <summary type="html">
     
