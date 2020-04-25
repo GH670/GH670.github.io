@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/test-ques.html</loc>
+    
+    <lastmod>2020-04-25T12:27:17.122Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/hexo-bowen1.html</loc>
     
     <lastmod>2020-04-25T09:50:58.357Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>www.wblog.tech/jihua20.html</loc>
     
     <lastmod>2020-04-23T13:05:18.088Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/test-ques.html</loc>
-    
-    <lastmod>2020-04-23T12:47:32.129Z</lastmod>
     
   </url>
   
