@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-04-26T03:41:18.511Z</updated>
+  <updated>2020-04-26T09:07:42.850Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>阿里云-将Hexo博客搭建至云服务器上</title>
+    <link href="www.wblog.tech/hexo-aliyundajianhexo.html"/>
+    <id>www.wblog.tech/hexo-aliyundajianhexo.html</id>
+    <published>2020-04-26T08:30:52.204Z</published>
+    <updated>2020-04-26T09:07:42.850Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>记录文，无任何教程指导。<br>仅为自己检查反省所用。</p><a id="more"></a><h2 id="question"><a href="#question" class="headerlink" title="question"></a>question</h2><ol><li>博客根目录下的_config.yml</li></ol><ul><li>修改仓库地址指向使其部署到云服务器上。</li><li>？大佬说：不可将博客同时部署到云服务器和GitHub上？<br>Q：现在我要是把serve里的网址把公网ip改成我的域名，博客配置里的部署指向同时指向云服务器和GitHub，能实现吗？<br>A:实现不了</li></ul><ol start="2"><li>vhost文件夹内文件的修改</li></ol><ul><li>cd /etc/nginx/vhost<br>vim blog.conf<br>修改地址指向：公网ip?域名？</li></ul><ol start="3"><li>vi /etc/nginx/nginx.conf </li></ol><ul><li>教程：添加include /etc/nginx/vhost/*.conf;</li><li>增加补错：添加root /home/www/website;<br>解决公网IP打开依然是centos的问题。<br>未解决，大佬：nginx版本的问题，无碍。</li></ul><ol start="4"><li>.ssh.ssh</li></ol><ul><li>设置git用户密码问题、成功公钥密钥文件ssh-keygen<br>目录下文件并不为id_rsa 和 id_rsa.pub<br>文件为.ssh.shh(模糊记忆)<br>但本地连接云服务器没问题。<br>注:本地连接云服务后云服务器上的相关操作均在本地电脑远程连接操作</li></ul><ol start="5"><li>现已取消阿里云服务器的部署。</li></ol><ul><li>#include /etc/nginx/vhost/*.conf;</li></ul><ol start="6"><li>域名解析</li></ol><ul><li>指到云服务器了？将hexo博客部署云服务器上</li></ul><h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><p><a href="https://blog.csdn.net/NoCortY/article/details/99631249" target="_blank" rel="noopener">从零搭建Hexo博客并部署阿里云服务器（奶妈级教学）</a><br>特别感谢大佬的解答！🧐</p>]]></content>
+    
+    <summary type="html">
+    
+      阿里云-将Hexo博客搭建至云服务器上
+    
+    </summary>
+    
+    
+    
+      <category term="阿里云" scheme="www.wblog.tech/tags/aliyun/"/>
+    
+  </entry>
   
   <entry>
     <title>【闲】</title>
@@ -414,27 +435,6 @@
       <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
       <category term="阿里云" scheme="www.wblog.tech/tags/aliyun/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-增加天气模块</title>
-    <link href="www.wblog.tech/hexo-weather.html"/>
-    <id>www.wblog.tech/hexo-weather.html</id>
-    <published>2020-04-17T01:33:21.013Z</published>
-    <updated>2020-04-22T08:57:40.953Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>为你的博客增加天气模块，实现天气预报功能。</p><a id="more"></a><h2 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h2><ol><li>注册心知天气账号，网址为<a href="https://www.seniverse.com/" target="_blank" rel="noopener">https://www.seniverse.com/</a></li><li>进入控制台，新版插件。选择你喜欢的样式，然后生成代码。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 《添加“心知天气”--&gt;</span><br><span class="line">&lt;div id&#x3D;&quot;tp-weather-widget&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">        (function(T, h, i, n, k, P, a, g, e) &#123;</span><br><span class="line">            g &#x3D; function() &#123;</span><br><span class="line">                P &#x3D; h.createElement(i);</span><br><span class="line">                a &#x3D; h.getElementsByTagName(i)[0];</span><br><span class="line">                P.src &#x3D; k;</span><br><span class="line">                P.charset &#x3D; &quot;utf-8&quot;;</span><br><span class="line">                P.async &#x3D; 1;</span><br><span class="line">                a.parentNode.insertBefore(P, a)</span><br><span class="line">            &#125;;</span><br><span class="line">            T[&quot;ThinkPageWeatherWidgetObject&quot;] &#x3D; n;</span><br><span class="line">            T[n] || (T[n] &#x3D; function() &#123;</span><br><span class="line">                (T[n].q &#x3D; T[n].q || []).push(arguments)</span><br><span class="line">            &#125;);</span><br><span class="line">            T[n].l &#x3D; +new Date();</span><br><span class="line">            if (T.attachEvent) &#123;</span><br><span class="line">                T.attachEvent(&quot;onload&quot;, g)</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                T.addEventListener(&quot;load&quot;, g, false)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;(window, document, &quot;script&quot;, &quot;tpwidget&quot;, &quot;&#x2F;&#x2F;widget.thinkpage.cn&#x2F;widget&#x2F;chameleon.js&quot;))</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        tpwidget(&quot;init&quot;, &#123;</span><br><span class="line">            &quot;flavor&quot;: &quot;slim&quot;,</span><br><span class="line">            &quot;location&quot;: &quot;WM6N2PM3WY2K&quot;,</span><br><span class="line">            &quot;geolocation&quot;: &quot;enabled&quot;,</span><br><span class="line">            &quot;language&quot;: &quot;zh-chs&quot;,</span><br><span class="line">            &quot;unit&quot;: &quot;c&quot;,</span><br><span class="line">            &quot;theme&quot;: &quot;chameleon&quot;,</span><br><span class="line">            &quot;container&quot;: &quot;tp-weather-widget&quot;,</span><br><span class="line">            &quot;bubble&quot;: &quot;enabled&quot;,</span><br><span class="line">            &quot;alarmType&quot;: &quot;badge&quot;,</span><br><span class="line">            &quot;color&quot;: &quot;#FFFFFF&quot;,</span><br><span class="line">            &quot;uid&quot;: &quot;U88B4B2797&quot;,</span><br><span class="line">            &quot;hash&quot;: &quot;c9d7cb43b80ffece52c9a1ebbfbca65f&quot;</span><br><span class="line">        &#125;);</span><br><span class="line">        tpwidget(&quot;show&quot;);</span><br><span class="line">    &lt;&#x2F;script&gt;</span><br><span class="line">&lt;!-- 添加“心知天气”》--&gt;</span><br></pre></td></tr></table></figure></li></ol><h2 id="工作进行中"><a href="#工作进行中" class="headerlink" title="工作进行中.."></a>工作进行中..</h2><ol><li>打开themes/yilia-plus/layout/_partial/left-col.ejs</li><li>将上面的插件生成的代码添加到指定位置，位置如下：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;overlay&quot; style&#x3D;&quot;background: &lt;%&#x3D; theme.style &amp;&amp; theme.style.header ? theme.style.header : defaultBg %&gt;&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 添加“心知天气”--&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;intrude-less&quot;&gt;</span><br></pre></td></tr></table></figure><ol start="3"><li>打开themes/yilia-plus/_config.yml中添加如下配置：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 心知天气(如果不用为false):https:&#x2F;&#x2F;www.seniverse.com</span><br><span class="line">xinzhi_weather: true</span><br></pre></td></tr></table></figure><h2 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g &#x2F; s &#x2F; clean    #重新部署</span><br><span class="line">hexo s      #本地预览</span><br></pre></td></tr></table></figure><blockquote><p>参考：<a href="https://www.yansheng.xyz/article/cd4e4c1.html" target="_blank" rel="noopener">https://www.yansheng.xyz/article/cd4e4c1.html</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      Hexo-增加天气模块，心知天气
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
