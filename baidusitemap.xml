@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/test-ques.html</loc>
+    <lastmod>2020-04-27</lastmod>
+  </url>  <url>
+    <loc>www.wblog.tech/hexo-shuangxianbushu.html</loc>
+    <lastmod>2020-04-27</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/rijiben.html</loc>
     <lastmod>2020-04-27</lastmod>
   </url>  <url>
@@ -11,9 +17,6 @@
     <lastmod>2020-04-26</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/suibijishi.html</loc>
-    <lastmod>2020-04-25</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/test-ques.html</loc>
     <lastmod>2020-04-25</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/jihua20.html</loc>

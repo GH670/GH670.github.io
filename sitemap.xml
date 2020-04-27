@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/test-ques.html</loc>
+    
+    <lastmod>2020-04-27T12:40:03.035Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/hexo-shuangxianbushu.html</loc>
+    
+    <lastmod>2020-04-27T12:39:18.592Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/rijiben.html</loc>
     
     <lastmod>2020-04-27T02:33:11.242Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>www.wblog.tech/suibijishi.html</loc>
     
     <lastmod>2020-04-25T13:59:48.806Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/test-ques.html</loc>
-    
-    <lastmod>2020-04-25T12:27:17.122Z</lastmod>
     
   </url>
   
