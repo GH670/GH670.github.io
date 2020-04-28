@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/rijiben.html</loc>
+    
+    <lastmod>2020-04-28T12:34:31.568Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/test-ques.html</loc>
     
     <lastmod>2020-04-28T02:18:44.490Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>www.wblog.tech/hexo-shuangxianbushu.html</loc>
     
     <lastmod>2020-04-27T12:45:27.644Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/rijiben.html</loc>
-    
-    <lastmod>2020-04-27T02:33:11.242Z</lastmod>
     
   </url>
   
