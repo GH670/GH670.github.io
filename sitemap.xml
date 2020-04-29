@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/git-false.html</loc>
+    
+    <lastmod>2020-04-29T08:32:35.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/links/index.html</loc>
+    
+    <lastmod>2020-04-29T07:36:51.857Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/rijiben.html</loc>
     
     <lastmod>2020-04-28T12:34:31.568Z</lastmod>
@@ -198,13 +212,6 @@
   </url>
   
   <url>
-    <loc>www.wblog.tech/git-false.html</loc>
-    
-    <lastmod>2020-04-22T08:58:45.179Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>www.wblog.tech/git-mail.html</loc>
     
     <lastmod>2020-04-22T08:58:37.924Z</lastmod>
@@ -299,13 +306,6 @@
     <loc>www.wblog.tech/hexo-github-picgo.html</loc>
     
     <lastmod>2020-04-22T07:36:58.442Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/photos/data.json</loc>
-    
-    <lastmod>2020-04-16T10:57:07.465Z</lastmod>
     
   </url>
   
