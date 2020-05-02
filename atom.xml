@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-04-27T12:45:27.644Z</updated>
+  <updated>2020-05-02T23:08:52.885Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-魔改yilia主题~Yileas</title>
+    <link href="www.wblog.tech/hexo-theme-yileas.html"/>
+    <id>www.wblog.tech/hexo-theme-yileas.html</id>
+    <published>2020-05-02T22:58:06.521Z</published>
+    <updated>2020-05-02T23:08:52.885Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基于yilia的魔改操作-yileas"><a href="#基于yilia的魔改操作-yileas" class="headerlink" title="基于yilia的魔改操作~yileas"></a>基于yilia的魔改操作~yileas</h1><blockquote><p>GitHub地址：<a href="https://github.com/GH670/yileas" target="_blank" rel="noopener">https://github.com/GH670/yileas</a>    </p></blockquote><p>存在许多的不足，欢迎大家的ieeus、PR、star.  </p><a id="more"></a><h1 id="yileas"><a href="#yileas" class="headerlink" title="yileas"></a>yileas</h1><p>hexo-theme-yileas🎈<br>基于<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia主题</a>的个性化定制——<strong>yileas</strong>  </p><blockquote><p>欢迎访问我的博客：<a href="https://wblog.tech/" target="_blank" rel="noopener">wblog.tech</a> 查看效果。</p></blockquote><h2 id="yileas-→-注重准确-崇尚简洁"><a href="#yileas-→-注重准确-崇尚简洁" class="headerlink" title="yileas → 注重准确,崇尚简洁"></a><strong>yileas → 注重准确,崇尚简洁</strong></h2><p>目前仅仅对原主题进行了 <em>魔改</em> .<br>后续会<strong>慢慢地</strong>对其进行更改<br>欢迎各位的PR.<br><a href="#说明">说明</a>  </p><h2 id="魔改："><a href="#魔改：" class="headerlink" title="魔改："></a>魔改：</h2><h3 id="更改："><a href="#更改：" class="headerlink" title="更改："></a>更改：</h3><ol><li>简单化的内容修改</li><li>增加网站运行时间</li><li>增加访问量统计功能(不蒜子)</li><li>添加代码复制功能</li><li>添加天气功能模块duigoucha</li><li>添加版权声明</li><li>添加valine评论系统</li><li>修复部分bug,修复微信分享，添加文章访问量统计</li><li>添加字数、阅读时长统计（博客根目录：npm i -save hexo-wordcount）</li><li>实现文章内容的加密（博客根目录：npm install hexo-blog-encrypt）<br>需加密文章的Front-matter中添加：<br>password: 是该博客加密使用的密码<br>abstract: 是该博客的摘要，会显示在博客的列表页<br>message: 这个是博客查看时，密码输入框上面的描述性文字  </li><li>实现文章的置顶功能  ①更改插件 ②修改源码 （均在博客根目录有修改）<br>修改博客根目录下的_config.yml → index_generator（order_by: top: -1 date: -1 ）<br>在需要置顶的文章的Front-matter中加上top选项即可<br>top后面的数字越大，优先级越高。</li></ol><h3 id="待续…"><a href="#待续…" class="headerlink" title="待续…"></a>待续…</h3><ol><li>优化..</li><li>Fork me on GitHub</li><li>…</li></ol><h3 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h3><p><del>1. DaoVoice在线聊天</del><br><del>2. live2d看板娘</del><br><del>3. 飘雪特效</del><br><del>4. 页面点击小红心效果</del><br><del>5. 网易云音乐插件</del><br><del>6. 头像旋转功能</del><br><del>7. 文字输入特效</del><br><del>8. 添加悬停预览图片效果</del><br><strong>均会拖慢加载速度，非必需，未更改</strong></p><h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h3><ol><li>能力欠缺，完善中…</li><li>yileas为yilia的个人魔改版。因yilia作者已停止对其主题的维护更新，故对此进行深度修改定制，形成自己特有的主题风格。</li><li>yileas为吸取各路大神经验总结而成，感谢开源、感谢互联网🌏</li><li>不定时→偶尔更新维护</li><li>依然存在很多的bug,欢迎大家提出issue.</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-魔改yilia主题~YIleas
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>【GitHub+Coding】个人博客双线部署</title>
@@ -231,7 +252,7 @@
     <link href="www.wblog.tech/jihua20.html"/>
     <id>www.wblog.tech/jihua20.html</id>
     <published>2020-04-17T01:41:55.186Z</published>
-    <updated>2020-04-23T13:05:18.088Z</updated>
+    <updated>2020-05-02T23:05:33.887Z</updated>
     
     <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">你不能一直做一些烂事，然后自己后悔，好像后悔有用一样，你需要变好。</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="f5f9b5f595c0e9cb027806e55a9be43488bf0bf033c7b72ad4f62c6a3e4d3a66">1459a842658dc431eb8d3390640026085dc8dba30abea5c8878adf87049cf3f51d485dba0c2a14b80ea724d10b9ea6f1ec0fedf7b39a661c1cefaee94a1e5f97c67b8524a63ebbdd77d8518068346a8e0943718998ba7452c1c2440e88d14e8deb5cfd86420fafab9ea8a10c346c302f4c461a0890578ac2c0e73425f7c446c4e5616163415c8c126bb44b6120d00d1e4ca7e1ec92c8af844aab6a624328057ec26bd6d59e44fbd6fe138ec315a953922641c8dcb13da8c123ab9a9be22832385f73793476b1a91cd00a4b64c2408435df76099ade55664ad480340985c6b6857f1e05d0e4d32efc43124c976aebc65f4933d9c4e9109b9aca2777f8be7fa2cbea4c9da6eda24de2d5808eabd7f8d7bff6498bf26c195e76a6f37efbe1e40a0ab6685a16d17b7ab8cbbdda55c6ec8592ae4775e2520d7a7bb4e4b8790969fbb924a2479d2b00957b78dd12e806f1766f5481604067b15221188f1bd8fe27609f7e9ff345349a8d04d2b0678d065fc71501e07bf1fdb8c42f26ed84caf2eab6dfb12241307c759027ec5a53f474f7c0663ffbbdd52223d291b5d4f717d64e2c0b52c1b810196dea28f0931f54086ac91e3bb1ea96c876cf153e8b5c0e5a9f53a1e9219e7c9355fecca9d198c6ef6526686865e0303df231cf409d2a9bfcb103ddd3502e1efe418dc4fb1e23542ed2a5a333053bfdec3047fc00a19f0e04ced586e492097f8e2b070b4ddb1f07fce5323ee6ae7015a905ec265e66c543bad2c19f0b1877f7ae2e61b48d36eb4783d1652fcd2dfa2b03160269f3b45eed662fd1a5af6ab237bb8582643690a3c899825b61f085230fc63f794eb86aa61064c47427ec035b2929f9bd1375dc8c87b424e3bbf1d1e85c5d936aa7752223183e74e5f39b24a305aa94b5fb87a1c585c00916f581c9943dab0c09efad1403842a9f79556380bc19f46b7bb35754a4289d38d3e471af5082432979ac9add4cb2e2d419dc2028efa3130c50b7a40a95ae660bd5b735d3e9934bc09d3336f650a3ee8dd9b1e96dee7c82a43e3e19c93c968a8d047f5ddc3de149e23de441a7b9add639297b07e10416c0cda1060e25a0089ad9f5a74d016048efa0b4764c4698231b1c62554178b370b8aefac672169d4fbec4ebd9ceb022618aa5881229ce538d952d9eed269491bfcb557f3db41495a4afb908c32a19c79690518bdbaf5f0d1071987637792fe29e94c8e2f86ba89dc535baaa7e003593777e2b7e1e9d008e858014db1d439a8796d64ece9534404a0692a0a0715443a1394032ed45f69afff6a2a5ad7c427509f603b9f21c1894a515be9c2511cb3e68789f51102c04d05f779373d345dc1734e2746ff59ad6b36af40c9549961632f77da8b4910edde49f4301b6e4a44868bafbcb14ef823e95f1a860d78bc4c68154e19638fbc6735a9d64314d8a79a759dcde46fc23f006e974c5fc36871a5f9daa0bb41c900d323ed435512b7b2a575c50b8d770f3f24778b7587b0c6ea138ec1e2780f86b123a9e55013073bdc6e5f8d7b8fbfb1855781fe326968f93d6d56cddd182eccd92b26da21a3e4ac9ce64a8cd330b3aa478f430458a024657308da6f6f1cd77054aaa058982b6c579b409f05d0e6a3c5dbcd68e37c5ee5af2f2e235213bc454f52c9a14a369cc75dd79cb4d1ff39a6184cf7b6ccc0f974a8a1de4cad1648f53d960a45f1667de4d3f6dd99f7cf459f84a9d942444e141198c3a774a5d7fb8bb3bd222265036467363751f86abe1f77d69696a389275dc270a46784a3f3c4d9155e056fb52f0e2c3ead9137a33bd14a1fe9f868dd1aca9b9f9699b99cdfe2de2aad4d098d5ae33d3e467cbc33668d30c6a57689e5b0a828a290ac7164705c1cb12b7fb9503567e12a73e3ffb7df9fe60a3e4289b401334ac1815135ddb5f57f41dcd9fe55e16f133fa8d460b54a69d26e75f669084854438cc1ec38d0207b074c9e53738af086edf905cb0cd4bf7f9dc717f26bc241ee99879ada52e3c93f5e12ef9450b9a6bd01ce38279c6db48395f6067f3dfa5f2714a90ee221f76e90e9d3c88fcb7811c560063a456c2f2fdf28cb0f2e7d439a1f0d9a1d7fbd412281ff4a1c32a181d7404cbc67503c7feb4a67d20707d926e0b5e77f484af0f9af77eae91ec57b74d5105f9a976604814631939b8741bc8e565961f226b8a32ab5a4ab81c9631a12c671e922081</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
@@ -406,27 +427,6 @@
     <summary type="html">
     
       python pip import
-    
-    </summary>
-    
-    
-    
-      <category term="python" scheme="www.wblog.tech/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于python-bug报错</title>
-    <link href="www.wblog.tech/python-bug.html"/>
-    <id>www.wblog.tech/python-bug.html</id>
-    <published>2020-04-17T01:33:21.019Z</published>
-    <updated>2020-04-23T08:32:40.823Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="本文主要更新python使用过程中遇到的相关bug报错问题、"><a href="#本文主要更新python使用过程中遇到的相关bug报错问题、" class="headerlink" title="本文主要更新python使用过程中遇到的相关bug报错问题、"></a>本文主要更新python使用过程中遇到的相关bug报错问题、</h2><h4 id="1-invalid-syntax"><a href="#1-invalid-syntax" class="headerlink" title="1.invalid syntax"></a>1.invalid syntax</h4><p>（1）符号使用不正确：例如缺少（）、或者使用了中文字符。<br>（2）缩进不规范：缩进不正确或者缩进格式不统一。</p><a id="more"></a><h4 id="2-ycharm-运行过程中，突然弹出："><a href="#2-ycharm-运行过程中，突然弹出：" class="headerlink" title="2.ycharm 运行过程中，突然弹出："></a>2.ycharm 运行过程中，突然弹出：</h4><p><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/23/a55fbbfa2c6da01c22a1e064ca98ccd8.png" alt=""></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;本文主要更新python使用过程中遇到的相关bug报错问题、&quot;&gt;&lt;a href=&quot;#本文主要更新python使用过程中遇到的相关bug报错问题、&quot; class=&quot;headerlink&quot; title=&quot;本文主要更新python使用过程中遇到的相关bug报错问题、&quot;&gt;&lt;/a&gt;本文主要更新python使用过程中遇到的相关bug报错问题、&lt;/h2&gt;&lt;h4 id=&quot;1-invalid-syntax&quot;&gt;&lt;a href=&quot;#1-invalid-syntax&quot; class=&quot;headerlink&quot; title=&quot;1.invalid syntax&quot;&gt;&lt;/a&gt;1.invalid syntax&lt;/h4&gt;&lt;p&gt;（1）符号使用不正确：例如缺少（）、或者使用了中文字符。&lt;br&gt;（2）缩进不规范：缩进不正确或者缩进格式不统一。&lt;/p&gt;
     
     </summary>
     
