@@ -119,8 +119,6 @@
         for (var i = 0, len = data.link.length; i < len; i++) {
           var minSrc = 'https://raw.githubusercontent.com/GH670/Blog-Back-Up-P-V/master/min_photos/' + data.link[i];
           var src = 'https://raw.githubusercontent.com/GH670/Blog-Back-Up-P-V/master/photos/' + data.link[i];
-          //var minSrc = 'https://raw.githubusercontent.com/GH670/Blog-Back-Up-P-V/tree/master/min_photos/' + data.link[i];
-          //var src = 'https://raw.githubusercontent.com/GH670/Blog-Back-Up-P-V/tree/master/photos/' + data.link[i];
           //var minSrc = 'https://raw.githubusercontent.com/lawlite19/blog-back-up/master/min_photos/' + data.link[i];
           //var src = 'https://raw.githubusercontent.com/lawlite19/blog-back-up/master/photos/' + data.link[i];
           var type = data.type[i];
