@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/bilibili-houlang.html</loc>
+    <lastmod>2020-05-06</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/github-push.html</loc>
     <lastmod>2020-05-05</lastmod>
   </url>  <url>
@@ -8,9 +11,6 @@
     <lastmod>2020-05-05</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/jihua20.html</loc>
-    <lastmod>2020-05-04</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/bilibili-houlang.html</loc>
     <lastmod>2020-05-04</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-theme-yileas.html</loc>
