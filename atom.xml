@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-07T04:48:22.707Z</updated>
+  <updated>2020-05-09T05:35:07.248Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-实现博客的相册模块</title>
+    <link href="www.wblog.tech/hexo-xiangce.html"/>
+    <id>www.wblog.tech/hexo-xiangce.html</id>
+    <published>2020-05-09T03:07:06.027Z</published>
+    <updated>2020-05-09T05:35:07.248Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><ul><li>Hexo——为你的博客添加相册功能。  </li><li>大体实现：在GitHub上创建一个新的仓库，存储图片。通过python脚本程序，对图片进行裁剪压缩，上传至GitHub仓库。生成josn格式数据，通过此文件进行图片的显示访问。  </li></ul><a id="more"></a><h1 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h1><h2 id="1-GitHub操作"><a href="#1-GitHub操作" class="headerlink" title="1.GitHub操作"></a>1.GitHub操作</h2><ul><li>创建GitHub图库<br>在你的GitHub中创建一个新的GitHub仓库，命名随意，我的命名是跟随参考教程里大佬的命名：Blog-Back-Up。<h2 id="2-本地操作"><a href="#2-本地操作" class="headerlink" title="2.本地操作"></a>2.本地操作</h2><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3></li></ul><ol><li><p>在<strong>博客根目录</strong>下的source文件夹下建立一个photos文件夹</p></li><li><p>将样式文件放到photos文件夹下，样式文件如下图所示，样式文件的下载地址为：<a href="https://github.com/GH670/photos-file" target="_blank" rel="noopener">https://github.com/GH670/photos-file</a><br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/05/09/97cb4c54887d8ef895eb958e692b3f47.png" alt=""></p></li></ol><p><strong>说明一下❗：红色框框中的是需要放置在该文件夹内的文件。黑色框框中的文件夹内的文件是需要放置到本博文第二部分所说的文件夹内的。黄色框中的是第二部分所说的生成的data.json文件。</strong><br>3. 修改ins.js文件中的render函数，将其中的url修改对应至你存放图片的地址<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/05/09/9438ef11c415bec933d883b682b9edba.png" alt=""></p><ul><li><strong>特别说明❗</strong>：  </li><li>其中的url地址，为下图红框框中内容所示，点击图片显示后、点击<strong>Download</strong>后的url地址。不是下面图片所处状态的url地址。或可根据下方代码段中地址样式修改。  </li><li>对于本文中第二个图片中红色画线的路径，保证本文第一个图片中红色方框框中的内容均放置位置正确，即可不用修改。<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/05/09/87b2dac1f2be480674cea0524d038318.png" alt=""></li></ul><p>或可根据下面代码段地址样式：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var minSrc &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;GH670&#x2F;Blog-Back-Up&#x2F;master&#x2F;min_photos&#x2F;&#39; + data.link[i];</span><br><span class="line">var src &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;GH670&#x2F;Blog-Back-Up&#x2F;master&#x2F;photos&#x2F;&#39; + data.link[i];</span><br><span class="line">&#x2F;&#x2F;var minSrc &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;lawlite19&#x2F;blog-back-up&#x2F;master&#x2F;min_photos&#x2F;&#39; + data.link[i];</span><br><span class="line">&#x2F;&#x2F;var src &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;lawlite19&#x2F;blog-back-up&#x2F;master&#x2F;photos&#x2F;&#39; + data.link[i];</span><br></pre></td></tr></table></figure><p>得出，可按下方所示填写修改url。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var minSrc &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;你的GitHub用户名&#x2F;GitHub仓库名&#x2F;master&#x2F;min_photos&#x2F;&#39; + data.link[i];</span><br><span class="line">var src &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;你的GitHub用户名&#x2F;GitHub仓库名&#x2F;master&#x2F;photos&#x2F;&#39; + data.link[i];</span><br></pre></td></tr></table></figure><p><strong>务必仔细查看，地址切勿填写错误❗</strong></p><h3 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h3><ol start="4"><li>在你的本地任何一个位置建立一个新的文件夹。存放要上传至GitHub相册图库的相片及文件。<br>将此文件夹与上述建立的存放相片的GitHub仓库相连接，具体的git指令此处不再过多说明，可见此链接文章：<a href="https://wblog.tech/github-push.html" target="_blank" rel="noopener">https://wblog.tech/github-push.html</a>，如果有什么疑问可留言。</li><li>将上述下载的文件中，黑色框中文件夹内的文件放置在本地该文件夹内。<br>(即下方图片所示文件)<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/05/09/bb84a07f4f8668cd908bfe321a4231a7.png" alt=""></li><li>修改tool.py文件大约135行处，如下图，将下面位置路径修改为你本地位置的。<strong>此处非常重要</strong>，此处为data.json文件的生成路径，将此文件生成至博客根目录下source/photos文件夹下即可。放置错误可能会导致最终设置完成后相册界面并不能加载出任何的相片，只会显示“图片正在加载中..”，<strong>切记data.json文件的生成路径要为博客根目录下source/photos文件中。</strong><br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/05/09/362905b52401e30dea84b2d70f12eb21.png" alt=""></li><li>每次向相册中添加新的相片时，都需要运行tool.py文件。tool.py中存放着对图片的一系列操作函数、操作完成后产生data.j文件以及将操作后的相片上传至GitHub仓库中。<strong>注意此处，GitHub仓库的连接要保证没有问题，否则会上传不上去文件，进而导致相册功能的失败</strong><br><em>此外，运行python脚本文件需电脑安装有python的运行环境。</em></li></ol><h1 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h1><p><a href="https://wblog.tech/photos/" target="_blank" rel="noopener">https://wblog.tech/photos/</a>  </p><ul><li>由于相册中相片是放置在GitHub仓库中的，基于国内访问GitHub的速度，在不翻墙的情况下，大多数时间会导致图片显示不出来。主要原因就是国内访问GitHub网站速度慢。  </li><li>解决方法：1.cdn加速 2.VPN</li></ul><blockquote><p>参考如下：<br><a href="https://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">https://blog.csdn.net/u013082989/article/details/70162293</a><br><a href="https://blog.csdn.net/wardseptember/article/details/82780684" target="_blank" rel="noopener">https://blog.csdn.net/wardseptember/article/details/82780684</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-实现博客的相册模块
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-友链样式的优化</title>
@@ -406,27 +427,6 @@
     <summary type="html">
     
       三分查找-算法
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>B-计算球的体积</title>
-    <link href="www.wblog.tech/algorithm-Sphere-volume.html"/>
-    <id>www.wblog.tech/algorithm-Sphere-volume.html</id>
-    <published>2020-04-17T01:33:21.037Z</published>
-    <updated>2020-04-22T08:59:39.453Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="B-计算球的体积"><a href="#B-计算球的体积" class="headerlink" title="B-计算球的体积"></a>B-计算球的体积</h2><p>根据输入的半径值，计算球的体积。<br>Input<br>输入数据有多组，每组占一行，每行包括一个实数，表示球的半径。<br>Output<br>输出对应的球的体积，对于每组输入数据，输出一行，计算结果保留三位小数。<br>Sample Input<br>1<br>1.5<br>Sample Output<br>4.189<br>14.137  </p><a id="more"></a><p>Hint<br>#define PI 3.1415927  </p><pre><code class="c++"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iomanip&gt;</span></span><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><span class="function"></span>{    <span class="keyword">double</span> r = <span class="number">0</span>,p=<span class="number">3.1415927</span>;    <span class="keyword">while</span> (<span class="built_in">cin</span>&gt;&gt;r)    {        <span class="keyword">double</span> v;        v = (<span class="number">4</span> *p*r*r*r) / <span class="number">3</span>;        <span class="built_in">cout</span> &lt;&lt; fixed &lt;&lt; setprecision(<span class="number">3</span>) &lt;&lt; v &lt;&lt; <span class="built_in">endl</span>;    }}</code></pre><p>多组输入，需要条件循环语句，<br>需要对小数点后的位数限制，因此用到了库函数setprecision(），对应iomanip头文件。</p>]]></content>
-    
-    <summary type="html">
-    
-      计算球的体积
     
     </summary>
     
