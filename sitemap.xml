@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/Friend-chain/index.html</loc>
+    
+    <lastmod>2020-05-09T00:10:55.612Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/photos/data.json</loc>
+    
+    <lastmod>2020-05-09T00:04:43.907Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/photos/index.html</loc>
     
-    <lastmod>2020-05-08T13:17:18.803Z</lastmod>
+    <lastmod>2020-05-08T14:30:19.184Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>www.wblog.tech/bilibili-houlang.html</loc>
     
     <lastmod>2020-05-08T09:08:55.064Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/Friend-chain/index.html</loc>
-    
-    <lastmod>2020-05-08T07:04:29.252Z</lastmod>
     
   </url>
   
