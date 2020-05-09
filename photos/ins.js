@@ -117,8 +117,10 @@
         var liTmpl = "";
 
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://raw.githubusercontent.com/GH670/Blog-Back-Up/master/min_photos/' + data.link[i];
-          var src = 'https://raw.githubusercontent.com/GH670/Blog-Back-Up/master/photos/' + data.link[i];
+          var minSrc = 'https://cdn.jsdelivr.net/gh/GH670/CDN@1.1.0/min_photos/' + data.link[i];
+          var src = 'https://cdn.jsdelivr.net/gh/GH670/CDN@1.1.0/photos/' + data.link[i];
+          //此处使用cdn..cdn仓库图
+          //https://raw.githubusercontent.com/GH670/Blog-Back-Up/master
           //var minSrc = 'https://raw.githubusercontent.com/lawlite19/blog-back-up/master/min_photos/' + data.link[i];
           //var src = 'https://raw.githubusercontent.com/lawlite19/blog-back-up/master/photos/' + data.link[i];
           var type = data.type[i];
