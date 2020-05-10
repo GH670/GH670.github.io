@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-09T05:35:07.248Z</updated>
+  <updated>2020-05-10T08:14:09.439Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git-部分指令</title>
+    <link href="www.wblog.tech/git-bufenzhiling.html"/>
+    <id>www.wblog.tech/git-bufenzhiling.html</id>
+    <published>2020-05-10T07:57:06.865Z</published>
+    <updated>2020-05-10T08:14:09.439Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><ul><li>记录一些常用的git指令，</li><li>学习记录~<a id="more"></a><h1 id="git指令"><a href="#git指令" class="headerlink" title="git指令"></a>git指令</h1><h2 id="git指令（一）"><a href="#git指令（一）" class="headerlink" title="git指令（一）"></a>git指令（一）</h2></li></ul><ol><li>git本地上传至仓库(已链接远程仓库的情况下)</li></ol><ul><li>git init</li><li>git add .</li><li>git commit -m ‘描述’</li><li>git pull –rebase origin marster</li><li>git push -u origin master</li></ul><ol start="2"><li>git远程与本地链接  </li></ol><ul><li>git remote -v<br>查看本地关联的远程仓库</li><li>git remote add origin ‘远程仓库地址’<br>本地关联远程仓库</li><li>git remote rm origin<br>取消本地关联的远程仓库</li></ul><h2 id="git指令（二）"><a href="#git指令（二）" class="headerlink" title="git指令（二）"></a>git指令（二）</h2><ol><li>git-分支</li></ol><ul><li>git branch<br>查看本地分支</li><li>git branch -r<br>查看远程分支</li><li>git branch -a<br>查看所有分支</li><li>git branch [newbranch]<br>创建新的分支</li><li>git checkout [newbranch]<br>切换分支</li><li>git push origin [newbranch]<br>将新分支push到GitHub</li><li>git branch -D -r<br>删除本地分支</li></ul><blockquote><p>在进行分支操作的时候，注意当前所属分支</p></blockquote><h2 id="git指令（三）"><a href="#git指令（三）" class="headerlink" title="git指令（三）"></a>git指令（三）</h2><ul><li>待续..</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      Git-部分指令
+    
+    </summary>
+    
+    
+    
+      <category term="git" scheme="www.wblog.tech/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-实现博客的相册模块</title>
@@ -406,27 +427,6 @@
     <summary type="html">
     
       编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三分查找-算法</title>
-    <link href="www.wblog.tech/a-sanfensearch.html"/>
-    <id>www.wblog.tech/a-sanfensearch.html</id>
-    <published>2020-04-17T01:33:21.041Z</published>
-    <updated>2020-04-22T09:00:00.152Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">ternarysearch</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> low,<span class="keyword">int</span> high,<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">if</span>(high&lt;low)</span><br><span class="line">j=<span class="number">-1</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">int</span> mid1 =low + (high-low)/<span class="number">3</span>;</span><br><span class="line"><span class="keyword">int</span> mid2 =high- (high-low)/<span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(x=a[mid1])</span><br><span class="line">j = mid1;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x&lt;a[mid1])</span><br><span class="line">j = ternarysearch(a,low,mid1<span class="number">-1</span>,x);</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x=a[mid2])</span><br><span class="line">j = mid2;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(x&gt;a[mid2])</span><br><span class="line">j = ternarysearch(a,low,mid2<span class="number">-1</span>,x);</span><br><span class="line"><span class="keyword">return</span> j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      三分查找-算法
     
     </summary>
     
