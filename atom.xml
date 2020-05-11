@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-11T03:37:02.189Z</updated>
+  <updated>2020-05-11T11:49:46.460Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-关于静态博客动态说说的实现</title>
+    <link href="www.wblog.tech/hexo-shuoshuo.html"/>
+    <id>www.wblog.tech/hexo-shuoshuo.html</id>
+    <published>2020-05-11T11:11:17.008Z</published>
+    <updated>2020-05-11T11:49:46.460Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><ul><li>基于leancloud实现的可实时发布说说的js.</li><li>指条明路 → <a href="https://artitalk.js.org/" target="_blank" rel="noopener">https://artitalk.js.org/</a></li><li>由于此项目处于初期阶段，更新或许比较频繁，故此文仅作参考，建议去查阅官方文档。<a id="more"></a><h1 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h1><h2 id="Leancloud"><a href="#Leancloud" class="headerlink" title="Leancloud"></a>Leancloud</h2></li></ul><ol><li>使用国际版的leancloud注册账号以及完成绑定邮箱及手机号等实名操作，否则不能创建应用。</li><li>创建应用，名称随意，建议取名为shuoshuo.</li><li>在新创建的应用中，找到”结构化数据”下的”用户”，点击”添加用户”,输入用户名密码，记住此用户名密码，下面的设置会用到。</li><li>点击”结构化数据”，点击”class”下的”shuoshuo”。找到”权限”，在”Class”访问权限”中,将”add_fields”,”create”,”delete”,”update”设置指定用户可见，输入刚刚设置的用户名，系统会自动匹配到刚刚你设置的用户名密码的，点击添加并确认即可。</li><li>在菜单栏中找到”设置”-&gt;”应用keys”，将”AppID”和”AppKey”记录下来，之后的设置会用到。</li></ol><h2 id="hexo博客"><a href="#hexo博客" class="headerlink" title="hexo博客"></a>hexo博客</h2><ol><li><p>hexo new page shuoshuo ,生成一个说说界面，在此文件夹中的index.md文件中，填下下属代码。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"https://libs.baidu.com/jquery/2.0.0/jquery.min.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">var img="";                 /</span><span class="regexp">/说说旁边显示的头像</span></span><br><span class="line"><span class="regexp">var appID="";               /</span><span class="regexp">/Leancloud中的AppID</span></span><br><span class="line"><span class="regexp">var appKEY="";              /</span><span class="regexp">/Leancloud中的AppKEY</span></span><br><span class="line"><span class="regexp">var per="";                 /</span><span class="regexp">/每页显示说说的数量</span></span><br><span class="line"><span class="regexp">var username="";            /</span><span class="regexp">/Leancloud中设置的用户名</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line">&lt;div id=<span class="string">"lazy"</span>&gt;&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;div id="artitalk"&gt;&lt;/</span>div&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"https://unpkg.com/artitalk"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure><p>上述中列出来的五项var，均为必须设置。<br>其中还可以在后添加</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> placeholder1=<span class="string">""</span><span class="comment">//在编辑说说的输入框中的占位符</span></span><br><span class="line"><span class="keyword">var</span> placeholder2=<span class="string">""</span><span class="comment">//输入密码的输入框的占位符</span></span><br><span class="line"><span class="keyword">var</span> placeholder3=<span class="string">""</span><span class="comment">//输入头像url的输入框的占位符（不填写开启即为默认头像）</span></span><br><span class="line"><span class="keyword">var</span> lazy=<span class="string">""</span>        <span class="comment">//是否开启加载动画（1：开启 0：关闭）</span></span><br><span class="line"><span class="keyword">var</span> bgimg=<span class="string">""</span>    <span class="comment">//说说输入框背景图片（需为图片格式）</span></span><br></pre></td></tr></table></figure></li><li><p>更新测试  </p></li></ol><ul><li>hexo g &amp;&amp; hexo s,进行本地的更新测试。<br>打开设置的说说界面，这个说说界面还需要在博客主题目录下的_config.yml添加，不同的主题添加的方式不同，我的主题为在menu中添加”说说：/shuoshuo/“即可。<br>进入说说界面，进行测试即可。<br>输入完说说的内容后，输入之前在leancloud创建的shuoshuo应用中,设置的用户名的密码，点击发布即可。</li></ul><h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><ul><li>项目目前处于初步阶段，更新或频繁，建议多多阅读官方的使用文档。</li><li>我的主题为yileas,基于yilia主题的魔改版。</li><li>再次声明，此教程仅作参考，详细具体还请详见项目使用文档。</li><li>教程就是这么的简单，该功能的添加并不复杂，原则上适合任何的hexo主题。<blockquote><p>项目源地址：<a href="https://github.com/Drew233/Artitalk" target="_blank" rel="noopener">https://github.com/Drew233/Artitalk</a><br>项目文档：<a href="https://artitalk.js.org/" target="_blank" rel="noopener">https://artitalk.js.org/</a><br>我的说说：<a href="https://wblog.tech/photos/Sshuo.html" target="_blank" rel="noopener">https://wblog.tech/photos/Sshuo.html</a>  </p></blockquote></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-实现静态博客的动态说说
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Git-部分指令</title>
@@ -406,27 +427,6 @@
     <summary type="html">
     
       A-求绝对值
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>求最大、最小元素的平均比较次数</title>
-    <link href="www.wblog.tech/max-min-compare.html"/>
-    <id>www.wblog.tech/max-min-compare.html</id>
-    <published>2020-04-17T01:33:21.043Z</published>
-    <updated>2020-05-11T03:35:14.554Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。"><a href="#编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。" class="headerlink" title="编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。"></a>编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXN 10</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">randa</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n)</span> <span class="comment">//随机产生20以内的10个数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        a[i] = rand()%<span class="number">20</span>+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MaxMin</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> n,<span class="keyword">int</span> &amp;comp)</span><span class="comment">//寻找最大最小元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,<span class="built_in">max</span>,<span class="built_in">min</span>;</span><br><span class="line">    <span class="built_in">max</span> = <span class="built_in">min</span> =a[<span class="number">0</span>];</span><br><span class="line">    comp=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;n;i++)&#123;</span><br><span class="line">        comp++;</span><br><span class="line">        <span class="keyword">if</span>(a[i]&gt;<span class="built_in">max</span>)</span><br><span class="line">            <span class="built_in">max</span> = a[i];</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            comp++;</span><br><span class="line">            <span class="keyword">if</span>(a[i]&lt;<span class="built_in">min</span>)&#123;</span><br><span class="line">                <span class="built_in">min</span> = a[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%3d"</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n最大值 = %d,最小值 = %d,比较次数 = %d"</span>,<span class="built_in">max</span>,<span class="built_in">min</span>,comp);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[MAXN];</span><br><span class="line">    <span class="keyword">int</span> m,count=<span class="number">0</span>,comp,sumcomp=<span class="number">0</span>;</span><br><span class="line">    srand((<span class="keyword">unsigned</span>)time(<span class="literal">NULL</span>));    </span><br><span class="line">    <span class="keyword">for</span>(m=<span class="number">1</span>;m&lt;=<span class="number">10</span>;m++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n第%2d组:"</span>,++count);</span><br><span class="line">        randa(a,<span class="number">10</span>);</span><br><span class="line">        MaxMin(a,<span class="number">10</span>,comp);</span><br><span class="line">        sumcomp += comp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n平均比较次数 = %g"</span>,<span class="number">1.0</span>*sumcomp/<span class="number">10</span>);</span><br><span class="line">system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      编写一个程序，随机产生20以内的10个整数，设计一个高效算法寻找其中最大最小元素，统计元素间比较次数。并调用该算法执行10次并求元素的平均比较次数。
     
     </summary>
     
