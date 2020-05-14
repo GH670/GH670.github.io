@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/test-yilia-ques.html</loc>
+    <lastmod>2020-05-14</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/hexo-shuoshuo.html</loc>
     <lastmod>2020-05-11</lastmod>
   </url>  <url>
@@ -140,9 +143,6 @@
     <lastmod>2020-05-11</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/basis-hello-world.html</loc>
-    <lastmod>2020-05-11</lastmod>
-  </url>  <url>
-    <loc>www.wblog.tech/test-yilia-ques.html</loc>
     <lastmod>2020-05-11</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/hexo-aliyundajianhexo.html</loc>
