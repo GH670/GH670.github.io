@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-11T11:49:46.460Z</updated>
+  <updated>2020-05-16T02:34:57.176Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>疫情之下超长假期之开学前的闲谈杂事</title>
+    <link href="www.wblog.tech/hexo-xiantanzashi1.html"/>
+    <id>www.wblog.tech/hexo-xiantanzashi1.html</id>
+    <published>2020-05-16T02:26:18.960Z</published>
+    <updated>2020-05-16T02:34:57.176Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">疫情之下超长假期之开学前的闲谈杂事</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="5a8c707d7691848589637ebac2c4e67c2be22fe133fb458231a99efffee02b4b">cbc64c84934653700c9114c189ccf22491e8a1732e1ca01cbed7b050a59b37a363d929db0fadbfea813602b2aef526e46d1f4d2038abadb186439922203a5781649bf1e8aad11db03d5a38ba1845437dc9acc6af6dab40f8dee8af644bd3217d23f91db0c346f811f3fee97c7fda7ece7e23e546ed206205fe7e493bc02c39200c99c1e7bce52a8ae2e27a61a448512a25571a7945fb87da51e25445064f84b89e0cbeb9d3da225e6bb40822df9555a74390f66c862d2087245ffd0f2dbc9edd6229d1d9cc97c0e59232065065730df70c987fef5a7577ea59370c11cfb7b4dc6c5663b109ca16519e8db3d810e47947ab615ab1921b029971f27c312a548888928b1c041b851d6ec06df34e37c53a08965104b285ea94ccd7c927fd0658f1b0a066d72061a51aad8dea71fdb0bcfa8836c8936884602168822b4994cbf148404d9f9d04309b5381b7570fc1e28e69dc4aaecd95123932c18d7ee2a15251a660c0a1f1fbe36f79b2680063349e9ad83428fb91a59eaa77fdb11cd44ecf72052940ccaf1faf5aa099f1f133a9216161efd56314741b5f09c263216441e52c2edfac308f54874451ca99cd599fe9c219136ed0e9912b00e977c0ad994c7274b75bf35bc39e690e02ec8d926ce39fe3134c3a66f8b1aa224877ff7fa1901f6f1002fbba60fa6414073773553c1d5e67ef4a6e8139536ba0072b51e0b238aef9a559df683a823756da45cad246a729ca4ef0ff13280dc53196af3b7c7835fbdfd6a9</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      疫情之下超长假期之开学前的闲谈杂事
+    
+    </summary>
+    
+    
+    
+      <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-关于静态博客动态说说的实现</title>
@@ -406,27 +427,6 @@
     <summary type="html">
     
       算法相关
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A-求绝对值</title>
-    <link href="www.wblog.tech/a-abs.html"/>
-    <id>www.wblog.tech/a-abs.html</id>
-    <published>2020-04-17T01:33:21.046Z</published>
-    <updated>2020-05-11T03:35:02.285Z</updated>
-    
-    <content type="html"><![CDATA[<p>求实数的绝对值。<br>Input<br>输入数据有多组，每组占一行，每行包含一个实数。<br>Output<br>对于每组输入数据，输出它的绝对值，要求每组数据输出一行，结果保留两位小数。<br>Sample Input<br>123<br>-234.00  </p><a id="more"></a>  <p>Sample Output<br>123.00<br>234.00  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">zxd</span> <span class="params">(<span class="keyword">double</span> x)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> x;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">scanf</span>(<span class="string">"%lf"</span>, &amp;x)!=EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">double</span> y = zxd(x);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>,y);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">zxd</span> <span class="params">(<span class="keyword">double</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> z;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;=<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        z=x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        z = -x;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      A-求绝对值
     
     </summary>
     
