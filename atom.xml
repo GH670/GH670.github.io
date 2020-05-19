@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-16T02:34:57.176Z</updated>
+  <updated>2020-05-19T11:46:48.655Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CCF 2014-1 相反数</title>
+    <link href="www.wblog.tech/ccf201403-1.html"/>
+    <id>www.wblog.tech/ccf201403-1.html</id>
+    <published>2020-05-19T11:44:48.273Z</published>
+    <updated>2020-05-19T11:46:48.655Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述<br>　　有 N 个非零且各不相同的整数。请你编一个程序求出它们中有多少对相反数(a 和 -a 为一对相反数)。<br>输入格式<br>　　第一行包含一个正整数 N。(1 ≤ N ≤ 500)。<br>　　第二行为 N 个用单个空格隔开的非零整数,每个数的绝对值不超过1000,保证这些整数各不相同。<br>输出格式<br>　　只输出一个整数,即这 N 个数中包含多少对相反数。  </p><a id="more"></a><p>样例输入<br>5<br>1 2 3 -1 -2<br>样例输出<br>2  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> n,sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">1000</span>];</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;n;j++)</span><br><span class="line"><span class="keyword">if</span>(a[i]+a[j]==<span class="number">0</span>)</span><br><span class="line">sum++;</span><br><span class="line"></span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;sum;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      CCF 2014-1 相反数
+    
+    </summary>
+    
+    
+    
+      <category term="CCF" scheme="www.wblog.tech/tags/CCF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CCF 2014-9 相邻数对</title>
+    <link href="www.wblog.tech/ccf201409-1.html"/>
+    <id>www.wblog.tech/ccf201409-1.html</id>
+    <published>2020-05-19T11:30:57.438Z</published>
+    <updated>2020-05-19T11:36:59.879Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述<br>　　给定n个不同的整数，问这些数中有多少对整数，它们的值正好相差1。<br>输入格式<br>　　输入的第一行包含一个整数n，表示给定整数的个数。<br>　　第二行包含所给定的n个整数。<br>输出格式<br>　　输出一个整数，表示值正好相差1的数对的个数。  </p><a id="more"></a><p>样例输入<br>6<br>10 2 6 3 7 8<br>样例输出<br>3<br>样例说明<br>　　值正好相差1的数对包括(2, 3), (6, 7), (7, 8)。<br>评测用例规模与约定<br>　　1&lt;=n&lt;=1000，给定的整数为不超过10000的非负整数。    </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> num[<span class="number">1000</span>];</span><br><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line"><span class="built_in">cin</span> &gt;&gt; num[i];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++)&#123; </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; n - i; j++)&#123; </span><br><span class="line"><span class="keyword">if</span> ((num[i] == num[i + j] + <span class="number">1</span>) || (num[i] == num[i + j] - <span class="number">1</span>))</span><br><span class="line">count++;</span><br><span class="line">&#125;</span><br><span class="line">&#125; </span><br><span class="line"><span class="built_in">cout</span> &lt;&lt; count;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      CCF，2014-9，相邻数对
+    
+    </summary>
+    
+    
+    
+      <category term="CCF" scheme="www.wblog.tech/tags/CCF/"/>
+    
+  </entry>
   
   <entry>
     <title>疫情之下超长假期之开学前的闲谈杂事</title>
@@ -391,48 +433,6 @@
     
     
       <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020年-元年</title>
-    <link href="www.wblog.tech/jihua20.html"/>
-    <id>www.wblog.tech/jihua20.html</id>
-    <published>2020-04-17T01:41:55.186Z</published>
-    <updated>2020-05-16T11:05:55.561Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">你不能一直做一些烂事，然后自己后悔，好像后悔有用一样，你需要变好。</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="ed8062934093dc622b3c726966dacebe12777d3003b8a651df85d416fed1eb37">1459a842658dc431eb8d3390640026085dc8dba30abea5c8878adf87049cf3f51d485dba0c2a14b80ea724d10b9ea6f1ec0fedf7b39a661c1cefaee94a1e5f97c67b8524a63ebbdd77d8518068346a8e0943718998ba7452c1c2440e88d14e8deb5cfd86420fafab9ea8a10c346c302f4c461a0890578ac2c0e73425f7c446c4e5616163415c8c126bb44b6120d00d1e4ca7e1ec92c8af844aab6a624328057ec26bd6d59e44fbd6fe138ec315a953922641c8dcb13da8c123ab9a9be22832385f73793476b1a91cd00a4b64c2408435df76099ade55664ad480340985c6b6857f1e05d0e4d32efc43124c976aebc65f4933d9c4e9109b9aca2777f8be7fa2cbea4c9da6eda24de2d5808eabd7f8d7bff6498bf26c195e76a6f37efbe1e40a0ab6685a16d17b7ab8cbbdda55c6ec8592ae4775e2520d7a7bb4e4b8790969fbb924a2479d2b00957b78dd12e806f1766f5481604067b15221188f1bd8fe27609f7e9ff345349a8d04d2b0678d065fc71501e07bf1fdb8c42f26ed84caf2eab6dfb12241307c759027ec5a53f474f7c0663ffbbdd52223d291b5d4f717d64e2c0b52c1b810196dea28f0931f54086ac91e3bb1ea96c876cf153e8b5c0e5a9f53a1e9219e7c9355fecca9d198c6ef6526686865e0303df231cf409d2a9bfcb103ddd3502e1efe418dc4fb1e23542ed2a5a333053bfdec3047fc00a19f0e04ced586e492097f8e2b070b4ddb1f07fce5323ee6ae7015a905ec265e66c543bad2c19f0b1877f7ae2e61b48d36eb4783d1652fcd2dfa2b03160269f3b45eed662fd1a5af6ab237bb8582643690a3c899825b61f085230fc63f794eb86aa61064c47427ec035b2929f9bd1375dc8c87b424e3bbf1d1e85c5d936aa7752223183e74e5f39b24a305aa94b5fb87a1c585c00916f581c9943dab0c09efad1403842a9f79556380bc19f46b7bb35754a4289d38d3e471af5082432979ac9add4cb2e2d419dc2028efa3130c50b7a40a95ae660bd5b735d3e9934bc09d3336f650a3ee8dd9b1e96dee7c82a43e3e19c93c968a8d047f5ddc3de149e23de441a7b9add639297b07e10416c0cda1060e25a0089ad9f5a74d016048efa0b4764c4698231b1c62554178b370b8aefac672169d4fbec4ebd9ceb022618aa5881229ce538d952d9eed269491bfcb557f3db41495a4afb908c32a19c79690518bdbaf5f0d1071987637a329a43e81d624dea6eefea123861df83a79d0d00470a4fac21d342acae059e8c300381a5541bfec9c8510afb221b9b4c15d403f53ae4627af4f4f7b96058e0363139fb448d2ada2dc20f347a9984873670afcd861310dcc2059d7fb7caf80e1f80ab93a65d6f582ecf2ed8f8a8da130f7c726b9bb4f6bef3bb92a8ba080805f280a6de266603d66accac03aed09b57aebaf7d5b8a43b5bf048b8812ea387d5629a81e6341d0bf44f7501f1c9633e41ea14975f75be0cc60e3e84768d85957b1d0548db588241248782afd28870c82a2855270cb876b3e6199eb9f2689452f0629d6cd24b6475af678de34edb08bdb6996e88a96caebabaeba58788d17d685a1558929ae5ff87002cca57abaf0aa55c200be053dd7905feab02f719ef0f2fdfdb5b4bec974c3e76a032f4d4600fa515dd5fe1cb7040776a0b0e51f940bbd18e5b95fc57c92084b738482a99e99b7ac3f23d9be0e86197004540267a9c780412b1ae5e24eeeca65aa20879e43127eefc57827db4b4ed3909e4d96026aa5fddba931729f9f417521eb877a6f8e65424f029b8c9a6cca53aee9d6ccff01f819e58c939e80450a36ab8f3ee86850353a227b211bc04fa342a58752656c1247b7302915373095d4acc9df8ac41fecacf102c6865c669115ac11ab3e76a33e771a5c6b40464053a72731e60a769d1fb9b548b4dd00bbb0913467130a53883f6910f7e4bc69b624952c0d8d0e8eb5f05993cf1dbc37784d720cd5d168916bbb5458ddca7f9cc275cb88b82b5b45f692d3f0a30cdd8a1e2306f05d5a26add7c99c4fe4530038562ee21ec73e46b78c3a1b7cfd4c98521f61ec56a4bb5e3d0008e535597fa474ccbf871b5b5f500e029a246df750e74deee5cad13675495b005bb4d9dca565468455ad13187587ec216544bca726f14de079b76b6754ea55c4f106f96b1d836b2ce51c6d6b9adf4b1a6f072e59000e9ee6f1545d11a66f5e7308d1307963c84252f9d8bfc5fc0a92d3afb32afce6d49ce76001f09107fb11b27f0842adf1defd4e9414a952f18217003bedcab23030ad47549c81aba94625b9795f62bdb4</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      ⚠首页说明❗❗❗博主比较菜，计算机专业初级学者，感谢访问。如有bug烦请告知❗学习复习备考ing
-    
-    </summary>
-    
-    
-    
-      <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法相关-小知识点</title>
-    <link href="www.wblog.tech/algorithm.html"/>
-    <id>www.wblog.tech/algorithm.html</id>
-    <published>2020-04-17T01:33:21.048Z</published>
-    <updated>2020-05-11T03:35:10.961Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一部分的算法小知识"><a href="#一部分的算法小知识" class="headerlink" title="一部分的算法小知识~"></a>一部分的算法小知识~</h3><p>1.万能头文件<br>#include &lt;bits/stdc++.h&gt;<br>包含C++的所有头文件，但会降低编程速度，编译原理相关问题。</p>]]></content>
-    
-    <summary type="html">
-    
-      算法相关
-    
-    </summary>
-    
-    
-    
-      <category term="算法" scheme="www.wblog.tech/tags/algorithm/"/>
     
   </entry>
   
