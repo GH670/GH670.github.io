@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-22T01:29:02.529Z</updated>
+  <updated>2020-05-22T12:05:42.725Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="www.wblog.tech/hexo-error-fatal.html"/>
     <id>www.wblog.tech/hexo-error-fatal.html</id>
     <published>2020-05-22T01:21:41.133Z</published>
-    <updated>2020-05-22T01:29:02.529Z</updated>
+    <updated>2020-05-22T12:05:42.725Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>那些年，写出的bug,供大家欣赏🤣<a id="more"></a></li></ul><ol><li>undefined reference to winmain<br>main?mian?</li><li>[Error] expected ‘;’ before ‘struct’<br>;</li><li>[Error] stray ‘\273’ in program<br>:?;?</li><li>未完待续..</li></ol>]]></content>
+    <content type="html"><![CDATA[<ul><li>那些年，写出的bug,供大家欣赏🤣<a id="more"></a></li></ul><ol><li>undefined reference to winmain<br>main?mian?</li><li>[Error] expected ‘;’ before ‘struct’<br>;</li><li>[Error] stray ‘\273’ in program<br>:?;?</li><li>[Error] expected ‘}’ at end of input<br>缺少’}’</li><li>error: reference to ‘min’ is ambiguous<br>自定义的变量名与库中的重名了  </li><li>未完待续..</li></ol>]]></content>
     
     <summary type="html">
     
