@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/hexo-xiantanzashi1.html</loc>
+    
+    <lastmod>2020-05-25T11:37:31.338Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/hexo-error-fatal.html</loc>
     
     <lastmod>2020-05-22T12:05:42.725Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>www.wblog.tech/rijiben.html</loc>
     
     <lastmod>2020-05-16T11:05:17.436Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/hexo-xiantanzashi1.html</loc>
-    
-    <lastmod>2020-05-16T02:34:57.176Z</lastmod>
     
   </url>
   
