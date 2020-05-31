@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>www.wblog.tech/sum-up-5.html</loc>
+    
+    <lastmod>2020-05-31T02:01:47.126Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>www.wblog.tech/jihua20.html</loc>
     
-    <lastmod>2020-05-27T23:07:09.332Z</lastmod>
+    <lastmod>2020-05-30T13:55:56.239Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>www.wblog.tech/rijiben.html</loc>
+    
+    <lastmod>2020-05-30T13:55:32.077Z</lastmod>
     
   </url>
   
@@ -89,13 +103,6 @@
     <loc>www.wblog.tech/hexo-aliyundajianhexo.html</loc>
     
     <lastmod>2020-05-17T12:19:30.393Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>www.wblog.tech/rijiben.html</loc>
-    
-    <lastmod>2020-05-16T11:05:17.436Z</lastmod>
     
   </url>
   
