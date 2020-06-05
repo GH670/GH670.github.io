@@ -7,19 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="www.wblog.tech">
-  <title>Archives: 2020 | GH670</title>
+  <title>python大作业-记录 | GH670</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Gh670&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GH670">
-<meta property="og:url" content="www.wblog.tech/archives/2020/page/5/index.html">
+  <meta name="description" content="Python~大作业只有自己能看懂系列~~乱七八糟学习记录。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python大作业-记录">
+<meta property="og:url" content="www.wblog.tech/python-dazuoye.html">
 <meta property="og:site_name" content="GH670">
-<meta property="og:description" content="Gh670&#39;s blog">
+<meta property="og:description" content="Python~大作业只有自己能看懂系列~~乱七八糟学习记录。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-06-05T01:09:57.920Z">
+<meta property="article:modified_time" content="2020-06-05T08:16:06.039Z">
 <meta property="article:author" content="GH670">
-<meta property="article:tag" content="wblog.tech">
-<meta property="article:tag" content="wblog">
-<meta property="article:tag" content="GH670">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="GH670" type="application/atom+xml">
@@ -251,423 +251,309 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-【Python】python大作业" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      python大作业-记录
+    </h1>
+  
+
+        
+        
+	<!-- 不蒜子统计 -->
+	<span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+		  <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+<a href="/python-dazuoye.html" class="archive-article-date">
+  	<time datetime="2020-06-05T01:09:57.920Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-05</time>
+</a>
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">698字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">2分</span>
+      </span>
+    </span>
+</div>
+
+          
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Python-大作业"><a href="#Python-大作业" class="headerlink" title="Python~大作业"></a>Python~大作业</h1><p>只有自己能看懂系列~~乱七八糟学习记录。</p>
+<a id="more"></a>
+
+<h1 id="库函数"><a href="#库函数" class="headerlink" title="库函数"></a>库函数</h1><h2 id="sklearn的train-test-split"><a href="#sklearn的train-test-split" class="headerlink" title="sklearn的train_test_split"></a>sklearn的train_test_split</h2><p>train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。<br>格式：<br>X_train,X_test, y_train, y_test =cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)   </p>
+<p>参数解释：<br>train_data：被划分的样本特征集<br>train_target：被划分的样本标签<br>test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量<br>random_state：是随机数的种子。<br>随机数种子：其实就是该组随机数的编号，在需要重复试验的时候，保证得到一组一样的随机数。比如你每次都填1，其他参数一样的情况下你得到的随机数组是一样的。但填0或不填，每次都会不一样。<br>随机数的产生取决于种子，随机数和种子之间的关系遵从以下两个规则：<br>种子不同，产生不同的随机数；种子相同，即使实例不同也产生相同的随机数。  </p>
+<h2 id="Sklearn库中Logistic-Regression函数各个参数总结"><a href="#Sklearn库中Logistic-Regression函数各个参数总结" class="headerlink" title="Sklearn库中Logistic Regression函数各个参数总结"></a>Sklearn库中Logistic Regression函数各个参数总结</h2><blockquote>
+<p><a href="https://blog.csdn.net/qq_38683692/article/details/82533460" target="_blank" rel="noopener">https://blog.csdn.net/qq_38683692/article/details/82533460</a></p>
+</blockquote>
+<ul>
+<li>Python的Sklearn库的基本用法<blockquote>
+<p><a href="https://www.cnblogs.com/zx931880423/p/11543256.html" target="_blank" rel="noopener">https://www.cnblogs.com/zx931880423/p/11543256.html</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>机器学习之特征工程<br><a href="http://www.csuldw.com/2015/10/24/2015-10-24%20feature%20engineering/" target="_blank" rel="noopener">http://www.csuldw.com/2015/10/24/2015-10-24%20feature%20engineering/</a><br><a href="https://blog.csdn.net/m0_38024592/article/details/80836217" target="_blank" rel="noopener">https://blog.csdn.net/m0_38024592/article/details/80836217</a><br>df.drop()<br><a href="https://blog.csdn.net/qq_42774323/article/details/99737466" target="_blank" rel="noopener">https://blog.csdn.net/qq_42774323/article/details/99737466</a>  </p>
+<p>阿里天池<br><a href="https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797</a><br><a href="https://tianchi.aliyun.com/notebook-ai/detail?postId=38470" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?postId=38470</a>  </p>
+<p>Python的Sklearn库的基本用法<br><a href="https://www.cnblogs.com/zx931880423/p/11543256.html" target="_blank" rel="noopener">https://www.cnblogs.com/zx931880423/p/11543256.html</a><br>sklearn的train_test_split<br><a href="https://www.cnblogs.com/bonelee/p/8036024.html" target="_blank" rel="noopener">https://www.cnblogs.com/bonelee/p/8036024.html</a>  </p>
+<p>【一】零基础入门深度学习：用numpy实现神经网络训练<br><a href="https://mp.weixin.qq.com/s/_2ya_3l1wT9PEKi9aEw7ww" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/_2ya_3l1wT9PEKi9aEw7ww</a>  </p>
+<p>对分类型变量，进行编码处理——pd.get_dummies()、LabelEncoder()、oneHotEncoder()<br><a href="https://www.cnblogs.com/wyy1480/p/10295084.html" target="_blank" rel="noopener">https://www.cnblogs.com/wyy1480/p/10295084.html</a>  </p>
+<p>机器学习入门-概率阈值的逻辑回归对准确度和召回率的影响 lr.predict_pr<br><a href="https://www.cnblogs.com/my-love-is-python/p/10271240.html" target="_blank" rel="noopener">https://www.cnblogs.com/my-love-is-python/p/10271240.html</a>  </p>
+<h2 id="aliyun"><a href="#aliyun" class="headerlink" title="aliyun"></a>aliyun</h2><p>学生成绩预测_PAT最佳实践<br><a href="https://help.aliyun.com/document_detail/43891.html#h2-u6570u636Eu96C6u4ECBu7ECD2" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/43891.html#h2-u6570u636Eu96C6u4ECBu7ECD2</a>  </p>
+<p>python数据分析（三）——逻辑回归之学生成绩预测<br><a href="https://zhuanlan.zhihu.com/p/87846855" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/87846855</a>  </p>
+<p>逻辑回归实战练习——根据学生成绩预测是否被录取<br><a href="https://zhuanlan.zhihu.com/p/61414743" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/61414743</a>  </p>
+<p>Python 机器学习实战：根据成绩预测大学生能否被高校录取<br><a href="https://blog.csdn.net/dengheCSDN/article/details/79054091" target="_blank" rel="noopener">https://blog.csdn.net/dengheCSDN/article/details/79054091</a>  </p>
+<p>【机器学习PAI实践八】用机器学习算法评估学生考试成绩<br><a href="https://blog.csdn.net/buptgshengod/article/details/73087225" target="_blank" rel="noopener">https://blog.csdn.net/buptgshengod/article/details/73087225</a>  </p>
+<p>阿里天池学生考试成绩预测-<br><a href="https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797</a><br><a href="https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12281915.0.0.340c355emr7Jj0&amp;postId=38406" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12281915.0.0.340c355emr7Jj0&amp;postId=38406</a>  </p>
+<h2 id="学无止境"><a href="#学无止境" class="headerlink" title="学无止境"></a>学无止境</h2><ul>
+<li>机器学习，只有趋于无限的接近。</li>
+</ul>
+
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
+    <!-- 《添加版权声明 -->
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/hexo-github-picgo.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.994Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/hexo-github-picgo.html">Github+PicGo 搭建图床</a>
-    </h1>
-  
+      <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
 
-        <div class="article-info info-on-right">
-          
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare">
+    <strong class="author">本文作者：</strong>
+    
+      GH670
+    
+    <br>
+    <strong class="create-time">发布时间：</strong>
+    2020-06-05
+    <br>
+    <strong class="update-time">最后更新：</strong>
+    2020-06-05
+    <br>
+    <strong class="article-titles">本文标题：</strong>
+    <a href="www.wblog.tech/python-dazuoye.html" title="python大作业-记录" target="_blank">python大作业-记录</a>
+    <br>
+    <strong class="article-url">本文链接：</strong>
+    <a href="www.wblog.tech/python-dazuoye.html" title="python大作业-记录" target="_blank">www.wblog.tech/python-dazuoye.html</a>
+    <br>
+    <strong class="copyright">版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+    许可协议进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
+
+<!-- 添加版权声明》 -->
+    
+    <!-- 添加版权声明》 -->
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>Thank you for your support and encouragement<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+
+
+    <div class="article-info article-info-index">
+
+      
+
+
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=GH670.github.iopython-dazuoye.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/hexo-404.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.992Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/sum-up-5.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">五月份-总结盘复</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/hexo-404.html">Hexo-404</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Python-大作业"><span class="toc-number">1.</span> <span class="toc-text">Python~大作业</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#库函数"><span class="toc-number">2.</span> <span class="toc-text">库函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sklearn的train-test-split"><span class="toc-number">2.1.</span> <span class="toc-text">sklearn的train_test_split</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sklearn库中Logistic-Regression函数各个参数总结"><span class="toc-number">2.2.</span> <span class="toc-text">Sklearn库中Logistic Regression函数各个参数总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">2.3.</span> <span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#aliyun"><span class="toc-number">2.4.</span> <span class="toc-text">aliyun</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#学无止境"><span class="toc-number">2.5.</span> <span class="toc-text">学无止境</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/git-false.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.989Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+<script>
+  var valineConifg = {"appId":"kVQCjjM5KQdlOecKV2TEf1Cs-gzGzoHsz","appKey":"EsotLcdbI03SC9LGGTzilV6h","verify":false,"notify":true,"avatar":"robohash","placeholder":"友情提示，留下正确的邮箱地址可以第一时间获取评论反馈。   因流控原因，消息可能回复不及时，若有意可通过Email/QQ/WeChat等联系~  感谢理解。","pageSize":12,"visitor":true,"recordIP":true,"enableQQ":true,"version":"latest"};
+  valineConifg.el = '#vcomment';
+    window.onload = function(){
+      new Valine(valineConifg);
+    }
+</script>
+    </section>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/git-false.html">Git fatal:... 、git error 报错的处理办法</a>
-    </h1>
+  
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/git-mail.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.984Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/git-mail.html">Git使用命令行更改用户名及邮箱</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/git-Github-gitee.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.981Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/git-Github-gitee.html">Github-gitee</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/github-hosts.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.977Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/github-hosts.html">Github访问-加速</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/github-yuming.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.975Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/github-yuming.html">Github 博客绑定域名</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/github-push.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.968Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/github-push.html">GitHub——向远程仓库提交</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/code-zhishidian.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.964Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/code-zhishidian.html">Code-相关知识点</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">code</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/ccf201703-1.html" class="archive-article-date">
-  	<time datetime="2020-04-17T01:33:20.962Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/ccf201703-1.html">CCF 201703-1 分蛋糕</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CCF</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/page/4/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2020/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/page/3/">3</a><a class="page-number" href="/archives/2020/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/archives/2020/page/6/">6</a><a class="extend next" rel="next" href="/archives/2020/page/6/">Next &amp;raquo;</a>
-    </nav>
   
 
 
@@ -749,8 +635,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

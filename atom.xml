@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-05-31T02:01:47.126Z</updated>
+  <updated>2020-06-05T08:16:06.039Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python大作业-记录</title>
+    <link href="www.wblog.tech/python-dazuoye.html"/>
+    <id>www.wblog.tech/python-dazuoye.html</id>
+    <published>2020-06-05T01:09:57.920Z</published>
+    <updated>2020-06-05T08:16:06.039Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Python-大作业"><a href="#Python-大作业" class="headerlink" title="Python~大作业"></a>Python~大作业</h1><p>只有自己能看懂系列~~乱七八糟学习记录。</p><a id="more"></a><h1 id="库函数"><a href="#库函数" class="headerlink" title="库函数"></a>库函数</h1><h2 id="sklearn的train-test-split"><a href="#sklearn的train-test-split" class="headerlink" title="sklearn的train_test_split"></a>sklearn的train_test_split</h2><p>train_test_split函数用于将矩阵随机划分为训练子集和测试子集，并返回划分好的训练集测试集样本和训练集测试集标签。<br>格式：<br>X_train,X_test, y_train, y_test =cross_validation.train_test_split(train_data,train_target,test_size=0.3, random_state=0)   </p><p>参数解释：<br>train_data：被划分的样本特征集<br>train_target：被划分的样本标签<br>test_size：如果是浮点数，在0-1之间，表示样本占比；如果是整数的话就是样本的数量<br>random_state：是随机数的种子。<br>随机数种子：其实就是该组随机数的编号，在需要重复试验的时候，保证得到一组一样的随机数。比如你每次都填1，其他参数一样的情况下你得到的随机数组是一样的。但填0或不填，每次都会不一样。<br>随机数的产生取决于种子，随机数和种子之间的关系遵从以下两个规则：<br>种子不同，产生不同的随机数；种子相同，即使实例不同也产生相同的随机数。  </p><h2 id="Sklearn库中Logistic-Regression函数各个参数总结"><a href="#Sklearn库中Logistic-Regression函数各个参数总结" class="headerlink" title="Sklearn库中Logistic Regression函数各个参数总结"></a>Sklearn库中Logistic Regression函数各个参数总结</h2><blockquote><p><a href="https://blog.csdn.net/qq_38683692/article/details/82533460" target="_blank" rel="noopener">https://blog.csdn.net/qq_38683692/article/details/82533460</a></p></blockquote><ul><li>Python的Sklearn库的基本用法<blockquote><p><a href="https://www.cnblogs.com/zx931880423/p/11543256.html" target="_blank" rel="noopener">https://www.cnblogs.com/zx931880423/p/11543256.html</a></p></blockquote></li></ul><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>机器学习之特征工程<br><a href="http://www.csuldw.com/2015/10/24/2015-10-24%20feature%20engineering/" target="_blank" rel="noopener">http://www.csuldw.com/2015/10/24/2015-10-24%20feature%20engineering/</a><br><a href="https://blog.csdn.net/m0_38024592/article/details/80836217" target="_blank" rel="noopener">https://blog.csdn.net/m0_38024592/article/details/80836217</a><br>df.drop()<br><a href="https://blog.csdn.net/qq_42774323/article/details/99737466" target="_blank" rel="noopener">https://blog.csdn.net/qq_42774323/article/details/99737466</a>  </p><p>阿里天池<br><a href="https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797</a><br><a href="https://tianchi.aliyun.com/notebook-ai/detail?postId=38470" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?postId=38470</a>  </p><p>Python的Sklearn库的基本用法<br><a href="https://www.cnblogs.com/zx931880423/p/11543256.html" target="_blank" rel="noopener">https://www.cnblogs.com/zx931880423/p/11543256.html</a><br>sklearn的train_test_split<br><a href="https://www.cnblogs.com/bonelee/p/8036024.html" target="_blank" rel="noopener">https://www.cnblogs.com/bonelee/p/8036024.html</a>  </p><p>【一】零基础入门深度学习：用numpy实现神经网络训练<br><a href="https://mp.weixin.qq.com/s/_2ya_3l1wT9PEKi9aEw7ww" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/_2ya_3l1wT9PEKi9aEw7ww</a>  </p><p>对分类型变量，进行编码处理——pd.get_dummies()、LabelEncoder()、oneHotEncoder()<br><a href="https://www.cnblogs.com/wyy1480/p/10295084.html" target="_blank" rel="noopener">https://www.cnblogs.com/wyy1480/p/10295084.html</a>  </p><p>机器学习入门-概率阈值的逻辑回归对准确度和召回率的影响 lr.predict_pr<br><a href="https://www.cnblogs.com/my-love-is-python/p/10271240.html" target="_blank" rel="noopener">https://www.cnblogs.com/my-love-is-python/p/10271240.html</a>  </p><h2 id="aliyun"><a href="#aliyun" class="headerlink" title="aliyun"></a>aliyun</h2><p>学生成绩预测_PAT最佳实践<br><a href="https://help.aliyun.com/document_detail/43891.html#h2-u6570u636Eu96C6u4ECBu7ECD2" target="_blank" rel="noopener">https://help.aliyun.com/document_detail/43891.html#h2-u6570u636Eu96C6u4ECBu7ECD2</a>  </p><p>python数据分析（三）——逻辑回归之学生成绩预测<br><a href="https://zhuanlan.zhihu.com/p/87846855" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/87846855</a>  </p><p>逻辑回归实战练习——根据学生成绩预测是否被录取<br><a href="https://zhuanlan.zhihu.com/p/61414743" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/61414743</a>  </p><p>Python 机器学习实战：根据成绩预测大学生能否被高校录取<br><a href="https://blog.csdn.net/dengheCSDN/article/details/79054091" target="_blank" rel="noopener">https://blog.csdn.net/dengheCSDN/article/details/79054091</a>  </p><p>【机器学习PAI实践八】用机器学习算法评估学生考试成绩<br><a href="https://blog.csdn.net/buptgshengod/article/details/73087225" target="_blank" rel="noopener">https://blog.csdn.net/buptgshengod/article/details/73087225</a>  </p><p>阿里天池学生考试成绩预测-<br><a href="https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12282024.0.0.1b9740can009cL&amp;postId=70797</a><br><a href="https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12281915.0.0.340c355emr7Jj0&amp;postId=38406" target="_blank" rel="noopener">https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12281915.0.0.340c355emr7Jj0&amp;postId=38406</a>  </p><h2 id="学无止境"><a href="#学无止境" class="headerlink" title="学无止境"></a>学无止境</h2><ul><li>机器学习，只有趋于无限的接近。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Python-大作业&quot;&gt;&lt;a href=&quot;#Python-大作业&quot; class=&quot;headerlink&quot; title=&quot;Python~大作业&quot;&gt;&lt;/a&gt;Python~大作业&lt;/h1&gt;&lt;p&gt;只有自己能看懂系列~~乱七八糟学习记录。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="python" scheme="www.wblog.tech/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>五月份-总结盘复</title>
@@ -412,27 +433,6 @@
     
     
       <category term="c语言" scheme="www.wblog.tech/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-解决picgo+github图床上传的各种问题</title>
-    <link href="www.wblog.tech/hexo-picgoup.html"/>
-    <id>www.wblog.tech/hexo-picgoup.html</id>
-    <published>2020-04-17T10:20:58.754Z</published>
-    <updated>2020-05-11T03:38:24.377Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>在使用picgo+github搭建博客图床的时候，通常会遇到上传失败等问题，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/GH670/Blog-Back-Up-P-V@master/2020/04/17/1d80cdc57bdd47ce515cf9e607e46133.png" alt=""><br>PicGo并不怎么稳定。下面介绍一种完美解决的方案，亲测有效！<br>（图片OK，但是视频上传目测不可；另，就偶尔上传比较慢，可能是我网的问题，我网确实不怎么样）</p><a id="more"></a><h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><ol><li>VPN</li><li>google或outlook邮箱</li></ol><h2 id="处理解决步骤："><a href="#处理解决步骤：" class="headerlink" title="处理解决步骤："></a>处理解决步骤：</h2><h3 id="1-进入下方网址"><a href="#1-进入下方网址" class="headerlink" title="1. 进入下方网址"></a>1. 进入下方网址</h3><p><a href="https://www.000webhost.com/" target="_blank" rel="noopener">https://www.000webhost.com/</a>  ,浏览网页选择下方箭头所指。<br>(没有该网站账号密码没有关系，选择之后注册登录即可，当然也可以先注册登录再选择。)<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/8ce62c6db13d1462df4ae02a382ca29c.png" alt=""></p><h3 id="2-选择图示。建立自己的网站，会让你输入用户名密码。"><a href="#2-选择图示。建立自己的网站，会让你输入用户名密码。" class="headerlink" title="2. 选择图示。建立自己的网站，会让你输入用户名密码。"></a>2. 选择图示。建立自己的网站，会让你输入用户名密码。</h3><p>（网站用户名密码自定义设置）<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/5587cd173cd826697f57e0847eff30e7.png" alt=""></p><h3 id="3-选择Upload-your-site"><a href="#3-选择Upload-your-site" class="headerlink" title="3. 选择Upload your site"></a>3. 选择Upload your site</h3><p><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/079856396959da531f545727c5fd4481.png" alt=""></p><h3 id="4-之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。"><a href="#4-之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。" class="headerlink" title="4. 之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。"></a>4. 之后可能会让你登录管理界面，输入的用户名和密码就是2中自定义设置的用户名密码。</h3><h3 id="5-登录完毕之后暂时最小化浏览器界面，进行其他的操作。"><a href="#5-登录完毕之后暂时最小化浏览器界面，进行其他的操作。" class="headerlink" title="5. 登录完毕之后暂时最小化浏览器界面，进行其他的操作。"></a>5. 登录完毕之后暂时<strong>最小化</strong>浏览器界面，进行其他的操作。</h3><h3 id="6-配置up-php"><a href="#6-配置up-php" class="headerlink" title="6. 配置up.php"></a>6. 配置up.php</h3><p>项目地址：<a href="https://github.com/kjhuanhao/autoPicCdn" target="_blank" rel="noopener">https://github.com/kjhuanhao/autoPicCdn</a><br>下载此项目，修改其中的<strong>up.php</strong>文件。<br>只需修改下列代码，按提示修改即可：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(&quot;REPO&quot;,&quot;仓库&quot;);&#x2F;&#x2F;必须是下面用户名下的公开仓库</span><br><span class="line">define(&quot;USER&quot;,&quot;github仓库名&quot;);&#x2F;&#x2F;必须是当前GitHub用户名</span><br><span class="line">define(&quot;MAIL&quot;,&quot;yumusb@foxmail.com&quot;);&#x2F;&#x2F;</span><br><span class="line">define(&quot;TOKEN&quot;,&quot;token&quot;);&#x2F;&#x2F;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;tokens 去这个页面生成一个有写权限的token（write:packages前打勾）</span><br></pre></td></tr></table></figure><p><strong>特别注意：token只会生成一次，且生成后不再显示，如果忘记需要重新生成，但是之前生成的就是失效。注意保存！</strong>  </p><p>修改完毕之后保存即可。  </p><h3 id="7-上传up-php"><a href="#7-上传up-php" class="headerlink" title="7. 上传up.php"></a>7. 上传up.php</h3><p>回到刚刚的浏览器中界面，如图所示操作。其中我的存在up.php文件，是因为我已经上传完毕，正常情况下是什么这个问价的。<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eb903eaa71ccc323c497ae71179ed84b.png" alt="">  </p><h3 id="8-保存地址"><a href="#8-保存地址" class="headerlink" title="8. 保存地址"></a>8. 保存地址</h3><p>访问下列地址:<br><a href="https://www.000webhost.com/members/website/list" target="_blank" rel="noopener">https://www.000webhost.com/members/website/list</a><br>复制下方箭头所指地址：<br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/eaa794ea9f9d66ba158beeba6a47e17a.png" alt=""><br>（注：鼠标移至该地址上方图片可选择管理网站，如果因网络不佳中途是关闭网址，可以访问上述超链接进入该网址选择管理网站，进入网站的管理界面，选择其中的File Manager可进入上传up.php的界面。）  </p><h3 id="9-配置picgo"><a href="#9-配置picgo" class="headerlink" title="9. 配置picgo"></a>9. 配置picgo</h3><p>打开picgo ——&gt; 选择插件设置 ——&gt;  搜索<strong>web-uploader</strong><br><img src="https://cdn.jsdelivr.net/gh/GH670/img@master/2020/04/17/3d72ccc341177e78689395a1592da881.png" alt=""><br>之后点击插件模块右下角的设置样式，选择配置uploader -up -uploader</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">API地址填写刚刚复制的地址 + &#x2F;up.php</span><br><span class="line">POST参数名填写pic</span><br><span class="line">JSON路径填写data.url</span><br></pre></td></tr></table></figure><p>填写完毕之后，保存即可！</p><h3 id="10-自定义web图床"><a href="#10-自定义web图床" class="headerlink" title="10. 自定义web图床"></a>10. 自定义web图床</h3><p>上述全部设置完毕之后，在picgo上传区选择自定义图床。之后，就可以进行图片的上传了！</p><blockquote><p>注：参考大佬文章——&gt; <a href="https://mrhuanhao.cn/2020/03/28/solvepicnet/" target="_blank" rel="noopener">https://mrhuanhao.cn/2020/03/28/solvepicnet/</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      解决picgo+github图床上传的各种问题
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
