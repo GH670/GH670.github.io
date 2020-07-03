@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.wblog.tech/stu-matlab.html</loc>
+    <lastmod>2020-06-18</lastmod>
+  </url>  <url>
     <loc>www.wblog.tech/python-dazuoye.html</loc>
-    <lastmod>2020-06-13</lastmod>
+    <lastmod>2020-06-14</lastmod>
   </url>  <url>
     <loc>www.wblog.tech/stu-asp-net.html</loc>
     <lastmod>2020-06-12</lastmod>
