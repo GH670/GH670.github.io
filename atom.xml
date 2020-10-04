@@ -80,27 +80,6 @@
   </entry>
   
   <entry>
-    <title>五月份-总结盘复</title>
-    <link href="www.wblog.tech/sum-up-5.html"/>
-    <id>www.wblog.tech/sum-up-5.html</id>
-    <published>2020-05-30T13:56:35.491Z</published>
-    <updated>2020-05-31T02:01:47.126Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">此文仅博主可见，感谢理解</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="eba054c0650196ff38e569e571d18c77c98dc0d12e6e34b32cbf7d76389300c2">90c8e3fd5701f4498c744b26b38b0a9759e2afc040e44a39cdb5997d1a91f342079fcd4f13a3bebe633af71d98fb1944cc388584dd7c13887171defb86715e2e28dfb3fa2e6ef5f3934f61b806f734f2e41e0af47c32f366d7172bdc2f472de8fc623d09e0a4060fde3d62bf3b8e25678eac3d7fae070abf8ce7b4c0b84736892bfb4b295f340c0ad537bf84b98aea2a96e265fe0702abad16db54436c693658bc83a03a4aaa5559cedd08db99dab017cee60b58c8c3e85e84c970e977f75c05a4d4d39439daab5c96e6452863b728fffa309fb5aa03839afa2716b3246af99a251725f10c9057695c6c5cf6e4264976d96087d92be548858543751d48e3f34edf3f8f071e71e98f8476f66d29a3e43cc6107a37af1cf4db941432b6a0a7bdd0df3b9a8c974919aef82751f72ed27e58e6451c4842949406b0e35814022e4efa60b833be90c8cede66752cfbf6003f91747c64f39302cfcf7194ece5356dac619c7a1841aabe1f7486ecf95e114484c1da4bf72ad096cfb40d65034debb4490cdb3ce9dbcc0a1078136ca6cacd619b29d8a9ac43d8fa34f9290ff524faa30d52dadac52985cf1e25936d1e950ce19da4f985f84aa61b2506a4f111b7d8ffac8f5149e35348c581c491d2e8e6a85c809d89d712d3dab54fcea93ea10cdbfcd9f8643a96df4a476618888f2a68fb110cbd4577b9b87257fceff9195ccc35da3a0863f29faf979a2de788f5fcfc560f8d567f7158c19d2b8deb4b57df146ea7754f53c04d28d77808ce4731e36a942a9644e070c4f807acfa14ffd6d011bb9be592dc50976dfeb6556d99efdb528c657d7b5757fd5c7e83c7935b8f5d060b7894dc16f20ec62c8f9f53a34f2103607d270f0802e90b73aed3461a7b2ffcf3df61e2127fed369d183e25ad4a5caa65ae5947ff1c5a8adf89c5625df43cce0f09a7c6459753d9c84286f65bbf725280d3e1ccb20fb0ef3e961c141c25bc660d075d23085553d2c275ea8a1a47359de3418db67c09403231c3de2fa91aec628de4ab2685cf48bf187f5fc0aeca2a54b9be633052e176ae7aced6a3a9ecf39537a4de821653a87920f51b55d5ca90edf716125146a4d98634a5d1fd49db289e5ab3b728c1d6b5b3464c4353542c6b63e7918e5c3dfb7c3c35108551a31d41ab98e137adf010c47b0895445fb028870981e775daf001c1b6656d76de305914b938f7d63dc092cad484b7da26a32518513d27c3e108b442a779166fd255190c4c25786dbe4cf523cf295262fe9a0c9336947a78e409c99b43cb5cb1b778a917d8299a41ee3535db8b9851cc690a77ee84ed487b2d670a3fb859cd871ffe2e22debc20343cb2b42811204f07ee2fdde429b3f27976dde38e4fd4ccf1d9492283f704a813e1206d7b0b707347077ad14dd444d11b886c033d5b04456976fc57b14941d70444bdd91837aa25856a3443711a643ba0fac67e8450b2453d857c1ded9afb2f5d5d2bf26ffee1494302cd3e0de8b324ab324f94de4585ed2ad661838a69882eed6490d3ab48b9d60629a38c55b5a1e38ff74eb614ac2aaa21ea9388c5eb6626ddc72d398446ce1fa95aa99f56873fea06a0d8a340fcbe3a677a34c4768c3f639ff98589c1b5b42b318a5c88ab5b319dff528dbe9e40911fb029e5c203463ca889a6d24905d5ca3c5a0a82f66bf807c57aba073af76eec306aad1a09cd32c15288dadd132a93c8413a4f39d0d28a7e24c81e54100010912039f7a172208e59086077746bf2db2caa24af0e6e41071ceb1a69a687a05010025230a0c0fa1ff579c0eb</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      五月份总结盘复
-    
-    </summary>
-    
-    
-    
-      <category term="sum-up" scheme="www.wblog.tech/tags/sum-up/"/>
-    
-  </entry>
-  
-  <entry>
     <title>那些年，写出的bug.</title>
     <link href="www.wblog.tech/hexo-error-fatal.html"/>
     <id>www.wblog.tech/hexo-error-fatal.html</id>
@@ -160,27 +139,6 @@
     
     
       <category term="CCF" scheme="www.wblog.tech/tags/CCF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>疫情之下超长假期之开学前的闲谈杂事</title>
-    <link href="www.wblog.tech/hexo-xiantanzashi1.html"/>
-    <id>www.wblog.tech/hexo-xiantanzashi1.html</id>
-    <published>2020-05-16T02:26:18.960Z</published>
-    <updated>2020-05-25T11:37:31.338Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">疫情之下超长假期之开学前的闲谈杂事</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="40722f3e0a2feb43e473ddbc2ba6c2fd52d7d423cf2868d5100d51e09ec422cc">cbc64c84934653700c9114c189ccf22491e8a1732e1ca01cbed7b050a59b37a363d929db0fadbfea813602b2aef526e46d1f4d2038abadb186439922203a5781649bf1e8aad11db03d5a38ba1845437dc9acc6af6dab40f8dee8af644bd3217d23f91db0c346f811f3fee97c7fda7ece7e23e546ed206205fe7e493bc02c39200c99c1e7bce52a8ae2e27a61a448512a25571a7945fb87da51e25445064f84b89e0cbeb9d3da225e6bb40822df9555a74390f66c862d2087245ffd0f2dbc9edd6229d1d9cc97c0e59232065065730df70c987fef5a7577ea59370c11cfb7b4dc6c5663b109ca16519e8db3d810e47947ab615ab1921b029971f27c312a548888928b1c041b851d6ec06df34e37c53a08965104b285ea94ccd7c927fd0658f1b0a066d72061a51aad8dea71fdb0bcfa8836c8936884602168822b4994cbf148404d9f9d04309b5381b7570fc1e28e69dc4aaecd95123932c18d7ee2a15251a660c0a1f1fbe36f79b2680063349e9ad83428fb91a59eaa77fdb11cd44ecf72052940ccaf1faf5aa099f1f133a9216161efd56314741b5f09c263216441e52c2edfac308f54874451ca99cd599fe9c219136ed0e9912b00e977c0ad994c7274b75bf35bc39e690e02ec8d926ce39fe3134c3a66f8b1aa224877ff7fa1901f6f1002fbba60fa6414073773553c1d5e67ef4a6e8139536ba0072b51e0b238aef9a559df683a823756da45cad246a729ca4ef03d6dfed0ef3a21e13298bd93dba4a50f82df25b71dbcb9e6fb0516c22d12e182323eac35bee271aefe7b1b401e67a4125aa515e9d3b0cd8e3fcc6cd352a3e3a9a86ba141fdcd419949c00d2af4289236945911dd7490fe32f33aa8ce30e7fa2cd232cb467fb0b54a1502f8a14df9ddd82375a91c2d214f81d543437ea97a64957687e8c21afe32dab981d4a3a73632d92d6ed5e063b8ce1ddf9a4d9f31b42c26</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      疫情之下超长假期之开学前的闲谈杂事
-    
-    </summary>
-    
-    
-    
-      <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
     
   </entry>
   
@@ -433,6 +391,48 @@
     
     
       <category term="github" scheme="www.wblog.tech/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-博客搭建文件解析</title>
+    <link href="www.wblog.tech/hexo-wenjianjiexi.html"/>
+    <id>www.wblog.tech/hexo-wenjianjiexi.html</id>
+    <published>2020-04-21T23:49:39.386Z</published>
+    <updated>2020-05-11T03:37:37.466Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo博客搭建文件解析"><a href="#Hexo博客搭建文件解析" class="headerlink" title="Hexo博客搭建文件解析"></a>Hexo博客搭建文件解析</h1><p>Hexo博客搭建的各个文件解析，俗称 wiki (手动滑稽)</p><a id="more"></a><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><ul><li>source - Hexo加载主题资源的主目录，需要编译生成</li><li>source-src - 源文件目录，编译到source目录</li><li>layout - 模板目录</li><li>languages - 语言配置目录</li></ul><p>一般来说，如果你想修改页面的html，请到layout文件夹里直接修改； 如想修改css，js，请到source-src文件夹里，并通过后面介绍的开发步骤，编译到source里。</p><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>你需要使用以下环境进行开发：</p><ul><li>node - 0.4.2以上</li><li>npm - 3.0.0以上</li><li>ejs - 前端模板</li><li>sass - css预编译</li><li>webpack - 构建工具</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      Hexo-文件解析
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C语言——简单知识点</title>
+    <link href="www.wblog.tech/c-jiandanzhishidian.html"/>
+    <id>www.wblog.tech/c-jiandanzhishidian.html</id>
+    <published>2020-04-21T08:30:33.344Z</published>
+    <updated>2020-05-11T03:36:02.628Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>本博文主要记录C语言的一些简单知识点、及疑难杂症。</p><a id="more"></a><h1 id="疑难杂症"><a href="#疑难杂症" class="headerlink" title="疑难杂症"></a>疑难杂症</h1><h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p>p1,*p1,&amp;p1。  </p><p>if int a=233  , &amp;a=0xa0<br>int *p , &amp;p1=0xb0<br>p1=&amp;a<br>*p=233<br>p1=0xa0 , &amp;p1=0xb0 , *p1=233   </p>]]></content>
+    
+    <summary type="html">
+    
+      C语言——简单知识点
+    
+    </summary>
+    
+    
+    
+      <category term="c语言" scheme="www.wblog.tech/tags/c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
