@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="www.wblog.tech/"/>
-  <updated>2020-11-10T12:28:41.344Z</updated>
+  <updated>2020-11-19T08:22:02.851Z</updated>
   <id>www.wblog.tech/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微软商店-加载失败</title>
+    <link href="www.wblog.tech/suibi-microsoftstore.html"/>
+    <id>www.wblog.tech/suibi-microsoftstore.html</id>
+    <published>2020-11-19T08:19:59.868Z</published>
+    <updated>2020-11-19T08:22:02.851Z</updated>
+    
+    <content type="html"><![CDATA[<p>1，首先我们打开“我的电脑”然后依次点击“计算机”“打开设置”  </p><a id="more"></a><p>2，打开“网络和internet”<br>3，在下面找到并打开“网络和共享中心”<br>4，打开”internet选项“<br>5，再点击“高级”<br>6，勾选“使用 TLS 1.1” 与“使用 TLS 1.2”最后点击”应用“就可以打开microsoft store。  </p>]]></content>
+    
+    <summary type="html">
+    
+      微软商店-加载失败
+    
+    </summary>
+    
+    
+    
+      <category term="随笔记事" scheme="www.wblog.tech/tags/notes/"/>
+    
+  </entry>
   
   <entry>
     <title>查看笔记本电池损耗</title>
@@ -412,27 +433,6 @@
     
     
       <category term="github" scheme="www.wblog.tech/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo-博客搭建文件解析</title>
-    <link href="www.wblog.tech/hexo-wenjianjiexi.html"/>
-    <id>www.wblog.tech/hexo-wenjianjiexi.html</id>
-    <published>2020-04-21T23:49:39.386Z</published>
-    <updated>2020-05-11T03:37:37.466Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hexo博客搭建文件解析"><a href="#Hexo博客搭建文件解析" class="headerlink" title="Hexo博客搭建文件解析"></a>Hexo博客搭建文件解析</h1><p>Hexo博客搭建的各个文件解析，俗称 wiki (手动滑稽)</p><a id="more"></a><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><ul><li>source - Hexo加载主题资源的主目录，需要编译生成</li><li>source-src - 源文件目录，编译到source目录</li><li>layout - 模板目录</li><li>languages - 语言配置目录</li></ul><p>一般来说，如果你想修改页面的html，请到layout文件夹里直接修改； 如想修改css，js，请到source-src文件夹里，并通过后面介绍的开发步骤，编译到source里。</p><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>你需要使用以下环境进行开发：</p><ul><li>node - 0.4.2以上</li><li>npm - 3.0.0以上</li><li>ejs - 前端模板</li><li>sass - css预编译</li><li>webpack - 构建工具</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      Hexo-文件解析
-    
-    </summary>
-    
-    
-    
-      <category term="hexo" scheme="www.wblog.tech/tags/hexo/"/>
     
   </entry>
   
