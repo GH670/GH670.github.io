@@ -42,9 +42,9 @@
     <link href="www.wblog.tech/suibi-chakandianchisunhao.html"/>
     <id>www.wblog.tech/suibi-chakandianchisunhao.html</id>
     <published>2020-11-10T12:25:12.676Z</published>
-    <updated>2020-11-10T12:28:41.344Z</updated>
+    <updated>2021-01-10T01:40:30.299Z</updated>
     
-    <content type="html"><![CDATA[<p>1、按Win+X选择命令提示符（管理员）<br>2、在界面中，输入“cd %userprofile%\Documents”，回车即可，<br>3、接着输入命令：powercfg /batteryreport，回车后会在我的文档中生成保存一个html文件（battery-report.html）<br>4、接着在我的文档中找到这个battery-report.html文件，用浏览器打开即可看到电池信息了。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><ul><li>找到“命令提示符”，点击右键，  </li><li>选择“使用管理员权限运行”在其中键入命令：  <a id="more"></a></li><li>Powercfg -energy（注Powercfg后有一个空格energy前面没有空格）  </li><li>回车  </li><li>程序将开始检查系统中与电源管理相关的策略、设置、软硬件兼容性，  </li><li>还要对当前运行的进程进行长达 60 秒的跟踪检测。  </li><li></li><li>结束之后，  </li><li>程序会将分析结果保存为  </li><li>命令提示符当前文件夹中名为energy-report.html的网页文件，  </li><li>用浏览器打开它。  <h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3></li></ul><p>1、按Win+X选择命令提示符（管理员）<br>2、在界面中，输入“cd %userprofile%\Documents”，回车即可，<br>3、接着输入命令：powercfg /batteryreport，回车后会在我的文档中生成保存一个html文件（battery-report.html）<br>4、接着在我的文档中找到这个battery-report.html文件，用浏览器打开即可看到电池信息了。</p>]]></content>
     
     <summary type="html">
     
